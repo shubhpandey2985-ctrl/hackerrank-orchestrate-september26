@@ -1,0 +1,114 @@
+{
+  "models": [
+    {
+      "model": "A",
+      "description": "stable fixed only; varying unresolved",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "first_divergence": "safe_amount for 23 baseline rows",
+      "false_positive_capacity": "none observed in prior run",
+      "false_negative_capacity": "possible when variable obligation is real",
+      "safety_invariant": "prior run safe",
+      "invented_future_movements": 0,
+      "recommendation": "strongest current model"
+    },
+    {
+      "model": "B",
+      "description": "latest observed amount",
+      "field_matches": null,
+      "first_divergence": null,
+      "false_positive_capacity": "not measurable without unsupported estimator",
+      "false_negative_capacity": "unknown",
+      "safety_invariant": "not promoted",
+      "invented_future_movements": "undefined",
+      "recommendation": "unsupported estimator"
+    },
+    {
+      "model": "C",
+      "description": "median observed amount",
+      "field_matches": null,
+      "first_divergence": null,
+      "false_positive_capacity": "not measurable without unsupported estimator",
+      "false_negative_capacity": "unknown",
+      "safety_invariant": "not promoted",
+      "invented_future_movements": "undefined",
+      "recommendation": "unsupported estimator"
+    },
+    {
+      "model": "D",
+      "description": "arithmetic mean",
+      "field_matches": null,
+      "first_divergence": null,
+      "false_positive_capacity": "not measurable without unsupported estimator",
+      "false_negative_capacity": "unknown",
+      "safety_invariant": "not promoted",
+      "invented_future_movements": "undefined",
+      "recommendation": "unsupported estimator"
+    },
+    {
+      "model": "E",
+      "description": "conservative maximum",
+      "field_matches": null,
+      "first_divergence": null,
+      "false_positive_capacity": "not measurable without unsupported estimator",
+      "false_negative_capacity": "unknown",
+      "safety_invariant": "not promoted",
+      "invented_future_movements": "undefined",
+      "recommendation": "unsupported estimator"
+    },
+    {
+      "model": "F",
+      "description": "recurrence-conditioned statistic",
+      "field_matches": null,
+      "first_divergence": null,
+      "false_positive_capacity": "not measurable without unsupported estimator",
+      "false_negative_capacity": "unknown",
+      "safety_invariant": "not promoted",
+      "invented_future_movements": "undefined",
+      "recommendation": "statistic undefined by specification"
+    },
+    {
+      "model": "G",
+      "description": "explicit future amount only",
+      "field_matches": {
+        "amount_safe_to_pay": 3,
+        "affordability_status": 12,
+        "recommended_payment_method": 14,
+        "payment_plan": 13,
+        "earliest_date_for_full_payment": 9,
+        "spending_changes_needed": 22
+      },
+      "first_divergence": "safe_amount for 23 baseline rows",
+      "false_positive_capacity": "none observed in prior run",
+      "false_negative_capacity": "possible when variable obligation is real",
+      "safety_invariant": "prior run safe",
+      "invented_future_movements": 0,
+      "recommendation": "counterfactual evidence only"
+    },
+    {
+      "model": "H",
+      "description": "evidence-weighted semantically justified amount",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "first_divergence": "safe_amount for 23 baseline rows",
+      "false_positive_capacity": "none observed in prior run",
+      "false_negative_capacity": "possible when variable obligation is real",
+      "safety_invariant": "prior run safe",
+      "invented_future_movements": 0,
+      "recommendation": "fixed equal-amount evidence only"
+    }
+  ],
+  "selection": "A/H fixed-only model retained; no statistic promoted."
+}

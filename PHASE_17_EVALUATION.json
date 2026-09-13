@@ -1,0 +1,23 @@
+{
+  "before": {
+    "amount_safe_to_pay": 2,
+    "affordability_status": 10,
+    "recommended_payment_method": 12,
+    "payment_plan": 11,
+    "earliest_date_for_full_payment": 8,
+    "spending_changes_needed": 22
+  },
+  "after": {
+    "amount_safe_to_pay": 2,
+    "affordability_status": 10,
+    "recommended_payment_method": 12,
+    "payment_plan": 11,
+    "earliest_date_for_full_payment": 8,
+    "spending_changes_needed": 22
+  },
+  "regressions": [],
+  "improvements": [],
+  "output_sha256": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840",
+  "rows": 250,
+  "deterministic": true
+}

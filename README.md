@@ -41,6 +41,19 @@ Run the starter Python entry point with:
 python3 code/main.py
 ```
 
+The implemented pipeline can be verified with:
+
+```bash
+python -m pytest code -q
+python code/evaluation.py
+python code/main.py
+```
+
+`code/main.py` performs schema validation, lifecycle filtering, direct supplied-rate
+normalization, deterministic forecasting, safe-amount search, candidate validation,
+ranking, and CSV writing. `code/evaluation.py` compares the deterministic engine
+against all 25 public solved examples and writes `evaluation_sample_report.json`.
+
 After running your solution, confirm that `output.csv` exists in the repository root and contains the required columns and one row for every request.
 
 ## Important File Locations

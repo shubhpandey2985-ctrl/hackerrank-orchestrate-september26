@@ -1,0 +1,164 @@
+{
+  "rows": [
+    {
+      "semantic": "Variable spending amount",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Variable recurrence identity",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Observation threshold",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Gap tolerance",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Weekly cadence",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Biweekly cadence",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Monthly cadence",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Month-end behavior",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Missed-cycle behavior",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Terminal recurrence",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "explicit schema/lifecycle fixture",
+      "expected_output_distinguishes": true,
+      "result": "IDENTIFIABLE"
+    },
+    {
+      "semantic": "Generic scheduled credits",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Confirmed future credits",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "explicit schema/lifecycle fixture",
+      "expected_output_distinguishes": true,
+      "result": "IDENTIFIABLE"
+    },
+    {
+      "semantic": "Pending credits",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "explicit schema/lifecycle fixture",
+      "expected_output_distinguishes": true,
+      "result": "IDENTIFIABLE"
+    },
+    {
+      "semantic": "Pending debits",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "explicit schema/lifecycle fixture",
+      "expected_output_distinguishes": true,
+      "result": "IDENTIFIABLE"
+    },
+    {
+      "semantic": "Optional baseline",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Same-day ordering",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Replacement timing",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Deadline/status mapping",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Decimal serialization",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    },
+    {
+      "semantic": "Flexible-action ties",
+      "candidate_a": "conservative/current policy",
+      "candidate_b": "alternative interpretation",
+      "distinguishing_fixture": "none in supplied 25",
+      "expected_output_distinguishes": false,
+      "result": "OBSERVATIONALLY_CONFOUNDED"
+    }
+  ]
+}

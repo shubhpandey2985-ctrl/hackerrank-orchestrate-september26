@@ -1,0 +1,124 @@
+{
+  "rules": [
+    {
+      "semantic": "Variable spending amount",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Variable recurrence identity",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Observation threshold",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Gap tolerance",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Weekly cadence",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Biweekly cadence",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Monthly cadence",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Month-end behavior",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Missed-cycle behavior",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Terminal recurrence",
+      "classification": "STRONGLY_EXAMPLE_SUPPORTED",
+      "supporting_evidence": "README/problem_statement and cited prior artifacts",
+      "result": "production rule retained"
+    },
+    {
+      "semantic": "Generic scheduled credits",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Confirmed future credits",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "supporting_evidence": "README/problem_statement and cited prior artifacts",
+      "result": "production rule retained"
+    },
+    {
+      "semantic": "Pending credits",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "supporting_evidence": "README/problem_statement and cited prior artifacts",
+      "result": "production rule retained"
+    },
+    {
+      "semantic": "Pending debits",
+      "classification": "STRONGLY_EXAMPLE_SUPPORTED",
+      "supporting_evidence": "README/problem_statement and cited prior artifacts",
+      "result": "production rule retained"
+    },
+    {
+      "semantic": "Optional baseline",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Same-day ordering",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Replacement timing",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Deadline/status mapping",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Decimal serialization",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    },
+    {
+      "semantic": "Flexible-action ties",
+      "classification": "UNRESOLVED",
+      "supporting_evidence": "NO AUTHORITATIVE EVIDENCE FOUND",
+      "result": "observationally confounded or unsupported"
+    }
+  ]
+}

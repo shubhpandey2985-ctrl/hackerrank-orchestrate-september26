@@ -1,0 +1,44 @@
+{
+  "groups": {
+    "serialization": [
+      "request_01",
+      "request_12"
+    ],
+    "safe amount": [
+      "request_02",
+      "request_03",
+      "request_04",
+      "request_05",
+      "request_06",
+      "request_07",
+      "request_08",
+      "request_09",
+      "request_10",
+      "request_11",
+      "request_13",
+      "request_14",
+      "request_15",
+      "request_16",
+      "request_17",
+      "request_18",
+      "request_19",
+      "request_20",
+      "request_21",
+      "request_22",
+      "request_23",
+      "request_24",
+      "request_25"
+    ]
+  },
+  "causal_order": [
+    "ledger/lifecycle",
+    "recurrence/income/scheduled-credit",
+    "forecast balance",
+    "safe amount",
+    "earliest date",
+    "candidate generation",
+    "ranking",
+    "serialization"
+  ],
+  "conclusion": "For 23 requests, the first observed output divergence is safe amount. The available evidence cannot identify a single semantic movement that must be added or removed without choosing among unresolved recurrence, scheduled-credit, optional-baseline, ordering, or variable-amount interpretations."
+}

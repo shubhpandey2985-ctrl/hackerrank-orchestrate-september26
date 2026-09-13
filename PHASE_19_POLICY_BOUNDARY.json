@@ -1,0 +1,11 @@
+{
+  "VARIABLE_SPENDING_POLICY": {"selected": "FIXED_ONLY_UNRESOLVED_VARIABLE", "classification": "UNSUPPORTED_ALTERNATIVES_REJECTED"},
+  "RECURRENCE_CALENDAR_POLICY": {"selected": "OBSERVED_INTERVAL", "classification": "UNRESOLVED_POLICY"},
+  "RECURRENCE_THRESHOLD_POLICY": {"selected": "configured_existing_threshold", "classification": "UNRESOLVED_POLICY"},
+  "OPTIONAL_BASELINE_POLICY": {"selected": "CURRENT_BEHAVIOR", "classification": "UNRESOLVED_POLICY"},
+  "SCHEDULED_CREDIT_POLICY": {"selected": "CONFIRMED_SALARY_ONLY", "classification": "SPECIFICATION_EXPLICIT"},
+  "SAME_DAY_ORDER_POLICY": {"selected": "credits_before_required_debits_before_plan", "classification": "POLICY_CHOICE"},
+  "REPLACEMENT_POLICY": {"selected": "NEVER_INVENT", "classification": "SPECIFICATION_EXPLICIT"},
+  "DEADLINE_STATUS_POLICY": {"selected": "CAPACITY_ONLY_NO_RECOMMENDATION", "classification": "UNRESOLVED_POLICY"},
+  "DECIMAL_PRESENTATION_POLICY": {"selected": "configured_decimal_scale", "classification": "UNRESOLVED_PRESENTATION"}
+}

@@ -1,0 +1,7 @@
+{
+  "semantic_lab_fixtures": 66,
+  "phase19_parametrized_fixtures": 60,
+  "categories": ["lifecycle", "pending", "recurrence", "variable_spending", "optional_baseline", "salary", "scheduled_credit", "same_day", "fx", "decimal", "deadline", "preferences", "flexible_actions", "duplicates", "malformed", "empty", "zero", "horizon"],
+  "sample_outputs_used_as_assertions": false,
+  "properties": ["minimum_balance", "determinism", "lifecycle_exclusion", "direct_fx", "preferences", "protected_categories", "action_limit", "exact_plan_sum", "deadline", "horizon"]
+}

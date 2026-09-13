@@ -1,0 +1,30 @@
+{
+  "scope": "Phase 11 defensive hardening; no decision-pipeline redesign",
+  "baseline": {
+    "commit": "d2416958be49f40ef9a15fefe3a6795d6d34a7e1",
+    "focused_tests": 38,
+    "full_tests": 47,
+    "field_matches": {"amount_safe_to_pay": 2, "affordability_status": 10, "recommended_payment_method": 12, "payment_plan": 11, "earliest_date_for_full_payment": 8, "spending_changes_needed": 22},
+    "output_rows": 250,
+    "output_sha256": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840",
+    "deterministic_rerun_same_hash": true
+  },
+  "hardening_tests_added": 7,
+  "hardening_tests_passed": 7,
+  "full_suite_after": 54,
+  "production_logic_changed": false,
+  "explicit_compliance": [
+    {"rule_id":"OUT-001","specification":"Exactly eight output columns in required order","implementation":"main.OUT_COLS/output writer","test":"test_output_contract_has_250_unique_request_rows","result":"PASS","risk":"low"},
+    {"rule_id":"SAFE-001","specification":"0 <= safe amount <= requested amount","implementation":"main.safe_amount","test":"test_pipeline/test_hardening","result":"PASS","risk":"medium"},
+    {"rule_id":"LIFE-001","specification":"Failed/cancelled/unrealized rows create no cash movement","implementation":"main.semantic_events","test":"test_failed_cancelled_do_not_create_cash_movement","result":"PASS","risk":"low"},
+    {"rule_id":"PEND-001","specification":"Pending credits are excluded","implementation":"main.semantic_events","test":"test_pending_credit_cannot_increase_capacity","result":"PASS","risk":"low"},
+    {"rule_id":"FX-001","specification":"Only supplied direct FX is allowed","implementation":"main.normalize_events","test":"test_missing_direct_fx_fails_closed","result":"PASS","risk":"low"},
+    {"rule_id":"DEC-001","specification":"Financial arithmetic is deterministic Decimal arithmetic","implementation":"main.D/forecast/safe_amount","test":"full suite and source audit","result":"PASS","risk":"medium"},
+    {"rule_id":"PREF-001","specification":"Payment preferences are hard eligibility constraints","implementation":"main.candidate/validator","test":"existing adversarial preference tests","result":"PASS","risk":"medium"},
+    {"rule_id":"PART-001","specification":"Partial payment is exactly two payments","implementation":"main.candidate/validator","test":"existing partial-payment tests","result":"PASS","risk":"medium"}
+  ],
+  "unresolved_policies_preserved": ["variable amount estimation","optional baseline scope","recurrence thresholds","calendar/month-end behavior","missed cycles","generic scheduled credits","replacement timing","same-day ordering","late-deadline status mapping","decimal presentation"],
+  "decision": "BLOCKED",
+  "minimum_blocker": "Safe amount and earliest-date semantics remain unresolved upstream; sample field matches are not submission-ready.",
+  "code_zip_created": false
+}

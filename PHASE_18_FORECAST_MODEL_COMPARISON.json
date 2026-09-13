@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "model": "A",
+      "description": "explicit confirmed + stable fixed recurrence",
+      "classification": "STRONGLY_EXAMPLE_SUPPORTED",
+      "promoted": true
+    },
+    {
+      "model": "B",
+      "description": "explicit confirmed only",
+      "classification": "SPECIFICATION_EXPLICIT but conservative alternative",
+      "promoted": false
+    },
+    {
+      "model": "C",
+      "description": "calendar-supported fixed recurrence",
+      "classification": "UNRESOLVED",
+      "promoted": false
+    },
+    {
+      "model": "D",
+      "description": "variable recurrence",
+      "classification": "UNSUPPORTED-ASSUMPTION unless amount evidence supplied",
+      "promoted": false
+    },
+    {
+      "model": "E",
+      "description": "current production",
+      "classification": "STRONGLY_EXAMPLE_SUPPORTED",
+      "promoted": true
+    }
+  ],
+  "field_matches": {
+    "amount_safe_to_pay": 2,
+    "affordability_status": 10,
+    "recommended_payment_method": 12,
+    "payment_plan": 11,
+    "earliest_date_for_full_payment": 8,
+    "spending_changes_needed": 22
+  },
+  "first_divergence_distribution": {
+    "safe_amount": 23,
+    "serialization": 2
+  },
+  "critical_forecast_dates": "available per PHASE_13_BEHAVIOR_MATRIX.json",
+  "selection": "No new model promoted."
+}
