@@ -4,130 +4,130 @@ request_27,6670,affordable_now,full_payment,2026-07-05:6670,2026-07-05,none,Plan
 request_28,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_29,51524,affordable_now,full_payment,2025-11-04:51524,2025-11-04,none,Plan full_payment completes 51524 while maintaining the minimum balance; safe today: 51524.
 request_30,775.2,affordable_with_plan,installments,2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74,2026-04-06,none,Plan installments completes 775.2 while maintaining the minimum balance; safe today: 775.2.
-request_31,5622969.36,not_affordable,not_recommended,none,,none,Safe amount today is 5622969.36; the full amount is not safe within the requested plan.
+request_31,6836010,not_affordable,not_recommended,none,,none,Safe amount today is 6836010; the full amount is not safe within the requested plan.
 request_32,28276.6,not_affordable,not_recommended,none,,none,Safe amount today is 28276.6; the full amount is not safe within the requested plan.
 request_33,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_34,129400,affordable_now,full_payment,2024-12-04:129400,2024-12-04,none,Plan full_payment completes 129400 while maintaining the minimum balance; safe today: 129400.
 request_35,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_36,127.46,not_affordable,not_recommended,none,,none,Safe amount today is 127.46; the full amount is not safe within the requested plan.
+request_36,644.6,not_affordable,not_recommended,none,,none,Safe amount today is 644.6; the full amount is not safe within the requested plan.
 request_37,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_38,107.6,not_affordable,not_recommended,none,,none,Safe amount today is 107.6; the full amount is not safe within the requested plan.
-request_39,176451.42,not_affordable,not_recommended,none,,none,Safe amount today is 176451.42; the full amount is not safe within the requested plan.
-request_40,225.38,not_affordable,not_recommended,none,,none,Safe amount today is 225.38; the full amount is not safe within the requested plan.
-request_41,16689213.31,not_affordable,not_recommended,none,,none,Safe amount today is 16689213.31; the full amount is not safe within the requested plan.
-request_42,13282.05,not_affordable,not_recommended,none,,none,Safe amount today is 13282.05; the full amount is not safe within the requested plan.
+request_38,186.4,not_affordable,not_recommended,none,,none,Safe amount today is 186.4; the full amount is not safe within the requested plan.
+request_39,191640,affordable_later,wait,2026-04-15:208600,2026-04-15,none,Plan wait completes 208600 while maintaining the minimum balance; safe today: 191640.
+request_40,443.3,not_affordable,not_recommended,none,,none,Safe amount today is 443.3; the full amount is not safe within the requested plan.
+request_41,19533900,not_affordable,not_recommended,none,,none,Safe amount today is 19533900; the full amount is not safe within the requested plan.
+request_42,37920,not_affordable,not_recommended,none,,none,Safe amount today is 37920; the full amount is not safe within the requested plan.
 request_43,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_44,50989.45,not_affordable,not_recommended,none,,none,Safe amount today is 50989.45; the full amount is not safe within the requested plan.
-request_45,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_44,58920,not_affordable,not_recommended,none,,none,Safe amount today is 58920; the full amount is not safe within the requested plan.
+request_45,1007000,not_affordable,not_recommended,none,,none,Safe amount today is 1007000; the full amount is not safe within the requested plan.
 request_46,49450,affordable_with_plan,installments,2024-12-03:25714|2024-12-31:25714,2024-12-03,none,Plan installments completes 49450 while maintaining the minimum balance; safe today: 49450.
 request_47,38114000,affordable_now,full_payment,2025-05-05:38114000,2025-05-05,none,Plan full_payment completes 38114000 while maintaining the minimum balance; safe today: 38114000.
-request_48,12765.86,not_affordable,not_recommended,none,,none,Safe amount today is 12765.86; the full amount is not safe within the requested plan.
+request_48,30785,not_affordable,not_recommended,none,,none,Safe amount today is 30785; the full amount is not safe within the requested plan.
 request_49,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_50,8998.99,not_affordable,not_recommended,none,,none,Safe amount today is 8998.99; the full amount is not safe within the requested plan.
+request_50,28625.5,not_affordable,not_recommended,none,,none,Safe amount today is 28625.5; the full amount is not safe within the requested plan.
 request_51,2191000,affordable_now,full_payment,2026-01-03:2191000,2026-01-03,none,Plan full_payment completes 2191000 while maintaining the minimum balance; safe today: 2191000.
 request_52,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_53,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_54,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_55,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_54,2186.8,not_affordable,not_recommended,none,,none,Safe amount today is 2186.8; the full amount is not safe within the requested plan.
+request_55,20791.19,not_affordable,not_recommended,none,,none,Safe amount today is 20791.19; the full amount is not safe within the requested plan.
 request_56,881.56,affordable_with_plan,installments,2025-02-03:458.42|2025-03-03:458.42,2025-02-03,none,Plan installments completes 881.56 while maintaining the minimum balance; safe today: 881.56.
 request_57,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_58,6279691.74,not_affordable,not_recommended,none,,none,Safe amount today is 6279691.74; the full amount is not safe within the requested plan.
+request_58,11610615,not_affordable,not_recommended,none,,none,Safe amount today is 11610615; the full amount is not safe within the requested plan.
 request_59,140600,affordable_with_plan,installments,2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33,2025-05-04,none,Plan installments completes 140600 while maintaining the minimum balance; safe today: 140600.
 request_60,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_61,29062,affordable_with_plan,installments,2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83,2024-03-03,none,Plan installments completes 29062 while maintaining the minimum balance; safe today: 29062.
 request_62,404.22,affordable_now,full_payment,2025-08-05:404.23,2025-08-05,none,Plan full_payment completes 404.23 while maintaining the minimum balance; safe today: 404.22.
-request_63,81376.5,not_affordable,not_recommended,none,,none,Safe amount today is 81376.5; the full amount is not safe within the requested plan.
-request_64,20254.45,not_affordable,not_recommended,none,,none,Safe amount today is 20254.45; the full amount is not safe within the requested plan.
-request_65,2889.08,not_affordable,not_recommended,none,,none,Safe amount today is 2889.08; the full amount is not safe within the requested plan.
+request_63,90990,not_affordable,not_recommended,none,,none,Safe amount today is 90990; the full amount is not safe within the requested plan.
+request_64,31353.01,not_affordable,not_recommended,none,,none,Safe amount today is 31353.01; the full amount is not safe within the requested plan.
+request_65,5379,not_affordable,not_recommended,none,,none,Safe amount today is 5379; the full amount is not safe within the requested plan.
 request_66,22200,affordable_now,full_payment,2026-04-03:22200,2026-04-03,none,Plan full_payment completes 22200 while maintaining the minimum balance; safe today: 22200.
-request_67,631.7,not_affordable,not_recommended,none,,none,Safe amount today is 631.7; the full amount is not safe within the requested plan.
-request_68,1096.81,not_affordable,not_recommended,none,,none,Safe amount today is 1096.81; the full amount is not safe within the requested plan.
+request_67,747.54,not_affordable,not_recommended,none,,none,Safe amount today is 747.54; the full amount is not safe within the requested plan.
+request_68,1398.83,not_affordable,not_recommended,none,,none,Safe amount today is 1398.83; the full amount is not safe within the requested plan.
 request_69,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_70,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_71,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_72,11330,affordable_now,full_payment,2026-07-05:11330,2026-07-05,none,Plan full_payment completes 11330 while maintaining the minimum balance; safe today: 11330.
-request_73,7680.27,not_affordable,not_recommended,none,,none,Safe amount today is 7680.27; the full amount is not safe within the requested plan.
+request_73,30442.5,not_affordable,not_recommended,none,,none,Safe amount today is 30442.5; the full amount is not safe within the requested plan.
 request_74,5010,affordable_now,full_payment,2025-08-04:5010,2025-08-04,none,Plan full_payment completes 5010 while maintaining the minimum balance; safe today: 5010.
 request_75,28270,affordable_with_plan,installments,2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27,2026-04-06,none,Plan installments completes 28270 while maintaining the minimum balance; safe today: 28270.
-request_76,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_77,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_78,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_79,954.58,not_affordable,not_recommended,none,,none,Safe amount today is 954.58; the full amount is not safe within the requested plan.
+request_76,149.2,not_affordable,not_recommended,none,,none,Safe amount today is 149.2; the full amount is not safe within the requested plan.
+request_77,19760.5,not_affordable,not_recommended,none,,none,Safe amount today is 19760.5; the full amount is not safe within the requested plan.
+request_78,7261,not_affordable,not_recommended,none,,none,Safe amount today is 7261; the full amount is not safe within the requested plan.
+request_79,1052.08,not_affordable,not_recommended,none,,none,Safe amount today is 1052.08; the full amount is not safe within the requested plan.
 request_80,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_81,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_82,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_83,23821.73,not_affordable,not_recommended,none,,none,Safe amount today is 23821.73; the full amount is not safe within the requested plan.
+request_83,28110,not_affordable,not_recommended,none,,none,Safe amount today is 28110; the full amount is not safe within the requested plan.
 request_84,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_85,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_86,46300,affordable_now,full_payment,2025-08-03:46300,2025-08-03,none,Plan full_payment completes 46300 while maintaining the minimum balance; safe today: 46300.
-request_87,59500.09,not_affordable,not_recommended,none,,none,Safe amount today is 59500.09; the full amount is not safe within the requested plan.
+request_87,75180,not_affordable,not_recommended,none,,none,Safe amount today is 75180; the full amount is not safe within the requested plan.
 request_88,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_89,11983319.51,not_affordable,not_recommended,none,,none,Safe amount today is 11983319.51; the full amount is not safe within the requested plan.
+request_89,12811662.01,affordable_with_plan,installments,2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67,2025-11-15,none,Plan installments completes 13756000 while maintaining the minimum balance; safe today: 12811662.01.
 request_90,2560,affordable_now,full_payment,2026-07-06:2560,2026-07-06,none,Plan full_payment completes 2560 while maintaining the minimum balance; safe today: 2560.
 request_91,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_92,32743.55,not_affordable,not_recommended,none,,none,Safe amount today is 32743.55; the full amount is not safe within the requested plan.
+request_92,34034,affordable_now,full_payment,2025-02-05:34034,2025-02-05,none,Plan full_payment completes 34034 while maintaining the minimum balance; safe today: 34034.
 request_93,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_94,572,affordable_now,full_payment,2024-12-04:572,2024-12-04,none,Plan full_payment completes 572 while maintaining the minimum balance; safe today: 572.
 request_95,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_96,90200,affordable_with_plan,installments,2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33,2026-01-15,none,Plan installments completes 90200 while maintaining the minimum balance; safe today: 90200.
-request_97,3148.34,not_affordable,not_recommended,none,,none,Safe amount today is 3148.34; the full amount is not safe within the requested plan.
+request_96,90200,affordable_with_plan,installments,2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33,2026-01-03,none,Plan installments completes 90200 while maintaining the minimum balance; safe today: 90200.
+request_97,5334.89,not_affordable,not_recommended,none,,none,Safe amount today is 5334.89; the full amount is not safe within the requested plan.
 request_98,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_99,18062,affordable_now,full_payment,2026-07-04:18062,2026-07-04,none,Plan full_payment completes 18062 while maintaining the minimum balance; safe today: 18062.
-request_100,28685.27,not_affordable,not_recommended,none,,none,Safe amount today is 28685.27; the full amount is not safe within the requested plan.
-request_101,143500,not_affordable,not_recommended,none,,none,Safe amount today is 143500; the full amount is not safe within the requested plan.
+request_100,33641.53,not_affordable,not_recommended,none,,none,Safe amount today is 33641.53; the full amount is not safe within the requested plan.
+request_101,143500,affordable_now,full_payment,2025-11-03:143500,2025-11-03,none,Plan full_payment completes 143500 while maintaining the minimum balance; safe today: 143500.
 request_102,1716,affordable_with_plan,installments,2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88,2026-04-05,none,Plan installments completes 1716 while maintaining the minimum balance; safe today: 1716.
 request_103,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_104,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_104,6238.1,not_affordable,not_recommended,none,,none,Safe amount today is 6238.1; the full amount is not safe within the requested plan.
 request_105,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_106,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_107,643.82,not_affordable,not_recommended,none,,none,Safe amount today is 643.82; the full amount is not safe within the requested plan.
+request_107,1003.52,not_affordable,not_recommended,none,,none,Safe amount today is 1003.52; the full amount is not safe within the requested plan.
 request_108,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_109,1081.7,not_affordable,not_recommended,none,,none,Safe amount today is 1081.7; the full amount is not safe within the requested plan.
+request_109,1190.46,not_affordable,not_recommended,none,,none,Safe amount today is 1190.46; the full amount is not safe within the requested plan.
 request_110,22352,affordable_with_plan,installments,2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69,2025-08-06,none,Plan installments completes 22352 while maintaining the minimum balance; safe today: 22352.
 request_111,16625000,affordable_now,full_payment,2026-04-03:16625000,2026-04-03,none,Plan full_payment completes 16625000 while maintaining the minimum balance; safe today: 16625000.
 request_112,271.7,affordable_now,full_payment,2024-06-05:271.7,2024-06-05,none,Plan full_payment completes 271.7 while maintaining the minimum balance; safe today: 271.7.
 request_113,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_114,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_114,3350,not_affordable,not_recommended,none,,none,Safe amount today is 3350; the full amount is not safe within the requested plan.
 request_115,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_116,40960.16,not_affordable,not_recommended,none,,none,Safe amount today is 40960.16; the full amount is not safe within the requested plan.
-request_117,592.13,not_affordable,not_recommended,none,,none,Safe amount today is 592.13; the full amount is not safe within the requested plan.
-request_118,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_119,93752.71,not_affordable,not_recommended,none,,none,Safe amount today is 93752.71; the full amount is not safe within the requested plan.
+request_116,46450,not_affordable,not_recommended,none,,none,Safe amount today is 46450; the full amount is not safe within the requested plan.
+request_117,765.2,not_affordable,not_recommended,none,,none,Safe amount today is 765.2; the full amount is not safe within the requested plan.
+request_118,130.91,not_affordable,not_recommended,none,,none,Safe amount today is 130.91; the full amount is not safe within the requested plan.
+request_119,106261.01,affordable_with_plan,installments,2025-05-18:70546.67|2025-06-15:70546.67|2025-07-13:70546.67,2025-05-15,none,Plan installments completes 203500 while maintaining the minimum balance; safe today: 106261.01.
 request_120,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_121,633.6,affordable_now,full_payment,2024-03-03:633.6,2024-03-03,none,Plan full_payment completes 633.6 while maintaining the minimum balance; safe today: 633.6.
 request_122,20558000,affordable_with_plan,installments,2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33,2025-08-05,none,Plan installments completes 20558000 while maintaining the minimum balance; safe today: 20558000.
 request_123,4076000,affordable_now,full_payment,2026-01-07:4076000,2026-01-07,none,Plan full_payment completes 4076000 while maintaining the minimum balance; safe today: 4076000.
-request_124,1592.4,not_affordable,not_recommended,none,,none,Safe amount today is 1592.4; the full amount is not safe within the requested plan.
-request_125,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_126,107766.4,not_affordable,not_recommended,none,,none,Safe amount today is 107766.4; the full amount is not safe within the requested plan.
-request_127,18654.35,not_affordable,not_recommended,none,,none,Safe amount today is 18654.35; the full amount is not safe within the requested plan.
-request_128,11533.78,not_affordable,not_recommended,none,,none,Safe amount today is 11533.78; the full amount is not safe within the requested plan.
+request_124,1742.56,not_affordable,not_recommended,none,,none,Safe amount today is 1742.56; the full amount is not safe within the requested plan.
+request_125,823.57,not_affordable,not_recommended,none,,none,Safe amount today is 823.57; the full amount is not safe within the requested plan.
+request_126,134545,not_affordable,not_recommended,none,,none,Safe amount today is 134545; the full amount is not safe within the requested plan.
+request_127,22055,affordable_later,wait,2024-09-15:23980,2024-09-15,none,Plan wait completes 23980 while maintaining the minimum balance; safe today: 22055.
+request_128,17708.9,not_affordable,not_recommended,none,,none,Safe amount today is 17708.9; the full amount is not safe within the requested plan.
 request_129,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_130,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_131,1600.1,affordable_with_plan,installments,2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14,2025-05-23,none,Plan installments completes 1855.2 while maintaining the minimum balance; safe today: 1600.1.
+request_131,1690.96,affordable_with_plan,installments,2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14,2025-05-23,none,Plan installments completes 1855.2 while maintaining the minimum balance; safe today: 1690.96.
 request_132,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_133,5432395.72,not_affordable,not_recommended,none,,none,Safe amount today is 5432395.72; the full amount is not safe within the requested plan.
-request_134,9566943.67,not_affordable,not_recommended,none,,none,Safe amount today is 9566943.67; the full amount is not safe within the requested plan.
-request_135,90.36,not_affordable,not_recommended,none,,none,Safe amount today is 90.36; the full amount is not safe within the requested plan.
+request_133,7375800,not_affordable,not_recommended,none,,none,Safe amount today is 7375800; the full amount is not safe within the requested plan.
+request_134,10740700,not_affordable,not_recommended,none,,none,Safe amount today is 10740700; the full amount is not safe within the requested plan.
+request_135,254.1,not_affordable,not_recommended,none,,none,Safe amount today is 254.1; the full amount is not safe within the requested plan.
 request_136,560.4,affordable_now,full_payment,2024-06-03:560.4,2024-06-03,none,Plan full_payment completes 560.4 while maintaining the minimum balance; safe today: 560.4.
 request_137,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_138,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_139,2038.67,affordable_with_plan,installments,2024-09-07:802.88|2024-10-08:802.88|2024-11-08:802.88,2024-09-15,none,Plan installments completes 2316 while maintaining the minimum balance; safe today: 2038.67.
-request_140,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_139,2128.84,affordable_with_plan,installments,2024-09-07:802.88|2024-10-08:802.88|2024-11-08:802.88,2024-09-15,none,Plan installments completes 2316 while maintaining the minimum balance; safe today: 2128.84.
+request_140,3907.2,not_affordable,not_recommended,none,,none,Safe amount today is 3907.2; the full amount is not safe within the requested plan.
 request_141,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_142,1263.6,affordable_now,full_payment,2024-12-05:1263.6,2024-12-05,none,Plan full_payment completes 1263.6 while maintaining the minimum balance; safe today: 1263.6.
 request_143,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_144,233.34,affordable_now,full_payment,2026-07-04:233.34,2026-07-04,stop:event_13239,Plan full_payment completes 233.34 while maintaining the minimum balance; safe today: 233.34.
+request_144,233.34,affordable_now,full_payment,2026-07-04:233.34,2026-07-04,none,Plan full_payment completes 233.34 while maintaining the minimum balance; safe today: 233.34.
 request_145,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_146,50344.18,not_affordable,not_recommended,none,,none,Safe amount today is 50344.18; the full amount is not safe within the requested plan.
-request_147,661.38,not_affordable,not_recommended,none,,none,Safe amount today is 661.38; the full amount is not safe within the requested plan.
+request_146,60905,not_affordable,not_recommended,none,,none,Safe amount today is 60905; the full amount is not safe within the requested plan.
+request_147,741.53,affordable_with_plan,installments,2026-04-08:391.63|2026-05-08:391.63|2026-06-07:391.63,2026-04-15,none,Plan installments completes 1129.7 while maintaining the minimum balance; safe today: 741.53.
 request_148,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_149,33748.72,not_affordable,not_recommended,none,,none,Safe amount today is 33748.72; the full amount is not safe within the requested plan.
+request_149,36652,affordable_with_plan,installments,2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03,2025-11-15,none,Plan installments completes 36652 while maintaining the minimum balance; safe today: 36652.
 request_150,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_151,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_152,1394.07,not_affordable,not_recommended,none,,none,Safe amount today is 1394.07; the full amount is not safe within the requested plan.
+request_152,3037.77,not_affordable,not_recommended,none,,none,Safe amount today is 3037.77; the full amount is not safe within the requested plan.
 request_153,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_154,1277.31,not_affordable,not_recommended,none,,none,Safe amount today is 1277.31; the full amount is not safe within the requested plan.
+request_154,1615.2,not_affordable,not_recommended,none,,none,Safe amount today is 1615.2; the full amount is not safe within the requested plan.
 request_155,112500,affordable_now,full_payment,2025-05-06:112500,2025-05-06,none,Plan full_payment completes 112500 while maintaining the minimum balance; safe today: 112500.
 request_156,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_157,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
@@ -135,117 +135,117 @@ request_158,242600,affordable_with_plan,installments,2025-08-07:84101.33|2025-09
 request_159,13398,affordable_now,full_payment,2026-01-04:13398,2026-01-04,none,Plan full_payment completes 13398 while maintaining the minimum balance; safe today: 13398.
 request_160,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_161,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_162,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_162,3380100,not_affordable,not_recommended,none,,none,Safe amount today is 3380100; the full amount is not safe within the requested plan.
 request_163,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_164,21660132.63,not_affordable,not_recommended,none,,none,Safe amount today is 21660132.63; the full amount is not safe within the requested plan.
+request_164,27018000,affordable_with_plan,installments,2025-02-11:9366240|2025-03-11:9366240|2025-04-08:9366240,2025-02-04,none,Plan installments completes 27018000 while maintaining the minimum balance; safe today: 27018000.
 request_165,80600,affordable_now,full_payment,2026-04-06:80600,2026-04-06,none,Plan full_payment completes 80600 while maintaining the minimum balance; safe today: 80600.
 request_166,2907.6,affordable_with_plan,installments,2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97,2024-12-03,none,Plan installments completes 2907.6 while maintaining the minimum balance; safe today: 2907.6.
-request_167,17757.64,not_affordable,not_recommended,none,,none,Safe amount today is 17757.64; the full amount is not safe within the requested plan.
+request_167,23764.3,not_affordable,not_recommended,none,,none,Safe amount today is 23764.3; the full amount is not safe within the requested plan.
 request_168,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_169,30222.32,not_affordable,not_recommended,none,,none,Safe amount today is 30222.32; the full amount is not safe within the requested plan.
-request_170,2042481.12,not_affordable,not_recommended,none,,none,Safe amount today is 2042481.12; the full amount is not safe within the requested plan.
-request_171,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_169,35261.6,not_affordable,not_recommended,none,,none,Safe amount today is 35261.6; the full amount is not safe within the requested plan.
+request_170,6902198.4,not_affordable,not_recommended,none,,none,Safe amount today is 6902198.4; the full amount is not safe within the requested plan.
+request_171,1.65,not_affordable,not_recommended,none,,none,Safe amount today is 1.65; the full amount is not safe within the requested plan.
 request_172,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_173,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_174,1146.20,affordable_with_plan,installments,2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35,2026-04-04,none,Plan installments completes 1146.20 while maintaining the minimum balance; safe today: 1146.20.
-request_175,1720.41,not_affordable,not_recommended,none,,none,Safe amount today is 1720.41; the full amount is not safe within the requested plan.
-request_176,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_177,315.76,not_affordable,not_recommended,none,,none,Safe amount today is 315.76; the full amount is not safe within the requested plan.
+request_175,2011.05,not_affordable,not_recommended,none,,none,Safe amount today is 2011.05; the full amount is not safe within the requested plan.
+request_176,19.95,not_affordable,not_recommended,none,,none,Safe amount today is 19.95; the full amount is not safe within the requested plan.
+request_177,552.64,not_affordable,not_recommended,none,,none,Safe amount today is 552.64; the full amount is not safe within the requested plan.
 request_178,2938.10,affordable_with_plan,installments,2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54,2024-12-07,none,Plan installments completes 2938.10 while maintaining the minimum balance; safe today: 2938.10.
 request_179,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_180,66500,affordable_now,full_payment,2026-07-06:66500,2026-07-06,none,Plan full_payment completes 66500 while maintaining the minimum balance; safe today: 66500.
-request_181,792.65,not_affordable,not_recommended,none,,none,Safe amount today is 792.65; the full amount is not safe within the requested plan.
-request_182,65714,not_affordable,not_recommended,none,,none,Safe amount today is 65714; the full amount is not safe within the requested plan.
-request_183,13277689.86,not_affordable,not_recommended,none,,none,Safe amount today is 13277689.86; the full amount is not safe within the requested plan.
+request_181,909,not_affordable,not_recommended,none,,none,Safe amount today is 909; the full amount is not safe within the requested plan.
+request_182,65714,affordable_now,full_payment,2025-08-05:65714,2025-08-05,none,Plan full_payment completes 65714 while maintaining the minimum balance; safe today: 65714.
+request_183,16787923.74,not_affordable,not_recommended,none,,none,Safe amount today is 16787923.74; the full amount is not safe within the requested plan.
 request_184,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_185,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_186,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_186,5745.3,not_affordable,not_recommended,none,,none,Safe amount today is 5745.3; the full amount is not safe within the requested plan.
 request_187,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_188,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_189,442.95,not_affordable,not_recommended,none,,none,Safe amount today is 442.95; the full amount is not safe within the requested plan.
-request_190,910.67,not_affordable,not_recommended,none,,none,Safe amount today is 910.67; the full amount is not safe within the requested plan.
-request_191,601.76,not_affordable,not_recommended,none,,none,Safe amount today is 601.76; the full amount is not safe within the requested plan.
-request_192,293.58,not_affordable,not_recommended,none,,none,Safe amount today is 293.58; the full amount is not safe within the requested plan.
+request_189,488.4,affordable_now,full_payment,2026-07-04:488.4,2026-07-04,none,Plan full_payment completes 488.4 while maintaining the minimum balance; safe today: 488.4.
+request_190,1075.8,not_affordable,not_recommended,none,,none,Safe amount today is 1075.8; the full amount is not safe within the requested plan.
+request_191,664.4,affordable_now,full_payment,2025-05-03:664.4,2025-05-03,none,Plan full_payment completes 664.4 while maintaining the minimum balance; safe today: 664.4.
+request_192,384.8,not_affordable,not_recommended,none,,none,Safe amount today is 384.8; the full amount is not safe within the requested plan.
 request_193,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_194,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_195,166.4,not_affordable,not_recommended,none,,none,Safe amount today is 166.4; the full amount is not safe within the requested plan.
+request_195,330.38,not_affordable,not_recommended,none,,none,Safe amount today is 330.38; the full amount is not safe within the requested plan.
 request_196,762.3,affordable_now,full_payment,2024-06-03:762.3,2024-06-03,none,Plan full_payment completes 762.3 while maintaining the minimum balance; safe today: 762.3.
-request_197,21822494.11,not_affordable,not_recommended,none,,none,Safe amount today is 21822494.11; the full amount is not safe within the requested plan.
-request_198,164975.9,not_affordable,not_recommended,none,,none,Safe amount today is 164975.9; the full amount is not safe within the requested plan.
+request_197,28187318.26,not_affordable,not_recommended,none,,none,Safe amount today is 28187318.26; the full amount is not safe within the requested plan.
+request_198,185800,affordable_now,full_payment,2026-07-07:185800,2026-07-07,stop:event_18222,Plan full_payment completes 185800 while maintaining the minimum balance; safe today: 185800.
 request_199,23674000,affordable_with_plan,installments,2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67,2024-09-04,none,Plan installments completes 23674000 while maintaining the minimum balance; safe today: 23674000.
 request_200,21717000,affordable_now,full_payment,2025-02-06:21717000,2025-02-06,none,Plan full_payment completes 21717000 while maintaining the minimum balance; safe today: 21717000.
 request_201,23997000,affordable_now,full_payment,2026-04-03:23997000,2026-04-03,none,Plan full_payment completes 23997000 while maintaining the minimum balance; safe today: 23997000.
-request_202,28612.06,not_affordable,not_recommended,none,,none,Safe amount today is 28612.06; the full amount is not safe within the requested plan.
+request_202,50665,not_affordable,not_recommended,none,,none,Safe amount today is 50665; the full amount is not safe within the requested plan.
 request_203,1442.1,affordable_with_plan,installments,2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93,2025-05-07,none,Plan installments completes 1442.1 while maintaining the minimum balance; safe today: 1442.1.
 request_204,588.74,affordable_now,full_payment,2026-01-04:588.74,2026-01-04,none,Plan full_payment completes 588.74 while maintaining the minimum balance; safe today: 588.74.
 request_205,10621000,affordable_now,full_payment,2024-03-06:10621000,2024-03-06,none,Plan full_payment completes 10621000 while maintaining the minimum balance; safe today: 10621000.
 request_206,1404.7,affordable_with_plan,installments,2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96,2025-08-03,none,Plan installments completes 1404.7 while maintaining the minimum balance; safe today: 1404.7.
-request_207,8662.67,affordable_later,wait,2026-07-15:11830,2026-07-15,none,Plan wait completes 11830 while maintaining the minimum balance; safe today: 8662.67.
+request_207,9779,affordable_later,wait,2026-07-15:11830,2026-07-15,none,Plan wait completes 11830 while maintaining the minimum balance; safe today: 9779.
 request_208,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_209,6364.28,not_affordable,not_recommended,none,,none,Safe amount today is 6364.28; the full amount is not safe within the requested plan.
-request_210,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_211,574.04,not_affordable,not_recommended,none,,none,Safe amount today is 574.04; the full amount is not safe within the requested plan.
+request_209,7606.5,not_affordable,not_recommended,none,,none,Safe amount today is 7606.5; the full amount is not safe within the requested plan.
+request_210,178.92,not_affordable,not_recommended,none,,none,Safe amount today is 178.92; the full amount is not safe within the requested plan.
+request_211,680.99,not_affordable,not_recommended,none,,none,Safe amount today is 680.99; the full amount is not safe within the requested plan.
 request_212,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_213,3362.4,affordable_with_plan,installments,2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63,2026-01-07,none,Plan installments completes 3362.4 while maintaining the minimum balance; safe today: 3362.4.
 request_214,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_215,29986,affordable_with_plan,installments,2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15,2025-05-06,none,Plan installments completes 29986 while maintaining the minimum balance; safe today: 29986.
-request_216,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_217,25351.75,not_affordable,not_recommended,none,,none,Safe amount today is 25351.75; the full amount is not safe within the requested plan.
+request_216,421.8,not_affordable,not_recommended,none,,none,Safe amount today is 421.8; the full amount is not safe within the requested plan.
+request_217,27982.97,not_affordable,not_recommended,none,,none,Safe amount today is 27982.97; the full amount is not safe within the requested plan.
 request_218,35762164.8,affordable_with_plan,installments,2025-08-07:21195893.33|2025-09-04:21195893.33|2025-10-02:21195893.33,2025-08-15,none,Plan installments completes 61142000 while maintaining the minimum balance; safe today: 35762164.8.
-request_219,1583.7,affordable_with_plan,installments,2026-04-07:580.01|2026-05-07:580.01|2026-06-06:580.01,2026-04-15,none,Plan installments completes 1673.10 while maintaining the minimum balance; safe today: 1583.7.
+request_219,1673.10,affordable_with_plan,installments,2026-04-07:580.01|2026-05-07:580.01|2026-06-06:580.01,2026-04-15,none,Plan installments completes 1673.10 while maintaining the minimum balance; safe today: 1673.10.
 request_220,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_221,54250.92,not_affordable,not_recommended,none,,none,Safe amount today is 54250.92; the full amount is not safe within the requested plan.
+request_221,71505,not_affordable,not_recommended,none,,none,Safe amount today is 71505; the full amount is not safe within the requested plan.
 request_222,34078,affordable_now,full_payment,2026-01-05:34078,2026-01-05,none,Plan full_payment completes 34078 while maintaining the minimum balance; safe today: 34078.
 request_223,898.7,affordable_now,full_payment,2024-09-07:898.7,2024-09-07,none,Plan full_payment completes 898.7 while maintaining the minimum balance; safe today: 898.7.
 request_224,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_225,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_226,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_226,9830,not_affordable,not_recommended,none,,none,Safe amount today is 9830; the full amount is not safe within the requested plan.
 request_227,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_228,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_229,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_230,3316.22,not_affordable,not_recommended,none,,none,Safe amount today is 3316.22; the full amount is not safe within the requested plan.
+request_230,3537.60,affordable_now,full_payment,2025-08-06:3537.60,2025-08-06,none,Plan full_payment completes 3537.60 while maintaining the minimum balance; safe today: 3537.60.
 request_231,35706,affordable_with_plan,installments,2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08,2026-01-03,none,Plan installments completes 35706 while maintaining the minimum balance; safe today: 35706.
-request_232,1057,not_affordable,not_recommended,none,,none,Safe amount today is 1057; the full amount is not safe within the requested plan.
+request_232,1383.4,not_affordable,not_recommended,none,,none,Safe amount today is 1383.4; the full amount is not safe within the requested plan.
 request_233,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_234,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_235,650.65,not_affordable,not_recommended,none,,none,Safe amount today is 650.65; the full amount is not safe within the requested plan.
-request_236,1602780.09,not_affordable,not_recommended,none,,none,Safe amount today is 1602780.09; the full amount is not safe within the requested plan.
+request_234,181.25,not_affordable,not_recommended,none,,none,Safe amount today is 181.25; the full amount is not safe within the requested plan.
+request_235,814.48,not_affordable,not_recommended,none,,none,Safe amount today is 814.48; the full amount is not safe within the requested plan.
+request_236,5885250,not_affordable,not_recommended,none,,none,Safe amount today is 5885250; the full amount is not safe within the requested plan.
 request_237,23826000,affordable_now,full_payment,2026-04-05:23826000,2026-04-05,none,Plan full_payment completes 23826000 while maintaining the minimum balance; safe today: 23826000.
-request_238,586.84,not_affordable,not_recommended,none,,none,Safe amount today is 586.84; the full amount is not safe within the requested plan.
+request_238,663.6,not_affordable,not_recommended,none,,none,Safe amount today is 663.6; the full amount is not safe within the requested plan.
 request_239,642,affordable_now,full_payment,2025-05-04:642,2025-05-04,none,Plan full_payment completes 642 while maintaining the minimum balance; safe today: 642.
-request_240,18943.24,not_affordable,not_recommended,none,,none,Safe amount today is 18943.24; the full amount is not safe within the requested plan.
+request_240,25570,not_affordable,not_recommended,none,,none,Safe amount today is 25570; the full amount is not safe within the requested plan.
 request_241,21052000,affordable_with_plan,installments,2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67,2024-03-03,none,Plan installments completes 21052000 while maintaining the minimum balance; safe today: 21052000.
 request_242,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_243,17468,affordable_now,full_payment,2026-07-07:17468,2026-07-07,none,Plan full_payment completes 17468 while maintaining the minimum balance; safe today: 17468.
 request_244,49918,affordable_now,full_payment,2024-06-04:49918,2024-06-04,none,Plan full_payment completes 49918 while maintaining the minimum balance; safe today: 49918.
 request_245,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_246,64086,affordable_with_plan,installments,2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48,2026-04-03,none,Plan installments completes 64086 while maintaining the minimum balance; safe today: 64086.
-request_247,313.33,not_affordable,not_recommended,none,,none,Safe amount today is 313.33; the full amount is not safe within the requested plan.
+request_247,614.2,not_affordable,not_recommended,none,,none,Safe amount today is 614.2; the full amount is not safe within the requested plan.
 request_248,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_249,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_250,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_251,1513.6,not_affordable,not_recommended,none,2025-05-03,none,Safe amount today is 1513.6; the full amount is not safe within the requested plan.
-request_252,868847.3,not_affordable,not_recommended,none,,none,Safe amount today is 868847.3; the full amount is not safe within the requested plan.
+request_252,3680300,not_affordable,not_recommended,none,,none,Safe amount today is 3680300; the full amount is not safe within the requested plan.
 request_253,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_254,389.84,not_affordable,not_recommended,none,,none,Safe amount today is 389.84; the full amount is not safe within the requested plan.
+request_254,917.6,not_affordable,not_recommended,none,,none,Safe amount today is 917.6; the full amount is not safe within the requested plan.
 request_255,3345000,affordable_now,full_payment,2026-04-06:3345000,2026-04-06,none,Plan full_payment completes 3345000 while maintaining the minimum balance; safe today: 3345000.
-request_256,194790.52,not_affordable,not_recommended,none,2024-06-15,none,Safe amount today is 194790.52; the full amount is not safe within the requested plan.
-request_257,875.13,not_affordable,not_recommended,none,,none,Safe amount today is 875.13; the full amount is not safe within the requested plan.
+request_256,207258.28,affordable_with_plan,installments,2024-06-10:75816|2024-07-11:75816|2024-08-11:75816,2024-06-15,none,Plan installments completes 218700 while maintaining the minimum balance; safe today: 207258.28.
+request_257,1003.2,affordable_later,wait,2025-11-15:1352.4,2025-11-15,none,Plan wait completes 1352.4 while maintaining the minimum balance; safe today: 1003.2.
 request_258,1113.60,affordable_now,full_payment,2026-01-07:1113.60,2026-01-07,none,Plan full_payment completes 1113.60 while maintaining the minimum balance; safe today: 1113.60.
 request_259,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_260,11940221.66,not_affordable,not_recommended,none,,none,Safe amount today is 11940221.66; the full amount is not safe within the requested plan.
-request_261,1605.14,not_affordable,not_recommended,none,,none,Safe amount today is 1605.14; the full amount is not safe within the requested plan.
-request_262,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
+request_260,14183500,not_affordable,not_recommended,none,,none,Safe amount today is 14183500; the full amount is not safe within the requested plan.
+request_261,1830.4,affordable_now,full_payment,2026-07-03:1830.4,2026-07-03,reduce_to:event_24010:25.5,Plan full_payment completes 1830.4 while maintaining the minimum balance; safe today: 1830.4.
+request_262,6629100,not_affordable,not_recommended,none,,none,Safe amount today is 6629100; the full amount is not safe within the requested plan.
 request_263,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_264,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_265,45970,affordable_now,full_payment,2024-03-06:45970,2024-03-06,none,Plan full_payment completes 45970 while maintaining the minimum balance; safe today: 45970.
-request_266,255.92,not_affordable,not_recommended,none,,none,Safe amount today is 255.92; the full amount is not safe within the requested plan.
-request_267,430.3,not_affordable,not_recommended,none,,none,Safe amount today is 430.3; the full amount is not safe within the requested plan.
+request_266,460.52,not_affordable,not_recommended,none,,none,Safe amount today is 460.52; the full amount is not safe within the requested plan.
+request_267,731.38,not_affordable,not_recommended,none,,none,Safe amount today is 731.38; the full amount is not safe within the requested plan.
 request_268,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
 request_269,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_270,373.68,not_affordable,not_recommended,none,,none,Safe amount today is 373.68; the full amount is not safe within the requested plan.
+request_270,457.4,not_affordable,not_recommended,none,,none,Safe amount today is 457.4; the full amount is not safe within the requested plan.
 request_271,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_272,4750592.24,not_affordable,not_recommended,none,,none,Safe amount today is 4750592.24; the full amount is not safe within the requested plan.
+request_272,5935524,not_affordable,not_recommended,none,,none,Safe amount today is 5935524; the full amount is not safe within the requested plan.
 request_273,0,not_affordable,not_recommended,none,,none,Safe amount today is 0; the full amount is not safe within the requested plan.
-request_274,1142.86,not_affordable,not_recommended,none,,none,Safe amount today is 1142.86; the full amount is not safe within the requested plan.
-request_275,5601109.44,not_affordable,not_recommended,none,,none,Safe amount today is 5601109.44; the full amount is not safe within the requested plan.
+request_274,1606.51,not_affordable,not_recommended,none,,none,Safe amount today is 1606.51; the full amount is not safe within the requested plan.
+request_275,9379350,not_affordable,not_recommended,none,,none,Safe amount today is 9379350; the full amount is not safe within the requested plan.

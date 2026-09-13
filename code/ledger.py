@@ -15,6 +15,11 @@ def detect_recurrence(events):
     from main import recurring
     return recurring(events)
 
+def estimate_future_amount(recurrence):
+    """Return the explicit recurrence amount policy and provenance."""
+    from main import estimate_future_amount as _estimate
+    return _estimate(recurrence)
+
 def classify(event, profile, recurrence=None):
     """Expose the canonical protected/flexible/optional classification."""
     from main import classify_event

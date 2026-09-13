@@ -250,6 +250,20 @@ def semantic_events(data: Data, user: str):
 def parse_pref(profile): return [x.strip() for x in profile["payment_methods_user_will_consider"].split("|") if x.strip()]
 def parse_list(v): return {x.strip() for x in (v or "").split("|") if x.strip()}
 
+def estimate_future_amount(recurrence: RecurrenceEvidence):
+    """Estimate only amounts explicitly supported by a recurrence series.
+
+    A varying series has no authoritative estimator in the challenge. It is
+    therefore returned as unresolved instead of being assigned a mean, median,
+    latest, maximum, minimum, or percentile.
+    """
+    values=[e.home_amount for e in recurrence.events if e.home_amount is not None]
+    if not values or any(v != values[0] for v in values[1:]):
+        return {"policy":"RECURRING_AMOUNT_UNRESOLVED","selected_amount":None,
+                "observations":[str(v) for v in values],"confidence":"unresolved"}
+    return {"policy":"SUPPORTED_FIXED_AMOUNT","selected_amount":values[0],
+            "observations":[str(v) for v in values],"confidence":"high"}
+
 def recurring(events):
     groups=defaultdict(list)
     for e in events:
@@ -293,15 +307,17 @@ def recurring(events):
         # Income recurrence is evidence only. Historical salary observations do
         # not authorize a future credit; explicit scheduled/message-confirmed
         # credits are already represented as dated events in semantic_events.
-        if variable:
-            policy, estimate, confidence = "unresolved_variable_amount", None, "unresolved"
+        recurrence_probe=RecurrenceEvidence(xs, med, tuple(str(x) for x in key), "", None, tuple(x.event_id for x in xs), "")
+        estimate=estimate_future_amount(recurrence_probe)
+        if variable or estimate["selected_amount"] is None:
+            policy, estimate_value, confidence = "RECURRING_AMOUNT_UNRESOLVED", None, estimate["confidence"]
         elif xs[0].direction == "credit":
-            policy, estimate, confidence = "no_historical_income_extrapolation", None, "policy"
+            policy, estimate_value, confidence = "UNSUPPORTED_HISTORICAL_INCOME", None, "policy"
         else:
-            policy, estimate, confidence = "latest_fixed_obligation_amount", xs[-1].home_amount, "high"
+            policy, estimate_value, confidence = "SUPPORTED_FIXED_AMOUNT", estimate["selected_amount"], estimate["confidence"]
         result.append(RecurrenceEvidence(
             events=xs, gap_days=med, identity=tuple(str(x) for x in key),
-            amount_policy=policy, amount_estimate=estimate,
+            amount_policy=policy, amount_estimate=estimate_value,
             provenance=tuple(x.event_id for x in xs), confidence=confidence))
     return result
 

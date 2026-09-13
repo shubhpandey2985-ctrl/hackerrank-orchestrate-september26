@@ -42,3 +42,19 @@ model run: safe amount 2/25, status 10/25, payment method 11/25, payment plan
 regressions are recorded in `SEMANTIC_MODEL_TEST_REPORT.md`; no sample-specific
 patches were applied. Remaining unresolved semantics are listed in
 `SPECIFICATION_RECONSTRUCTION.md`.
+
+## Phase 6 controlled forecast repair
+
+Created checkpoint `phase6-pre-forecast-repair` (`ad6dd80`) before production
+changes. Added a separate `estimate_future_amount` interface and now project a
+recurring series only when its source identity and every observed home amount
+are stable. Varying series are recorded as `RECURRING_AMOUNT_UNRESOLVED`; no
+mean, median, maximum, minimum, percentile or latest-value substitution is
+used. Added `POLICY_DECISIONS.md` and focused regression coverage.
+
+Focused tests: 36 passed. Full suite: 45 passed. Before → after sample matches:
+safe amount 2/25 → 2/25; status 10/25 → 10/25; payment method 11/25 → 12/25;
+payment plan 10/25 → 11/25; earliest date 8/25 → 8/25; spending changes
+22/25 → 22/25. Exact field matches improved by 2, regressed by 0, and four
+fields were unchanged. Remaining mismatches and first-divergence categories
+are documented in `PHASE_6_FORECAST_REPAIR.md`.
