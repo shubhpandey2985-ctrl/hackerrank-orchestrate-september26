@@ -1,0 +1,2435 @@
+{
+  "fixture_count": 66,
+  "fixtures": [
+    {
+      "fixture_id": "VS-01",
+      "question": "single variable occurrence",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "v1"
+      ]
+    },
+    {
+      "fixture_id": "VS-02",
+      "question": "repeated variable amount series",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "vs-02_0",
+        "vs-02_1"
+      ]
+    },
+    {
+      "fixture_id": "VS-03",
+      "question": "repeated variable amount series",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "vs-03_0",
+        "vs-03_1",
+        "vs-03_2"
+      ]
+    },
+    {
+      "fixture_id": "VS-04",
+      "question": "repeated variable amount series",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "vs-04_0",
+        "vs-04_1",
+        "vs-04_2"
+      ]
+    },
+    {
+      "fixture_id": "VS-05",
+      "question": "same category different merchants",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "v5a",
+        "v5b"
+      ]
+    },
+    {
+      "fixture_id": "VS-06",
+      "question": "same merchant different categories",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "v6a",
+        "v6b"
+      ]
+    },
+    {
+      "fixture_id": "VS-07",
+      "question": "recurring flexible variable spending",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "750",
+          "safety": true,
+          "movements": 5
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "750",
+          "safety": true,
+          "movements": 5
+        }
+      },
+      "input_events": [
+        "v7"
+      ]
+    },
+    {
+      "fixture_id": "VS-08",
+      "question": "recurring protected variable spending",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "750",
+          "safety": true,
+          "movements": 5
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "750",
+          "safety": true,
+          "movements": 5
+        }
+      },
+      "input_events": [
+        "v8"
+      ]
+    },
+    {
+      "fixture_id": "VS-09",
+      "question": "terminal variable recurrence",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "v9"
+      ]
+    },
+    {
+      "fixture_id": "VS-10",
+      "question": "variable recurrence explicit future confirmation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "930",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "930",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "680",
+          "safety": true,
+          "movements": 6
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "680",
+          "safety": true,
+          "movements": 6
+        }
+      },
+      "input_events": [
+        "v10h",
+        "v10f"
+      ]
+    },
+    {
+      "fixture_id": "RC-01",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "400.00",
+          "earliest": "",
+          "minimum_observed": "500",
+          "safety": true,
+          "movements": 5
+        },
+        "variable": {
+          "safe_amount": "400.00",
+          "earliest": "",
+          "minimum_observed": "500",
+          "safety": true,
+          "movements": 5
+        }
+      },
+      "input_events": [
+        "rc-01"
+      ]
+    },
+    {
+      "fixture_id": "RC-02",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "700",
+          "safety": true,
+          "movements": 3
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "700",
+          "safety": true,
+          "movements": 3
+        }
+      },
+      "input_events": [
+        "rc-02"
+      ]
+    },
+    {
+      "fixture_id": "RC-03",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-03"
+      ]
+    },
+    {
+      "fixture_id": "RC-04",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-04"
+      ]
+    },
+    {
+      "fixture_id": "RC-05",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-05"
+      ]
+    },
+    {
+      "fixture_id": "RC-06",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "800",
+          "safety": true,
+          "movements": 2
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "800",
+          "safety": true,
+          "movements": 2
+        }
+      },
+      "input_events": [
+        "rc-06"
+      ]
+    },
+    {
+      "fixture_id": "RC-07",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-07"
+      ]
+    },
+    {
+      "fixture_id": "RC-08",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-08"
+      ]
+    },
+    {
+      "fixture_id": "RC-09",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "700",
+          "safety": true,
+          "movements": 3
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "700",
+          "safety": true,
+          "movements": 3
+        }
+      },
+      "input_events": [
+        "rc-09"
+      ]
+    },
+    {
+      "fixture_id": "RC-10",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "rc-10"
+      ]
+    },
+    {
+      "fixture_id": "RC-11",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-11"
+      ]
+    },
+    {
+      "fixture_id": "RC-12",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "400.00",
+          "earliest": "",
+          "minimum_observed": "500",
+          "safety": true,
+          "movements": 5
+        },
+        "variable": {
+          "safe_amount": "400.00",
+          "earliest": "",
+          "minimum_observed": "500",
+          "safety": true,
+          "movements": 5
+        }
+      },
+      "input_events": [
+        "rc-12"
+      ]
+    },
+    {
+      "fixture_id": "RC-13",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rc-13"
+      ]
+    },
+    {
+      "fixture_id": "RC-14",
+      "question": "recurrence calendar boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": [
+        "rc-14"
+      ]
+    },
+    {
+      "fixture_id": "INC-01",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-01"
+      ]
+    },
+    {
+      "fixture_id": "INC-02",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-02"
+      ]
+    },
+    {
+      "fixture_id": "INC-03",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-03"
+      ]
+    },
+    {
+      "fixture_id": "INC-04",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-04"
+      ]
+    },
+    {
+      "fixture_id": "INC-05",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-05"
+      ]
+    },
+    {
+      "fixture_id": "INC-06",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-06"
+      ]
+    },
+    {
+      "fixture_id": "INC-07",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-07"
+      ]
+    },
+    {
+      "fixture_id": "INC-08",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-08"
+      ]
+    },
+    {
+      "fixture_id": "INC-09",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-09"
+      ]
+    },
+    {
+      "fixture_id": "INC-10",
+      "question": "income future-money boundary",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "500.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "inc-10"
+      ]
+    },
+    {
+      "fixture_id": "OB-A",
+      "question": "optional included",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "oba"
+      ]
+    },
+    {
+      "fixture_id": "OB-B",
+      "question": "optional excluded",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "800.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "obb"
+      ]
+    },
+    {
+      "fixture_id": "PEN-01",
+      "question": "pending lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "pen-01"
+      ]
+    },
+    {
+      "fixture_id": "PEN-02",
+      "question": "pending lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "pen-02"
+      ]
+    },
+    {
+      "fixture_id": "PEN-03",
+      "question": "pending lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "pen-03"
+      ]
+    },
+    {
+      "fixture_id": "PEN-04",
+      "question": "pending lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "pen-04"
+      ]
+    },
+    {
+      "fixture_id": "PEN-05",
+      "question": "pending lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "pen-05"
+      ]
+    },
+    {
+      "fixture_id": "SD-01",
+      "question": "same-day movement ordering",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        }
+      },
+      "input_events": [
+        "sd-01c",
+        "sd-01d"
+      ]
+    },
+    {
+      "fixture_id": "SD-02",
+      "question": "same-day movement ordering",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        }
+      },
+      "input_events": [
+        "sd-02c",
+        "sd-02d"
+      ]
+    },
+    {
+      "fixture_id": "SD-03",
+      "question": "same-day movement ordering",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        }
+      },
+      "input_events": [
+        "sd-03c",
+        "sd-03d"
+      ]
+    },
+    {
+      "fixture_id": "SD-04",
+      "question": "same-day movement ordering",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 2
+        }
+      },
+      "input_events": [
+        "sd-04c",
+        "sd-04d"
+      ]
+    },
+    {
+      "fixture_id": "REP-01",
+      "question": "replacement lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rep-01"
+      ]
+    },
+    {
+      "fixture_id": "REP-02",
+      "question": "replacement lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rep-02"
+      ]
+    },
+    {
+      "fixture_id": "REP-03",
+      "question": "replacement lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rep-03"
+      ]
+    },
+    {
+      "fixture_id": "REP-04",
+      "question": "replacement lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rep-04"
+      ]
+    },
+    {
+      "fixture_id": "REP-05",
+      "question": "replacement lifecycle",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "rep-05"
+      ]
+    },
+    {
+      "fixture_id": "DL-01",
+      "question": "deadline and capacity",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dl-01"
+      ]
+    },
+    {
+      "fixture_id": "DL-02",
+      "question": "deadline and capacity",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dl-02"
+      ]
+    },
+    {
+      "fixture_id": "DL-03",
+      "question": "deadline and capacity",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dl-03"
+      ]
+    },
+    {
+      "fixture_id": "DL-04",
+      "question": "deadline and capacity",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dl-04"
+      ]
+    },
+    {
+      "fixture_id": "DL-05",
+      "question": "deadline and capacity",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "1000",
+          "safety": true,
+          "movements": 0
+        }
+      },
+      "input_events": []
+    },
+    {
+      "fixture_id": "FX-01",
+      "question": "direct dated FX",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "fx-01"
+      ]
+    },
+    {
+      "fixture_id": "FX-02",
+      "question": "direct dated FX",
+      "models": {
+        "explicit_only": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "stable_fixed": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "calendar": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "variable": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        }
+      },
+      "input_events": [
+        "fx-02"
+      ]
+    },
+    {
+      "fixture_id": "FX-03",
+      "question": "direct dated FX",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "995.0",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "995.0",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "995.0",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "995.0",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "fx-03"
+      ]
+    },
+    {
+      "fixture_id": "FX-04",
+      "question": "direct dated FX",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "10.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "980",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "fx-04"
+      ]
+    },
+    {
+      "fixture_id": "FX-05",
+      "question": "direct dated FX",
+      "models": {
+        "explicit_only": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "stable_fixed": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "calendar": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        },
+        "variable": {
+          "error": "missing direct FX rate (datetime.date(2025, 1, 1), 'EUR', 'USD')",
+          "safety": true
+        }
+      },
+      "input_events": [
+        "fx-05"
+      ]
+    },
+    {
+      "fixture_id": "DEC-01",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.00",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.00",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.00",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.00",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-01"
+      ]
+    },
+    {
+      "fixture_id": "DEC-02",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.0",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.0",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.0",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900.0",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-02"
+      ]
+    },
+    {
+      "fixture_id": "DEC-03",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "100.00",
+          "earliest": "2025-01-01",
+          "minimum_observed": "900",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-03"
+      ]
+    },
+    {
+      "fixture_id": "DEC-04",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "0.10",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.90",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "0.10",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.90",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "0.10",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.90",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "0.10",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.90",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-04"
+      ]
+    },
+    {
+      "fixture_id": "DEC-05",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "0.30",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.70",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "0.30",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.70",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "0.30",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.70",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "0.30",
+          "earliest": "2025-01-01",
+          "minimum_observed": "999.70",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-05"
+      ]
+    },
+    {
+      "fixture_id": "DEC-06",
+      "question": "Decimal representation",
+      "models": {
+        "explicit_only": {
+          "safe_amount": "296.70",
+          "earliest": "",
+          "minimum_observed": "396.70",
+          "safety": true,
+          "movements": 1
+        },
+        "stable_fixed": {
+          "safe_amount": "296.70",
+          "earliest": "",
+          "minimum_observed": "396.70",
+          "safety": true,
+          "movements": 1
+        },
+        "calendar": {
+          "safe_amount": "296.70",
+          "earliest": "",
+          "minimum_observed": "396.70",
+          "safety": true,
+          "movements": 1
+        },
+        "variable": {
+          "safe_amount": "296.70",
+          "earliest": "",
+          "minimum_observed": "396.70",
+          "safety": true,
+          "movements": 1
+        }
+      },
+      "input_events": [
+        "dec-06"
+      ]
+    }
+  ],
+  "meaningful_differences": 21,
+  "production_changed": false
+}

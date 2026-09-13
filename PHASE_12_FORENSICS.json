@@ -1,0 +1,16 @@
+{
+  "status": "UNRESOLVED",
+  "evidence_hierarchy": ["specification", "repository_requirements", "solved_examples", "repeated_behavior", "labelled_engineering_inference"],
+  "experiments": [
+    {"name": "optional_baseline", "source": "PHASE_7_BOUNDARY_FORENSICS.json", "result": "No policy uniquely supported; current behavior retained as configurable baseline"},
+    {"name": "recurrence_inventory", "source": "PHASE_9_RECURRENCE_FORENSICS.json", "series_count": 728, "result": "Calendar, missed-cycle, month-end and variable-amount semantics remain unresolved"},
+    {"name": "first_divergence", "source": "PHASE_10_DECISION_FORENSICS.json", "result": "Safe amount is the first divergence for 23 of 25 examples"},
+    {"name": "hardening", "source": "PHASE_11_HARDENING_REPORT.json", "full_tests": 54, "result": "Deterministic pipeline and invariants pass"}
+  ],
+  "sample_field_matches": {"safe_amount": "2/25", "status": "10/25", "payment_method": "12/25", "payment_plan": "11/25", "earliest_safe_date": "8/25", "spending_changes": "22/25"},
+  "recommended_model": "explicit confirmed movements plus supported stable fixed recurrence, Decimal arithmetic, direct supplied FX, strict lifecycle handling and deterministic horizon simulation",
+  "unresolved": ["variable amount forecasting", "optional baseline scope", "recurrence calendar and missed cycles", "month-end behavior", "generic scheduled credits", "replacement timing", "same-day ordering", "late-deadline status mapping", "decimal presentation"],
+  "prohibited_inference": ["category-only recurrence", "arithmetic mean for variable spending", "historical salary as future cash", "invented FX fallback", "invented replacement obligation", "LLM-authorized financial plan", "sample-specific exceptions"],
+  "counterfactual_score_is_not_specification_proof": true,
+  "next_phase": "fixture-backed forecast contract tests before any production semantic change"
+}

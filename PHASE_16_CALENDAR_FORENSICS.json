@@ -1,0 +1,69 @@
+{
+  "models": {
+    "A_EXACT_INTERVAL": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "B_CALENDAR_WEEKLY": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "C_CALENDAR_BIWEEKLY": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "D_MONTHLY_DAY_OF_MONTH": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "E_MONTH_END_CLAMP": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "F_EXPLICIT_FUTURE_ONLY": {
+      "amount_safe_to_pay": 3,
+      "affordability_status": 12,
+      "recommended_payment_method": 14,
+      "payment_plan": 13,
+      "earliest_date_for_full_payment": 9,
+      "spending_changes_needed": 22
+    },
+    "G_FIXED_STABLE_ONLY": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    }
+  },
+  "series_count": 728,
+  "generated_event_policy": "Only stable fixed supported recurrence is retained in production.",
+  "unresolved": [
+    "monthly day-of-month vs month-end",
+    "missed cycles",
+    "replacement timing",
+    "calendar vs exact interval"
+  ],
+  "false_positive_policy": "Do not generate unsupported future movement"
+}

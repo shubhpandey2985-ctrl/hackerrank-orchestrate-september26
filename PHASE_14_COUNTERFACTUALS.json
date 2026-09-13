@@ -1,0 +1,151 @@
+{
+  "models": [
+    {
+      "model": "A",
+      "description": "explicit confirmed movements + stable fixed recurrence",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "current strongest model"
+    },
+    {
+      "model": "B",
+      "description": "explicit movements + all stable recurring events",
+      "field_matches": null,
+      "rows": null,
+      "deterministic_hash": null,
+      "safety": "not independently rerun",
+      "note": "not isolated without changing unresolved classification"
+    },
+    {
+      "model": "C",
+      "description": "explicit movements + evidence-supported variable recurrence",
+      "field_matches": null,
+      "rows": null,
+      "deterministic_hash": null,
+      "safety": "not independently rerun",
+      "note": "requires unsupported amount estimator"
+    },
+    {
+      "model": "D",
+      "description": "exact calendar cadence",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "analysis-only Phase 9 score"
+    },
+    {
+      "model": "E",
+      "description": "weekly/biweekly/monthly calendar cadence",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "analysis-only Phase 9 score"
+    },
+    {
+      "model": "F",
+      "description": "conservative variable treatment/no unsupported projection",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "closest supported conservative variant"
+    },
+    {
+      "model": "G",
+      "description": "optional recurring expenses included",
+      "field_matches": null,
+      "rows": null,
+      "deterministic_hash": null,
+      "safety": "not independently rerun",
+      "note": "optional-baseline policy not isolated by binding evidence"
+    },
+    {
+      "model": "H",
+      "description": "optional flexible recurring expenses excluded",
+      "field_matches": null,
+      "rows": null,
+      "deterministic_hash": null,
+      "safety": "not independently rerun",
+      "note": "optional-baseline policy not isolated by binding evidence"
+    },
+    {
+      "model": "I",
+      "description": "explicit confirmed future credits only",
+      "field_matches": {
+        "amount_safe_to_pay": 3,
+        "affordability_status": 12,
+        "recommended_payment_method": 14,
+        "payment_plan": 13,
+        "earliest_date_for_full_payment": 9,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "analysis-only Phase 9 score"
+    },
+    {
+      "model": "J",
+      "description": "explicit credits + strongly evidenced recurrence",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "rows": 250,
+      "deterministic_hash": null,
+      "safety": "prior forensic run reported invariant-safe",
+      "note": "analysis-only Phase 9 score"
+    }
+  ],
+  "baseline": {
+    "field_matches": {
+      "amount_safe_to_pay": 2,
+      "affordability_status": 10,
+      "recommended_payment_method": 12,
+      "payment_plan": 11,
+      "earliest_date_for_full_payment": 8,
+      "spending_changes_needed": 22
+    },
+    "rows": 25,
+    "comparison_hash": "59e7cec04e7d5ec331fe4b5f738ed9ebb7118a02a8acb7342fcdf5939459cd2a",
+    "output_sha256": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840"
+  },
+  "selection": "No unresolved model selected by score alone.",
+  "safety_invariant": "No production behavior changed; frozen full suite remains the safety authority."
+}

@@ -1,0 +1,109 @@
+{
+  "sources": [
+    {
+      "source": "problem_statement.md",
+      "authority": "LEVEL_1",
+      "type": "binding specification"
+    },
+    {
+      "source": "README.md",
+      "authority": "LEVEL_1/2",
+      "type": "repository contract"
+    },
+    {
+      "source": "dataset/*.csv",
+      "authority": "LEVEL_2/3",
+      "type": "supplied schemas/data"
+    },
+    {
+      "source": "PHASE_13_BEHAVIOR_MATRIX.json",
+      "authority": "LEVEL_3",
+      "type": "solved-example comparison"
+    },
+    {
+      "source": "code/main.py",
+      "authority": "LEVEL_4",
+      "type": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "semantic": "opening/minimum/horizon",
+      "evidence": "problem_statement.md:25,99; README.md:108-113",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "affected": "safety, capacity"
+    },
+    {
+      "semantic": "confirmed future credits",
+      "evidence": "problem_statement.md:36; SPECIFICATION_RECONSTRUCTION.md:59-65",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "affected": "income"
+    },
+    {
+      "semantic": "pending credits excluded",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:79-82; README.md:125",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "affected": "pending"
+    },
+    {
+      "semantic": "failed/cancelled/unrealized/non-cash",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:95; policy.py",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "affected": "lifecycle"
+    },
+    {
+      "semantic": "direct dated FX",
+      "evidence": "problem_statement.md:47; SPECIFICATION_RECONSTRUCTION.md:145-148",
+      "classification": "SPECIFICATION_EXPLICIT",
+      "affected": "currency"
+    },
+    {
+      "semantic": "variable amount estimator",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:156-160; PHASE_16_VARIABLE_SPENDING_EVIDENCE.md",
+      "classification": "UNRESOLVED",
+      "affected": "variable spending"
+    },
+    {
+      "semantic": "recurrence threshold/calendar",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:173; PHASE_16_CALENDAR_FORENSICS.md",
+      "classification": "UNRESOLVED",
+      "affected": "recurrence"
+    },
+    {
+      "semantic": "generic scheduled credits",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:163-164",
+      "classification": "UNRESOLVED",
+      "affected": "scheduled credits"
+    },
+    {
+      "semantic": "same-day order",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:104-109; PHASE_16_SAME_DAY_POLICY.md",
+      "classification": "UNRESOLVED",
+      "affected": "ordering"
+    },
+    {
+      "semantic": "optional baseline",
+      "evidence": "README.md:108; PHASE_16_OPTIONAL_BASELINE_DECISION.md",
+      "classification": "UNRESOLVED",
+      "affected": "baseline"
+    },
+    {
+      "semantic": "replacement timing",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:168; 120-123",
+      "classification": "UNRESOLVED",
+      "affected": "lifecycle"
+    },
+    {
+      "semantic": "deadline mapping",
+      "evidence": "problem_statement.md:119-122; SPECIFICATION_RECONSTRUCTION.md:125-131",
+      "classification": "UNRESOLVED",
+      "affected": "status"
+    },
+    {
+      "semantic": "decimal serialization",
+      "evidence": "SPECIFICATION_RECONSTRUCTION.md:148-149,181",
+      "classification": "UNRESOLVED",
+      "affected": "serialization"
+    }
+  ]
+}

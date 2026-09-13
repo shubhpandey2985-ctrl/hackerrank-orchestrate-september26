@@ -1,0 +1,16 @@
+{
+  "status": "READY_FOR_PACKAGING",
+  "full_tests": 128,
+  "phase19_adversarial_tests": 74,
+  "semantic_lab_tests": 10,
+  "output_rows": 250,
+  "output_sha256": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840",
+  "output_schema_valid": true,
+  "validator_valid": true,
+  "deterministic": true,
+  "datasets_modified": false,
+  "expected_outputs_modified": false,
+  "unresolved_semantics_policy_controlled": true,
+  "code_zip_created": true,
+  "code_zip_sha256": "4AFD4CF2418F298923FD30CDB1557A2EAECA632022C675E7C9E1C98346F8CC15"
+}

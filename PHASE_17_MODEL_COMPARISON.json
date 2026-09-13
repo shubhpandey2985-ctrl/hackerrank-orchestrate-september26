@@ -1,0 +1,192 @@
+{
+  "models": [
+    {
+      "model": "MODEL_A",
+      "description": "current stable-fixed production model",
+      "classification": "SPECIFICATION-SUPPORTED + STRONGLY-EXAMPLE-SUPPORTED",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "safety_violations": 0,
+      "invented_future_movements": 0,
+      "first_divergence": "safe_amount:23; serialization:2",
+      "affected_request_ids": {
+        "serialization": [
+          "request_01",
+          "request_12"
+        ],
+        "safe amount": [
+          "request_02",
+          "request_03",
+          "request_04",
+          "request_05",
+          "request_06",
+          "request_07",
+          "request_08",
+          "request_09",
+          "request_10",
+          "request_11",
+          "request_13",
+          "request_14",
+          "request_15",
+          "request_16",
+          "request_17",
+          "request_18",
+          "request_19",
+          "request_20",
+          "request_21",
+          "request_22",
+          "request_23",
+          "request_24",
+          "request_25"
+        ]
+      },
+      "promoted": true
+    },
+    {
+      "model": "MODEL_B",
+      "description": "explicit confirmed movements only",
+      "classification": "SPECIFICATION-SUPPORTED; conservative counterfactual",
+      "field_matches": {
+        "amount_safe_to_pay": 3,
+        "affordability_status": 12,
+        "recommended_payment_method": 14,
+        "payment_plan": 13,
+        "earliest_date_for_full_payment": 9,
+        "spending_changes_needed": 22
+      },
+      "safety_violations": 0,
+      "invented_future_movements": 0,
+      "first_divergence": "safe_amount:23; serialization:2",
+      "affected_request_ids": {
+        "serialization": [
+          "request_01",
+          "request_12"
+        ],
+        "safe amount": [
+          "request_02",
+          "request_03",
+          "request_04",
+          "request_05",
+          "request_06",
+          "request_07",
+          "request_08",
+          "request_09",
+          "request_10",
+          "request_11",
+          "request_13",
+          "request_14",
+          "request_15",
+          "request_16",
+          "request_17",
+          "request_18",
+          "request_19",
+          "request_20",
+          "request_21",
+          "request_22",
+          "request_23",
+          "request_24",
+          "request_25"
+        ]
+      },
+      "promoted": false
+    },
+    {
+      "model": "MODEL_C",
+      "description": "explicit movements plus stable fixed recurrence",
+      "classification": "STRONGLY-EXAMPLE-SUPPORTED; current contract",
+      "field_matches": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "safety_violations": 0,
+      "invented_future_movements": 0,
+      "first_divergence": "safe_amount:23; serialization:2",
+      "affected_request_ids": {
+        "serialization": [
+          "request_01",
+          "request_12"
+        ],
+        "safe amount": [
+          "request_02",
+          "request_03",
+          "request_04",
+          "request_05",
+          "request_06",
+          "request_07",
+          "request_08",
+          "request_09",
+          "request_10",
+          "request_11",
+          "request_13",
+          "request_14",
+          "request_15",
+          "request_16",
+          "request_17",
+          "request_18",
+          "request_19",
+          "request_20",
+          "request_21",
+          "request_22",
+          "request_23",
+          "request_24",
+          "request_25"
+        ]
+      },
+      "promoted": true
+    },
+    {
+      "model": "MODEL_D",
+      "description": "variable estimator variants",
+      "classification": "UNSUPPORTED-ASSUMPTION; analysis only",
+      "field_matches": null,
+      "safety_violations": 0,
+      "invented_future_movements": "not promoted",
+      "first_divergence": "safe_amount:23; serialization:2",
+      "affected_request_ids": {
+        "serialization": [
+          "request_01",
+          "request_12"
+        ],
+        "safe amount": [
+          "request_02",
+          "request_03",
+          "request_04",
+          "request_05",
+          "request_06",
+          "request_07",
+          "request_08",
+          "request_09",
+          "request_10",
+          "request_11",
+          "request_13",
+          "request_14",
+          "request_15",
+          "request_16",
+          "request_17",
+          "request_18",
+          "request_19",
+          "request_20",
+          "request_21",
+          "request_22",
+          "request_23",
+          "request_24",
+          "request_25"
+        ]
+      },
+      "promoted": false
+    }
+  ],
+  "production_model": "MODEL_A/MODEL_C stable-fixed contract",
+  "baseline_hash": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840",
+  "selection": "No counterfactual-only model promoted."
+}

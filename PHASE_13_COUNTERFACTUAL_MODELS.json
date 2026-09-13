@@ -1,0 +1,110 @@
+{
+  "models": [
+    {
+      "model": "A",
+      "description": "Explicit confirmed movements + stable fixed recurrence",
+      "scores": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "source": "PHASE_9_RECURRENCE_FORENSICS.json",
+      "evidence_status": "counterfactual evidence only"
+    },
+    {
+      "model": "B",
+      "description": "Explicit movements + all stable recurring events",
+      "scores": null,
+      "source": "not independently isolated",
+      "evidence_status": "unresolved; not selected"
+    },
+    {
+      "model": "C",
+      "description": "Explicit movements + evidence-supported variable recurrence",
+      "scores": null,
+      "source": "not independently isolated",
+      "evidence_status": "unresolved; not selected"
+    },
+    {
+      "model": "D",
+      "description": "Explicit movements + exact calendar cadence",
+      "scores": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "source": "PHASE_9_RECURRENCE_FORENSICS.json",
+      "evidence_status": "counterfactual evidence only"
+    },
+    {
+      "model": "E",
+      "description": "Explicit movements + weekly/biweekly/monthly calendar cadence",
+      "scores": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "source": "PHASE_9_RECURRENCE_FORENSICS.json",
+      "evidence_status": "counterfactual evidence only"
+    },
+    {
+      "model": "F",
+      "description": "Explicit movements + conservative variable spending treatment",
+      "scores": null,
+      "source": "not independently isolated",
+      "evidence_status": "unresolved; not selected"
+    },
+    {
+      "model": "G",
+      "description": "Explicit movements + optional recurring expenses included",
+      "scores": null,
+      "source": "not independently isolated",
+      "evidence_status": "unresolved; not selected"
+    },
+    {
+      "model": "H",
+      "description": "Explicit movements + optional flexible recurring expenses excluded",
+      "scores": null,
+      "source": "not independently isolated",
+      "evidence_status": "unresolved; not selected"
+    },
+    {
+      "model": "I",
+      "description": "Explicit confirmed future credits only",
+      "scores": {
+        "amount_safe_to_pay": 3,
+        "affordability_status": 12,
+        "recommended_payment_method": 14,
+        "payment_plan": 13,
+        "earliest_date_for_full_payment": 9,
+        "spending_changes_needed": 22
+      },
+      "source": "PHASE_9_RECURRENCE_FORENSICS.json",
+      "evidence_status": "counterfactual evidence only"
+    },
+    {
+      "model": "J",
+      "description": "Explicit confirmed credits + strongly evidenced recurrence",
+      "scores": {
+        "amount_safe_to_pay": 2,
+        "affordability_status": 10,
+        "recommended_payment_method": 12,
+        "payment_plan": 11,
+        "earliest_date_for_full_payment": 8,
+        "spending_changes_needed": 22
+      },
+      "source": "PHASE_9_RECURRENCE_FORENSICS.json",
+      "evidence_status": "counterfactual evidence only"
+    }
+  ],
+  "interpretation": "Counterfactual score is supporting evidence, not specification proof. Existing runs show no defensible winner among calendar variants; explicit-future-only improves sample counts but would discard supported fixed-obligation evidence and is not selected solely on score."
+}

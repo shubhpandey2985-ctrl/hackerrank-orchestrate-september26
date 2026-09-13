@@ -1,0 +1,6030 @@
+{
+  "scope": "read-only Phase 10 downstream decision forensics",
+  "forecast_frozen": true,
+  "field_mismatch_counts": {
+    "amount_safe_to_pay": 23,
+    "earliest_date_for_full_payment": 17,
+    "affordability_status": 15,
+    "recommended_payment_method": 13,
+    "payment_plan": 14,
+    "spending_changes_needed": 3
+  },
+  "first_divergence_groups": {
+    "OUTPUT_SERIALIZATION": [
+      "request_01",
+      "request_12"
+    ],
+    "SAFE_AMOUNT": [
+      "request_02",
+      "request_03",
+      "request_04",
+      "request_05",
+      "request_06",
+      "request_07",
+      "request_08",
+      "request_09",
+      "request_10",
+      "request_11",
+      "request_13",
+      "request_14",
+      "request_15",
+      "request_16",
+      "request_17",
+      "request_18",
+      "request_19",
+      "request_20",
+      "request_21",
+      "request_22",
+      "request_23",
+      "request_24",
+      "request_25"
+    ]
+  },
+  "rows": [
+    {
+      "request_id": "request_01",
+      "first_divergence": "OUTPUT_SERIALIZATION",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "25256",
+          "actual": "25256",
+          "match": true
+        },
+        "affordability_status": {
+          "expected": "affordable_now",
+          "actual": "affordable_now",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "full_payment",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2024-03-03:25256",
+          "actual": "2024-03-03:25256",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2024-03-03",
+          "actual": "2024-03-03",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay ZAR 25,256 today. This leaves at least ZAR 18,000 available over the next 90 days.",
+          "actual": "Plan full_payment completes 25256 while maintaining the minimum balance; safe today: 25256.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 6,
+        "valid": 3,
+        "rejected": 3,
+        "valid_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-03-03",
+                "25256"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "25256",
+              "2024-03-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "option_payment_option_01",
+            "method": "full_payment",
+            "option_id": "payment_option_01",
+            "plan": [
+              [
+                "2024-03-03",
+                "25256"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "25256",
+              "2024-03-03",
+              1,
+              "payment_option_01"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "wait",
+            "method": "wait",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-03-03",
+                "25256"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "25256",
+              "2024-03-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "option_payment_option_02",
+            "method": "installments",
+            "option_id": "payment_option_02",
+            "plan": [
+              [
+                "2024-03-06",
+                "1852.11"
+              ],
+              [
+                "2024-04-05",
+                "1852.11"
+              ],
+              [
+                "2024-05-05",
+                "1852.11"
+              ],
+              [
+                "2024-06-04",
+                "1852.11"
+              ],
+              [
+                "2024-07-04",
+                "1852.11"
+              ],
+              [
+                "2024-08-03",
+                "1852.11"
+              ],
+              [
+                "2024-09-02",
+                "1852.11"
+              ],
+              [
+                "2024-10-02",
+                "1852.11"
+              ],
+              [
+                "2024-11-01",
+                "1852.11"
+              ],
+              [
+                "2024-12-01",
+                "1852.11"
+              ],
+              [
+                "2024-12-31",
+                "1852.11"
+              ],
+              [
+                "2025-01-30",
+                "1852.11"
+              ],
+              [
+                "2025-03-01",
+                "1852.11"
+              ],
+              [
+                "2025-03-31",
+                "1852.11"
+              ],
+              [
+                "2025-04-30",
+                "1852.11"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_03",
+            "method": "installments",
+            "option_id": "payment_option_03",
+            "plan": [
+              [
+                "2024-03-10",
+                "4546.08"
+              ],
+              [
+                "2024-04-10",
+                "4546.08"
+              ],
+              [
+                "2024-05-11",
+                "4546.08"
+              ],
+              [
+                "2024-06-11",
+                "4546.08"
+              ],
+              [
+                "2024-07-12",
+                "4546.08"
+              ],
+              [
+                "2024-08-12",
+                "4546.08"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_04",
+            "method": "installments",
+            "option_id": "payment_option_04",
+            "plan": [
+              [
+                "2024-03-17",
+                "1283.85"
+              ],
+              [
+                "2024-04-14",
+                "1283.85"
+              ],
+              [
+                "2024-05-12",
+                "1283.85"
+              ],
+              [
+                "2024-06-09",
+                "1283.85"
+              ],
+              [
+                "2024-07-07",
+                "1283.85"
+              ],
+              [
+                "2024-08-04",
+                "1283.85"
+              ],
+              [
+                "2024-09-01",
+                "1283.85"
+              ],
+              [
+                "2024-09-29",
+                "1283.85"
+              ],
+              [
+                "2024-10-27",
+                "1283.85"
+              ],
+              [
+                "2024-11-24",
+                "1283.85"
+              ],
+              [
+                "2024-12-22",
+                "1283.85"
+              ],
+              [
+                "2025-01-19",
+                "1283.85"
+              ],
+              [
+                "2025-02-16",
+                "1283.85"
+              ],
+              [
+                "2025-03-16",
+                "1283.85"
+              ],
+              [
+                "2025-04-13",
+                "1283.85"
+              ],
+              [
+                "2025-05-11",
+                "1283.85"
+              ],
+              [
+                "2025-06-08",
+                "1283.85"
+              ],
+              [
+                "2025-07-06",
+                "1283.85"
+              ],
+              [
+                "2025-08-03",
+                "1283.85"
+              ],
+              [
+                "2025-08-31",
+                "1283.85"
+              ],
+              [
+                "2025-09-28",
+                "1283.85"
+              ],
+              [
+                "2025-10-26",
+                "1283.85"
+              ],
+              [
+                "2025-11-23",
+                "1283.85"
+              ],
+              [
+                "2025-12-21",
+                "1283.85"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "18000",
+      "request_date": "2024-03-03",
+      "deadline": "2024-03-20",
+      "expected_status": "affordable_now",
+      "actual_status": "affordable_now",
+      "expected_method": "full_payment",
+      "actual_method": "full_payment",
+      "expected_plan": "2024-03-03:25256",
+      "actual_plan": "2024-03-03:25256",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_02",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "17229139.2",
+          "actual": "20760289.2",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "installments",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2025-08-08:15952906.67|2025-09-07:15952906.67|2025-10-07:15952906.67",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2025-09-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Use 3 installments of IDR 15,952,906.67, starting 8 August 2025. This leaves at least IDR 29,158,400 available.",
+          "actual": "Safe amount today is 20760289.2; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-08-05",
+                "46018000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_05",
+            "method": "installments",
+            "option_id": "payment_option_05",
+            "plan": [
+              [
+                "2025-08-08",
+                "15952906.67"
+              ],
+              [
+                "2025-09-07",
+                "15952906.67"
+              ],
+              [
+                "2025-10-07",
+                "15952906.67"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_06",
+            "method": "full_payment",
+            "option_id": "payment_option_06",
+            "plan": [
+              [
+                "2025-08-05",
+                "46018000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_07",
+            "method": "installments",
+            "option_id": "payment_option_07",
+            "plan": [
+              [
+                "2025-08-12",
+                "2914473.33"
+              ],
+              [
+                "2025-09-12",
+                "2914473.33"
+              ],
+              [
+                "2025-10-13",
+                "2914473.33"
+              ],
+              [
+                "2025-11-13",
+                "2914473.33"
+              ],
+              [
+                "2025-12-14",
+                "2914473.33"
+              ],
+              [
+                "2026-01-14",
+                "2914473.33"
+              ],
+              [
+                "2026-02-14",
+                "2914473.33"
+              ],
+              [
+                "2026-03-17",
+                "2914473.33"
+              ],
+              [
+                "2026-04-17",
+                "2914473.33"
+              ],
+              [
+                "2026-05-18",
+                "2914473.33"
+              ],
+              [
+                "2026-06-18",
+                "2914473.33"
+              ],
+              [
+                "2026-07-19",
+                "2914473.33"
+              ],
+              [
+                "2026-08-19",
+                "2914473.33"
+              ],
+              [
+                "2026-09-19",
+                "2914473.33"
+              ],
+              [
+                "2026-10-20",
+                "2914473.33"
+              ],
+              [
+                "2026-11-20",
+                "2914473.33"
+              ],
+              [
+                "2026-12-21",
+                "2914473.33"
+              ],
+              [
+                "2027-01-21",
+                "2914473.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "29158400",
+      "request_date": "2025-08-05",
+      "deadline": "2025-10-10",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "not_affordable",
+      "expected_method": "installments",
+      "actual_method": "not_recommended",
+      "expected_plan": "2025-08-08:15952906.67|2025-09-07:15952906.67|2025-10-07:15952906.67",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_03",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "873000",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2019-11-15:5491000",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2019-11-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay IDR 5,491,000 in full on 15 November 2019. Paying earlier would take the balance below the IDR 2,668,700 minimum.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2019-09-03",
+                "5491000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_08",
+            "method": "full_payment",
+            "option_id": "payment_option_08",
+            "plan": [
+              [
+                "2019-09-03",
+                "5491000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_09",
+            "method": "installments",
+            "option_id": "payment_option_09",
+            "plan": [
+              [
+                "2019-09-17",
+                "308541.9"
+              ],
+              [
+                "2019-10-15",
+                "308541.9"
+              ],
+              [
+                "2019-11-12",
+                "308541.9"
+              ],
+              [
+                "2019-12-10",
+                "308541.9"
+              ],
+              [
+                "2020-01-07",
+                "308541.9"
+              ],
+              [
+                "2020-02-04",
+                "308541.9"
+              ],
+              [
+                "2020-03-03",
+                "308541.9"
+              ],
+              [
+                "2020-03-31",
+                "308541.9"
+              ],
+              [
+                "2020-04-28",
+                "308541.9"
+              ],
+              [
+                "2020-05-26",
+                "308541.9"
+              ],
+              [
+                "2020-06-23",
+                "308541.9"
+              ],
+              [
+                "2020-07-21",
+                "308541.9"
+              ],
+              [
+                "2020-08-18",
+                "308541.9"
+              ],
+              [
+                "2020-09-15",
+                "308541.9"
+              ],
+              [
+                "2020-10-13",
+                "308541.9"
+              ],
+              [
+                "2020-11-10",
+                "308541.9"
+              ],
+              [
+                "2020-12-08",
+                "308541.9"
+              ],
+              [
+                "2021-01-05",
+                "308541.9"
+              ],
+              [
+                "2021-02-02",
+                "308541.9"
+              ],
+              [
+                "2021-03-02",
+                "308541.9"
+              ],
+              [
+                "2021-03-30",
+                "308541.9"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_10",
+            "method": "installments",
+            "option_id": "payment_option_10",
+            "plan": [
+              [
+                "2019-09-06",
+                "279125.83"
+              ],
+              [
+                "2019-10-07",
+                "279125.83"
+              ],
+              [
+                "2019-11-07",
+                "279125.83"
+              ],
+              [
+                "2019-12-08",
+                "279125.83"
+              ],
+              [
+                "2020-01-08",
+                "279125.83"
+              ],
+              [
+                "2020-02-08",
+                "279125.83"
+              ],
+              [
+                "2020-03-10",
+                "279125.83"
+              ],
+              [
+                "2020-04-10",
+                "279125.83"
+              ],
+              [
+                "2020-05-11",
+                "279125.83"
+              ],
+              [
+                "2020-06-11",
+                "279125.83"
+              ],
+              [
+                "2020-07-12",
+                "279125.83"
+              ],
+              [
+                "2020-08-12",
+                "279125.83"
+              ],
+              [
+                "2020-09-12",
+                "279125.83"
+              ],
+              [
+                "2020-10-13",
+                "279125.83"
+              ],
+              [
+                "2020-11-13",
+                "279125.83"
+              ],
+              [
+                "2020-12-14",
+                "279125.83"
+              ],
+              [
+                "2021-01-14",
+                "279125.83"
+              ],
+              [
+                "2021-02-14",
+                "279125.83"
+              ],
+              [
+                "2021-03-17",
+                "279125.83"
+              ],
+              [
+                "2021-04-17",
+                "279125.83"
+              ],
+              [
+                "2021-05-18",
+                "279125.83"
+              ],
+              [
+                "2021-06-18",
+                "279125.83"
+              ],
+              [
+                "2021-07-19",
+                "279125.83"
+              ],
+              [
+                "2021-08-19",
+                "279125.83"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "2668700",
+      "request_date": "2019-09-03",
+      "deadline": "2019-11-15",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2019-11-15:5491000",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_04",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "8401800",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2024-06-15:12693000",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2024-06-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Wait until 15 June 2024, then pay IDR 12,693,000 in full. Paying sooner would put the IDR 30,686,600 minimum at risk.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-06-04",
+                "12693000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_11",
+            "method": "full_payment",
+            "option_id": "payment_option_11",
+            "plan": [
+              [
+                "2024-06-04",
+                "12693000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_12",
+            "method": "installments",
+            "option_id": "payment_option_12",
+            "plan": [
+              [
+                "2024-06-04",
+                "875817"
+              ],
+              [
+                "2024-07-04",
+                "875817"
+              ],
+              [
+                "2024-08-03",
+                "875817"
+              ],
+              [
+                "2024-09-02",
+                "875817"
+              ],
+              [
+                "2024-10-02",
+                "875817"
+              ],
+              [
+                "2024-11-01",
+                "875817"
+              ],
+              [
+                "2024-12-01",
+                "875817"
+              ],
+              [
+                "2024-12-31",
+                "875817"
+              ],
+              [
+                "2025-01-30",
+                "875817"
+              ],
+              [
+                "2025-03-01",
+                "875817"
+              ],
+              [
+                "2025-03-31",
+                "875817"
+              ],
+              [
+                "2025-04-30",
+                "875817"
+              ],
+              [
+                "2025-05-30",
+                "875817"
+              ],
+              [
+                "2025-06-29",
+                "875817"
+              ],
+              [
+                "2025-07-29",
+                "875817"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "30686600",
+      "request_date": "2024-06-04",
+      "deadline": "2024-06-19",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2024-06-15:12693000",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_05",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "737",
+          "actual": "15488",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "affordable_now",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "full_payment",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "2025-11-06:15488",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "2025-11-06",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not make this payment by 12 January 2026. None of the available options keeps the ZAR 13,100 minimum protected.",
+          "actual": "Plan full_payment completes 15488 while maintaining the minimum balance; safe today: 15488.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 5,
+        "valid": 3,
+        "rejected": 2,
+        "valid_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-11-06",
+                "15488"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "15488",
+              "2025-11-06",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "option_payment_option_13",
+            "method": "full_payment",
+            "option_id": "payment_option_13",
+            "plan": [
+              [
+                "2025-11-06",
+                "15488"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "15488",
+              "2025-11-06",
+              1,
+              "payment_option_13"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "wait",
+            "method": "wait",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-11-06",
+                "15488"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "15488",
+              "2025-11-06",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "option_payment_option_14",
+            "method": "installments",
+            "option_id": "payment_option_14",
+            "plan": [
+              [
+                "2025-11-09",
+                "980.91"
+              ],
+              [
+                "2025-12-10",
+                "980.91"
+              ],
+              [
+                "2026-01-10",
+                "980.91"
+              ],
+              [
+                "2026-02-10",
+                "980.91"
+              ],
+              [
+                "2026-03-13",
+                "980.91"
+              ],
+              [
+                "2026-04-13",
+                "980.91"
+              ],
+              [
+                "2026-05-14",
+                "980.91"
+              ],
+              [
+                "2026-06-14",
+                "980.91"
+              ],
+              [
+                "2026-07-15",
+                "980.91"
+              ],
+              [
+                "2026-08-15",
+                "980.91"
+              ],
+              [
+                "2026-09-15",
+                "980.91"
+              ],
+              [
+                "2026-10-16",
+                "980.91"
+              ],
+              [
+                "2026-11-16",
+                "980.91"
+              ],
+              [
+                "2026-12-17",
+                "980.91"
+              ],
+              [
+                "2027-01-17",
+                "980.91"
+              ],
+              [
+                "2027-02-17",
+                "980.91"
+              ],
+              [
+                "2027-03-20",
+                "980.91"
+              ],
+              [
+                "2027-04-20",
+                "980.91"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_15",
+            "method": "installments",
+            "option_id": "payment_option_15",
+            "plan": [
+              [
+                "2025-11-20",
+                "787.31"
+              ],
+              [
+                "2025-12-20",
+                "787.31"
+              ],
+              [
+                "2026-01-19",
+                "787.31"
+              ],
+              [
+                "2026-02-18",
+                "787.31"
+              ],
+              [
+                "2026-03-20",
+                "787.31"
+              ],
+              [
+                "2026-04-19",
+                "787.31"
+              ],
+              [
+                "2026-05-19",
+                "787.31"
+              ],
+              [
+                "2026-06-18",
+                "787.31"
+              ],
+              [
+                "2026-07-18",
+                "787.31"
+              ],
+              [
+                "2026-08-17",
+                "787.31"
+              ],
+              [
+                "2026-09-16",
+                "787.31"
+              ],
+              [
+                "2026-10-16",
+                "787.31"
+              ],
+              [
+                "2026-11-15",
+                "787.31"
+              ],
+              [
+                "2026-12-15",
+                "787.31"
+              ],
+              [
+                "2027-01-14",
+                "787.31"
+              ],
+              [
+                "2027-02-13",
+                "787.31"
+              ],
+              [
+                "2027-03-15",
+                "787.31"
+              ],
+              [
+                "2027-04-14",
+                "787.31"
+              ],
+              [
+                "2027-05-14",
+                "787.31"
+              ],
+              [
+                "2027-06-13",
+                "787.31"
+              ],
+              [
+                "2027-07-13",
+                "787.31"
+              ],
+              [
+                "2027-08-12",
+                "787.31"
+              ],
+              [
+                "2027-09-11",
+                "787.31"
+              ],
+              [
+                "2027-10-11",
+                "787.31"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "13100",
+      "request_date": "2025-11-06",
+      "deadline": "2026-01-12",
+      "expected_status": "not_affordable",
+      "actual_status": "affordable_now",
+      "expected_method": "not_recommended",
+      "actual_method": "full_payment",
+      "expected_plan": "none",
+      "actual_plan": "2025-11-06:15488",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_06",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "603.3",
+          "actual": "541.2",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2026-01-03:620.40",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-01-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "stop:event_476",
+          "actual": "none",
+          "match": false
+        },
+        "decision_explanation": {
+          "expected": "Stop the family streaming plan, then pay EUR 620.40 today. This leaves at least EUR 800 available.",
+          "actual": "Safe amount today is 541.2; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-01-03",
+                "620.4"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_16",
+            "method": "full_payment",
+            "option_id": "payment_option_16",
+            "plan": [
+              [
+                "2026-01-03",
+                "620.4"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_17",
+            "method": "installments",
+            "option_id": "payment_option_17",
+            "plan": [
+              [
+                "2026-01-10",
+                "34.86"
+              ],
+              [
+                "2026-02-07",
+                "34.86"
+              ],
+              [
+                "2026-03-07",
+                "34.86"
+              ],
+              [
+                "2026-04-04",
+                "34.86"
+              ],
+              [
+                "2026-05-02",
+                "34.86"
+              ],
+              [
+                "2026-05-30",
+                "34.86"
+              ],
+              [
+                "2026-06-27",
+                "34.86"
+              ],
+              [
+                "2026-07-25",
+                "34.86"
+              ],
+              [
+                "2026-08-22",
+                "34.86"
+              ],
+              [
+                "2026-09-19",
+                "34.86"
+              ],
+              [
+                "2026-10-17",
+                "34.86"
+              ],
+              [
+                "2026-11-14",
+                "34.86"
+              ],
+              [
+                "2026-12-12",
+                "34.86"
+              ],
+              [
+                "2027-01-09",
+                "34.86"
+              ],
+              [
+                "2027-02-06",
+                "34.86"
+              ],
+              [
+                "2027-03-06",
+                "34.86"
+              ],
+              [
+                "2027-04-03",
+                "34.86"
+              ],
+              [
+                "2027-05-01",
+                "34.86"
+              ],
+              [
+                "2027-05-29",
+                "34.86"
+              ],
+              [
+                "2027-06-26",
+                "34.86"
+              ],
+              [
+                "2027-07-24",
+                "34.86"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_18",
+            "method": "installments",
+            "option_id": "payment_option_18",
+            "plan": [
+              [
+                "2026-01-17",
+                "111.67"
+              ],
+              [
+                "2026-02-16",
+                "111.67"
+              ],
+              [
+                "2026-03-18",
+                "111.67"
+              ],
+              [
+                "2026-04-17",
+                "111.67"
+              ],
+              [
+                "2026-05-17",
+                "111.67"
+              ],
+              [
+                "2026-06-16",
+                "111.67"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment"
+      ],
+      "minimum_balance": "800",
+      "request_date": "2026-01-03",
+      "deadline": "2026-01-14",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "not_affordable",
+      "expected_method": "full_payment",
+      "actual_method": "not_recommended",
+      "expected_plan": "2026-01-03:620.40",
+      "actual_plan": "none",
+      "expected_changes": "stop:event_476",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_07",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "87170.56",
+          "actual": "12619.56",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "installments",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2024-09-12:68432|2024-10-10:68432|2024-11-07:68432",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2024-10-23",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Use 3 installments of INR 68,432, starting 12 September 2024. This leaves at least INR 93,000 available.",
+          "actual": "Safe amount today is 12619.56; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-09-05",
+                "197400"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_19",
+            "method": "installments",
+            "option_id": "payment_option_19",
+            "plan": [
+              [
+                "2024-09-12",
+                "68432"
+              ],
+              [
+                "2024-10-10",
+                "68432"
+              ],
+              [
+                "2024-11-07",
+                "68432"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_20",
+            "method": "full_payment",
+            "option_id": "payment_option_20",
+            "plan": [
+              [
+                "2024-09-05",
+                "197400"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_21",
+            "method": "installments",
+            "option_id": "payment_option_21",
+            "plan": [
+              [
+                "2024-09-19",
+                "14476"
+              ],
+              [
+                "2024-10-19",
+                "14476"
+              ],
+              [
+                "2024-11-18",
+                "14476"
+              ],
+              [
+                "2024-12-18",
+                "14476"
+              ],
+              [
+                "2025-01-17",
+                "14476"
+              ],
+              [
+                "2025-02-16",
+                "14476"
+              ],
+              [
+                "2025-03-18",
+                "14476"
+              ],
+              [
+                "2025-04-17",
+                "14476"
+              ],
+              [
+                "2025-05-17",
+                "14476"
+              ],
+              [
+                "2025-06-16",
+                "14476"
+              ],
+              [
+                "2025-07-16",
+                "14476"
+              ],
+              [
+                "2025-08-15",
+                "14476"
+              ],
+              [
+                "2025-09-14",
+                "14476"
+              ],
+              [
+                "2025-10-14",
+                "14476"
+              ],
+              [
+                "2025-11-13",
+                "14476"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "installments"
+      ],
+      "minimum_balance": "93000",
+      "request_date": "2024-09-05",
+      "deadline": "2024-11-14",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "not_affordable",
+      "expected_method": "installments",
+      "actual_method": "not_recommended",
+      "expected_plan": "2024-09-12:68432|2024-10-10:68432|2024-11-07:68432",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_08",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "284.57",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2025-04-15:996.60",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2025-04-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay EUR 996.60 in full on 15 April 2025. Paying earlier would take the balance below the EUR 800 minimum.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-02-07",
+                "996.6"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_22",
+            "method": "full_payment",
+            "option_id": "payment_option_22",
+            "plan": [
+              [
+                "2025-02-07",
+                "996.6"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_23",
+            "method": "installments",
+            "option_id": "payment_option_23",
+            "plan": [
+              [
+                "2025-02-07",
+                "63.12"
+              ],
+              [
+                "2025-03-10",
+                "63.12"
+              ],
+              [
+                "2025-04-10",
+                "63.12"
+              ],
+              [
+                "2025-05-11",
+                "63.12"
+              ],
+              [
+                "2025-06-11",
+                "63.12"
+              ],
+              [
+                "2025-07-12",
+                "63.12"
+              ],
+              [
+                "2025-08-12",
+                "63.12"
+              ],
+              [
+                "2025-09-12",
+                "63.12"
+              ],
+              [
+                "2025-10-13",
+                "63.12"
+              ],
+              [
+                "2025-11-13",
+                "63.12"
+              ],
+              [
+                "2025-12-14",
+                "63.12"
+              ],
+              [
+                "2026-01-14",
+                "63.12"
+              ],
+              [
+                "2026-02-14",
+                "63.12"
+              ],
+              [
+                "2026-03-17",
+                "63.12"
+              ],
+              [
+                "2026-04-17",
+                "63.12"
+              ],
+              [
+                "2026-05-18",
+                "63.12"
+              ],
+              [
+                "2026-06-18",
+                "63.12"
+              ],
+              [
+                "2026-07-19",
+                "63.12"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "800",
+      "request_date": "2025-02-07",
+      "deadline": "2025-04-15",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2025-04-15:996.60",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_09",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "166.61",
+          "actual": "166.6",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_now",
+          "actual": "affordable_now",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "full_payment",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2026-07-04:166.61",
+          "actual": "2026-07-04:166.61",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-07-04",
+          "actual": "2026-07-04",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay EUR 166.61 today. This keeps the EUR 600 minimum available over the next 90 days.",
+          "actual": "Plan full_payment completes 166.61 while maintaining the minimum balance; safe today: 166.6.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 6,
+        "valid": 4,
+        "rejected": 2,
+        "valid_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-07-04",
+                "166.61"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "166.61",
+              "2026-07-04",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "option_payment_option_24",
+            "method": "full_payment",
+            "option_id": "payment_option_24",
+            "plan": [
+              [
+                "2026-07-04",
+                "166.61"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "166.61",
+              "2026-07-04",
+              1,
+              "payment_option_24"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "partial",
+            "method": "partial_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-07-04",
+                "166.60"
+              ],
+              [
+                "2026-07-04",
+                "0.01"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "166.61",
+              "2026-07-04",
+              2,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "wait",
+            "method": "wait",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-07-04",
+                "166.61"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "166.61",
+              "2026-07-04",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "option_payment_option_25",
+            "method": "installments",
+            "option_id": "payment_option_25",
+            "plan": [
+              [
+                "2026-07-07",
+                "8.22"
+              ],
+              [
+                "2026-08-04",
+                "8.22"
+              ],
+              [
+                "2026-09-01",
+                "8.22"
+              ],
+              [
+                "2026-09-29",
+                "8.22"
+              ],
+              [
+                "2026-10-27",
+                "8.22"
+              ],
+              [
+                "2026-11-24",
+                "8.22"
+              ],
+              [
+                "2026-12-22",
+                "8.22"
+              ],
+              [
+                "2027-01-19",
+                "8.22"
+              ],
+              [
+                "2027-02-16",
+                "8.22"
+              ],
+              [
+                "2027-03-16",
+                "8.22"
+              ],
+              [
+                "2027-04-13",
+                "8.22"
+              ],
+              [
+                "2027-05-11",
+                "8.22"
+              ],
+              [
+                "2027-06-08",
+                "8.22"
+              ],
+              [
+                "2027-07-06",
+                "8.22"
+              ],
+              [
+                "2027-08-03",
+                "8.22"
+              ],
+              [
+                "2027-08-31",
+                "8.22"
+              ],
+              [
+                "2027-09-28",
+                "8.22"
+              ],
+              [
+                "2027-10-26",
+                "8.22"
+              ],
+              [
+                "2027-11-23",
+                "8.22"
+              ],
+              [
+                "2027-12-21",
+                "8.22"
+              ],
+              [
+                "2028-01-18",
+                "8.22"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_26",
+            "method": "installments",
+            "option_id": "payment_option_26",
+            "plan": [
+              [
+                "2026-07-18",
+                "7.29"
+              ],
+              [
+                "2026-08-18",
+                "7.29"
+              ],
+              [
+                "2026-09-18",
+                "7.29"
+              ],
+              [
+                "2026-10-19",
+                "7.29"
+              ],
+              [
+                "2026-11-19",
+                "7.29"
+              ],
+              [
+                "2026-12-20",
+                "7.29"
+              ],
+              [
+                "2027-01-20",
+                "7.29"
+              ],
+              [
+                "2027-02-20",
+                "7.29"
+              ],
+              [
+                "2027-03-23",
+                "7.29"
+              ],
+              [
+                "2027-04-23",
+                "7.29"
+              ],
+              [
+                "2027-05-24",
+                "7.29"
+              ],
+              [
+                "2027-06-24",
+                "7.29"
+              ],
+              [
+                "2027-07-25",
+                "7.29"
+              ],
+              [
+                "2027-08-25",
+                "7.29"
+              ],
+              [
+                "2027-09-25",
+                "7.29"
+              ],
+              [
+                "2027-10-26",
+                "7.29"
+              ],
+              [
+                "2027-11-26",
+                "7.29"
+              ],
+              [
+                "2027-12-27",
+                "7.29"
+              ],
+              [
+                "2028-01-27",
+                "7.29"
+              ],
+              [
+                "2028-02-27",
+                "7.29"
+              ],
+              [
+                "2028-03-29",
+                "7.29"
+              ],
+              [
+                "2028-04-29",
+                "7.29"
+              ],
+              [
+                "2028-05-30",
+                "7.29"
+              ],
+              [
+                "2028-06-30",
+                "7.29"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "600",
+      "request_date": "2026-07-04",
+      "deadline": "2026-07-23",
+      "expected_status": "affordable_now",
+      "actual_status": "affordable_now",
+      "expected_method": "full_payment",
+      "actual_method": "full_payment",
+      "expected_plan": "2026-07-04:166.61",
+      "actual_plan": "2026-07-04:166.61",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_10",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "12700",
+          "actual": "266700",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "2024-12-06",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not make this payment by 10 February 2025. None of the available options keeps the INR 225,400 minimum protected.",
+          "actual": "Safe amount today is 266700; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-12-06",
+                "266700"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_27",
+            "method": "full_payment",
+            "option_id": "payment_option_27",
+            "plan": [
+              [
+                "2024-12-06",
+                "266700"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_28",
+            "method": "installments",
+            "option_id": "payment_option_28",
+            "plan": [
+              [
+                "2024-12-13",
+                "19558"
+              ],
+              [
+                "2025-01-12",
+                "19558"
+              ],
+              [
+                "2025-02-11",
+                "19558"
+              ],
+              [
+                "2025-03-13",
+                "19558"
+              ],
+              [
+                "2025-04-12",
+                "19558"
+              ],
+              [
+                "2025-05-12",
+                "19558"
+              ],
+              [
+                "2025-06-11",
+                "19558"
+              ],
+              [
+                "2025-07-11",
+                "19558"
+              ],
+              [
+                "2025-08-10",
+                "19558"
+              ],
+              [
+                "2025-09-09",
+                "19558"
+              ],
+              [
+                "2025-10-09",
+                "19558"
+              ],
+              [
+                "2025-11-08",
+                "19558"
+              ],
+              [
+                "2025-12-08",
+                "19558"
+              ],
+              [
+                "2026-01-07",
+                "19558"
+              ],
+              [
+                "2026-02-06",
+                "19558"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "225400",
+      "request_date": "2024-12-06",
+      "deadline": "2025-02-10",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_11",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "12510645",
+          "actual": "13110000",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "affordable_now",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "full_payment",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2025-05-03:13110000",
+          "actual": "2025-05-03:13110000",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2025-07-15",
+          "actual": "2025-05-03",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "reduce_to:event_989:665950",
+          "actual": "none",
+          "match": false
+        },
+        "decision_explanation": {
+          "expected": "Reduce the weekend food delivery to IDR 665,950, then pay IDR 13,110,000 today. This leaves at least IDR 34,140,600 available.",
+          "actual": "Plan full_payment completes 13110000 while maintaining the minimum balance; safe today: 13110000.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 6,
+        "valid": 3,
+        "rejected": 3,
+        "valid_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-05-03",
+                "13110000"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "13110000",
+              "2025-05-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "option_payment_option_29",
+            "method": "full_payment",
+            "option_id": "payment_option_29",
+            "plan": [
+              [
+                "2025-05-03",
+                "13110000"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "13110000",
+              "2025-05-03",
+              1,
+              "payment_option_29"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "wait",
+            "method": "wait",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-05-03",
+                "13110000"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "13110000",
+              "2025-05-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "option_payment_option_30",
+            "method": "installments",
+            "option_id": "payment_option_30",
+            "plan": [
+              [
+                "2025-05-17",
+                "830300"
+              ],
+              [
+                "2025-06-17",
+                "830300"
+              ],
+              [
+                "2025-07-18",
+                "830300"
+              ],
+              [
+                "2025-08-18",
+                "830300"
+              ],
+              [
+                "2025-09-18",
+                "830300"
+              ],
+              [
+                "2025-10-19",
+                "830300"
+              ],
+              [
+                "2025-11-19",
+                "830300"
+              ],
+              [
+                "2025-12-20",
+                "830300"
+              ],
+              [
+                "2026-01-20",
+                "830300"
+              ],
+              [
+                "2026-02-20",
+                "830300"
+              ],
+              [
+                "2026-03-23",
+                "830300"
+              ],
+              [
+                "2026-04-23",
+                "830300"
+              ],
+              [
+                "2026-05-24",
+                "830300"
+              ],
+              [
+                "2026-06-24",
+                "830300"
+              ],
+              [
+                "2026-07-25",
+                "830300"
+              ],
+              [
+                "2026-08-25",
+                "830300"
+              ],
+              [
+                "2026-09-25",
+                "830300"
+              ],
+              [
+                "2026-10-26",
+                "830300"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_31",
+            "method": "installments",
+            "option_id": "payment_option_31",
+            "plan": [
+              [
+                "2025-05-03",
+                "2359800"
+              ],
+              [
+                "2025-05-31",
+                "2359800"
+              ],
+              [
+                "2025-06-28",
+                "2359800"
+              ],
+              [
+                "2025-07-26",
+                "2359800"
+              ],
+              [
+                "2025-08-23",
+                "2359800"
+              ],
+              [
+                "2025-09-20",
+                "2359800"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_32",
+            "method": "installments",
+            "option_id": "payment_option_32",
+            "plan": [
+              [
+                "2025-05-06",
+                "666425"
+              ],
+              [
+                "2025-06-05",
+                "666425"
+              ],
+              [
+                "2025-07-05",
+                "666425"
+              ],
+              [
+                "2025-08-04",
+                "666425"
+              ],
+              [
+                "2025-09-03",
+                "666425"
+              ],
+              [
+                "2025-10-03",
+                "666425"
+              ],
+              [
+                "2025-11-02",
+                "666425"
+              ],
+              [
+                "2025-12-02",
+                "666425"
+              ],
+              [
+                "2026-01-01",
+                "666425"
+              ],
+              [
+                "2026-01-31",
+                "666425"
+              ],
+              [
+                "2026-03-02",
+                "666425"
+              ],
+              [
+                "2026-04-01",
+                "666425"
+              ],
+              [
+                "2026-05-01",
+                "666425"
+              ],
+              [
+                "2026-05-31",
+                "666425"
+              ],
+              [
+                "2026-06-30",
+                "666425"
+              ],
+              [
+                "2026-07-30",
+                "666425"
+              ],
+              [
+                "2026-08-29",
+                "666425"
+              ],
+              [
+                "2026-09-28",
+                "666425"
+              ],
+              [
+                "2026-10-28",
+                "666425"
+              ],
+              [
+                "2026-11-27",
+                "666425"
+              ],
+              [
+                "2026-12-27",
+                "666425"
+              ],
+              [
+                "2027-01-26",
+                "666425"
+              ],
+              [
+                "2027-02-25",
+                "666425"
+              ],
+              [
+                "2027-03-27",
+                "666425"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "34140600",
+      "request_date": "2025-05-03",
+      "deadline": "2025-06-12",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "affordable_now",
+      "expected_method": "full_payment",
+      "actual_method": "full_payment",
+      "expected_plan": "2025-05-03:13110000",
+      "actual_plan": "2025-05-03:13110000",
+      "expected_changes": "reduce_to:event_989:665950",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_12",
+      "first_divergence": "OUTPUT_SERIALIZATION",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "65164",
+          "actual": "65164",
+          "match": true
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "affordable_with_plan",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "installments",
+          "actual": "installments",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19",
+          "actual": "2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-04-05",
+          "actual": "2026-04-05",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Use 3 installments of ZAR 22,590.19, starting 19 April 2026. This leaves at least ZAR 43,200 available.",
+          "actual": "Plan installments completes 65164 while maintaining the minimum balance; safe today: 65164.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 1,
+        "rejected": 3,
+        "valid_candidates": [
+          {
+            "label": "option_payment_option_33",
+            "method": "installments",
+            "option_id": "payment_option_33",
+            "plan": [
+              [
+                "2026-04-19",
+                "22590.19"
+              ],
+              [
+                "2026-05-20",
+                "22590.19"
+              ],
+              [
+                "2026-06-20",
+                "22590.19"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "67770.57",
+              "2026-04-19",
+              3,
+              "payment_option_33"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-04-05",
+                "65164"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_34",
+            "method": "full_payment",
+            "option_id": "payment_option_34",
+            "plan": [
+              [
+                "2026-04-05",
+                "65164"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_35",
+            "method": "installments",
+            "option_id": "payment_option_35",
+            "plan": [
+              [
+                "2026-04-05",
+                "3661.6"
+              ],
+              [
+                "2026-05-03",
+                "3661.6"
+              ],
+              [
+                "2026-05-31",
+                "3661.6"
+              ],
+              [
+                "2026-06-28",
+                "3661.6"
+              ],
+              [
+                "2026-07-26",
+                "3661.6"
+              ],
+              [
+                "2026-08-23",
+                "3661.6"
+              ],
+              [
+                "2026-09-20",
+                "3661.6"
+              ],
+              [
+                "2026-10-18",
+                "3661.6"
+              ],
+              [
+                "2026-11-15",
+                "3661.6"
+              ],
+              [
+                "2026-12-13",
+                "3661.6"
+              ],
+              [
+                "2027-01-10",
+                "3661.6"
+              ],
+              [
+                "2027-02-07",
+                "3661.6"
+              ],
+              [
+                "2027-03-07",
+                "3661.6"
+              ],
+              [
+                "2027-04-04",
+                "3661.6"
+              ],
+              [
+                "2027-05-02",
+                "3661.6"
+              ],
+              [
+                "2027-05-30",
+                "3661.6"
+              ],
+              [
+                "2027-06-27",
+                "3661.6"
+              ],
+              [
+                "2027-07-25",
+                "3661.6"
+              ],
+              [
+                "2027-08-22",
+                "3661.6"
+              ],
+              [
+                "2027-09-19",
+                "3661.6"
+              ],
+              [
+                "2027-10-17",
+                "3661.6"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "43200",
+      "request_date": "2026-04-05",
+      "deadline": "2026-06-20",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "affordable_with_plan",
+      "expected_method": "installments",
+      "actual_method": "installments",
+      "expected_plan": "2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19",
+      "actual_plan": "2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_13",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "433.4",
+          "actual": "941.6",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2024-05-15:941.60",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2024-05-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay EUR 941.60 in full on 15 May 2024. Paying earlier would take the balance below the EUR 1,300 minimum.",
+          "actual": "Safe amount today is 941.6; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-03-07",
+                "941.6"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_36",
+            "method": "full_payment",
+            "option_id": "payment_option_36",
+            "plan": [
+              [
+                "2024-03-07",
+                "941.6"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_37",
+            "method": "installments",
+            "option_id": "payment_option_37",
+            "plan": [
+              [
+                "2024-03-10",
+                "69.05"
+              ],
+              [
+                "2024-04-09",
+                "69.05"
+              ],
+              [
+                "2024-05-09",
+                "69.05"
+              ],
+              [
+                "2024-06-08",
+                "69.05"
+              ],
+              [
+                "2024-07-08",
+                "69.05"
+              ],
+              [
+                "2024-08-07",
+                "69.05"
+              ],
+              [
+                "2024-09-06",
+                "69.05"
+              ],
+              [
+                "2024-10-06",
+                "69.05"
+              ],
+              [
+                "2024-11-05",
+                "69.05"
+              ],
+              [
+                "2024-12-05",
+                "69.05"
+              ],
+              [
+                "2025-01-04",
+                "69.05"
+              ],
+              [
+                "2025-02-03",
+                "69.05"
+              ],
+              [
+                "2025-03-05",
+                "69.05"
+              ],
+              [
+                "2025-04-04",
+                "69.05"
+              ],
+              [
+                "2025-05-04",
+                "69.05"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_38",
+            "method": "installments",
+            "option_id": "payment_option_38",
+            "plan": [
+              [
+                "2024-03-21",
+                "47.86"
+              ],
+              [
+                "2024-04-18",
+                "47.86"
+              ],
+              [
+                "2024-05-16",
+                "47.86"
+              ],
+              [
+                "2024-06-13",
+                "47.86"
+              ],
+              [
+                "2024-07-11",
+                "47.86"
+              ],
+              [
+                "2024-08-08",
+                "47.86"
+              ],
+              [
+                "2024-09-05",
+                "47.86"
+              ],
+              [
+                "2024-10-03",
+                "47.86"
+              ],
+              [
+                "2024-10-31",
+                "47.86"
+              ],
+              [
+                "2024-11-28",
+                "47.86"
+              ],
+              [
+                "2024-12-26",
+                "47.86"
+              ],
+              [
+                "2025-01-23",
+                "47.86"
+              ],
+              [
+                "2025-02-20",
+                "47.86"
+              ],
+              [
+                "2025-03-20",
+                "47.86"
+              ],
+              [
+                "2025-04-17",
+                "47.86"
+              ],
+              [
+                "2025-05-15",
+                "47.86"
+              ],
+              [
+                "2025-06-12",
+                "47.86"
+              ],
+              [
+                "2025-07-10",
+                "47.86"
+              ],
+              [
+                "2025-08-07",
+                "47.86"
+              ],
+              [
+                "2025-09-04",
+                "47.86"
+              ],
+              [
+                "2025-10-02",
+                "47.86"
+              ],
+              [
+                "2025-10-30",
+                "47.86"
+              ],
+              [
+                "2025-11-27",
+                "47.86"
+              ],
+              [
+                "2025-12-25",
+                "47.86"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "1300",
+      "request_date": "2024-03-07",
+      "deadline": "2024-05-15",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2024-05-15:941.60",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_14",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "597.74",
+          "actual": "1381.74",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not proceed with the EUR 5,414.20 request. Although EUR 597.74 is available today, the full amount cannot be completed safely within 90 days.",
+          "actual": "Safe amount today is 1381.74; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-08-04",
+                "5414.2"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_39",
+            "method": "full_payment",
+            "option_id": "payment_option_39",
+            "plan": [
+              [
+                "2025-08-04",
+                "5414.2"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_40",
+            "method": "installments",
+            "option_id": "payment_option_40",
+            "plan": [
+              [
+                "2025-08-11",
+                "342.9"
+              ],
+              [
+                "2025-09-11",
+                "342.9"
+              ],
+              [
+                "2025-10-12",
+                "342.9"
+              ],
+              [
+                "2025-11-12",
+                "342.9"
+              ],
+              [
+                "2025-12-13",
+                "342.9"
+              ],
+              [
+                "2026-01-13",
+                "342.9"
+              ],
+              [
+                "2026-02-13",
+                "342.9"
+              ],
+              [
+                "2026-03-16",
+                "342.9"
+              ],
+              [
+                "2026-04-16",
+                "342.9"
+              ],
+              [
+                "2026-05-17",
+                "342.9"
+              ],
+              [
+                "2026-06-17",
+                "342.9"
+              ],
+              [
+                "2026-07-18",
+                "342.9"
+              ],
+              [
+                "2026-08-18",
+                "342.9"
+              ],
+              [
+                "2026-09-18",
+                "342.9"
+              ],
+              [
+                "2026-10-19",
+                "342.9"
+              ],
+              [
+                "2026-11-19",
+                "342.9"
+              ],
+              [
+                "2026-12-20",
+                "342.9"
+              ],
+              [
+                "2027-01-20",
+                "342.9"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment"
+      ],
+      "minimum_balance": "2200",
+      "request_date": "2025-08-04",
+      "deadline": "2025-10-04",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_15",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "83.05",
+          "actual": "448.05",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not make this payment by 1 February 2026. None of the available options keeps the EUR 1,200 minimum protected.",
+          "actual": "Safe amount today is 448.05; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-01-06",
+                "3685"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_41",
+            "method": "full_payment",
+            "option_id": "payment_option_41",
+            "plan": [
+              [
+                "2026-01-06",
+                "3685"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_42",
+            "method": "installments",
+            "option_id": "payment_option_42",
+            "plan": [
+              [
+                "2026-01-20",
+                "207.06"
+              ],
+              [
+                "2026-02-17",
+                "207.06"
+              ],
+              [
+                "2026-03-17",
+                "207.06"
+              ],
+              [
+                "2026-04-14",
+                "207.06"
+              ],
+              [
+                "2026-05-12",
+                "207.06"
+              ],
+              [
+                "2026-06-09",
+                "207.06"
+              ],
+              [
+                "2026-07-07",
+                "207.06"
+              ],
+              [
+                "2026-08-04",
+                "207.06"
+              ],
+              [
+                "2026-09-01",
+                "207.06"
+              ],
+              [
+                "2026-09-29",
+                "207.06"
+              ],
+              [
+                "2026-10-27",
+                "207.06"
+              ],
+              [
+                "2026-11-24",
+                "207.06"
+              ],
+              [
+                "2026-12-22",
+                "207.06"
+              ],
+              [
+                "2027-01-19",
+                "207.06"
+              ],
+              [
+                "2027-02-16",
+                "207.06"
+              ],
+              [
+                "2027-03-16",
+                "207.06"
+              ],
+              [
+                "2027-04-13",
+                "207.06"
+              ],
+              [
+                "2027-05-11",
+                "207.06"
+              ],
+              [
+                "2027-06-08",
+                "207.06"
+              ],
+              [
+                "2027-07-06",
+                "207.06"
+              ],
+              [
+                "2027-08-03",
+                "207.06"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_43",
+            "method": "installments",
+            "option_id": "payment_option_43",
+            "plan": [
+              [
+                "2026-01-09",
+                "187.32"
+              ],
+              [
+                "2026-02-09",
+                "187.32"
+              ],
+              [
+                "2026-03-12",
+                "187.32"
+              ],
+              [
+                "2026-04-12",
+                "187.32"
+              ],
+              [
+                "2026-05-13",
+                "187.32"
+              ],
+              [
+                "2026-06-13",
+                "187.32"
+              ],
+              [
+                "2026-07-14",
+                "187.32"
+              ],
+              [
+                "2026-08-14",
+                "187.32"
+              ],
+              [
+                "2026-09-14",
+                "187.32"
+              ],
+              [
+                "2026-10-15",
+                "187.32"
+              ],
+              [
+                "2026-11-15",
+                "187.32"
+              ],
+              [
+                "2026-12-16",
+                "187.32"
+              ],
+              [
+                "2027-01-16",
+                "187.32"
+              ],
+              [
+                "2027-02-16",
+                "187.32"
+              ],
+              [
+                "2027-03-19",
+                "187.32"
+              ],
+              [
+                "2027-04-19",
+                "187.32"
+              ],
+              [
+                "2027-05-20",
+                "187.32"
+              ],
+              [
+                "2027-06-20",
+                "187.32"
+              ],
+              [
+                "2027-07-21",
+                "187.32"
+              ],
+              [
+                "2027-08-21",
+                "187.32"
+              ],
+              [
+                "2027-09-21",
+                "187.32"
+              ],
+              [
+                "2027-10-22",
+                "187.32"
+              ],
+              [
+                "2027-11-22",
+                "187.32"
+              ],
+              [
+                "2027-12-23",
+                "187.32"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment"
+      ],
+      "minimum_balance": "1200",
+      "request_date": "2026-01-06",
+      "deadline": "2026-02-01",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_16",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "122500",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_now",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2023-08-12:122500",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2023-08-12",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay INR 122,500 today. This leaves at least INR 122,400 available over the next 90 days.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2023-08-12",
+                "122500"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_44",
+            "method": "full_payment",
+            "option_id": "payment_option_44",
+            "plan": [
+              [
+                "2023-08-12",
+                "122500"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_45",
+            "method": "installments",
+            "option_id": "payment_option_45",
+            "plan": [
+              [
+                "2023-08-12",
+                "8983.33"
+              ],
+              [
+                "2023-09-11",
+                "8983.33"
+              ],
+              [
+                "2023-10-11",
+                "8983.33"
+              ],
+              [
+                "2023-11-10",
+                "8983.33"
+              ],
+              [
+                "2023-12-10",
+                "8983.33"
+              ],
+              [
+                "2024-01-09",
+                "8983.33"
+              ],
+              [
+                "2024-02-08",
+                "8983.33"
+              ],
+              [
+                "2024-03-09",
+                "8983.33"
+              ],
+              [
+                "2024-04-08",
+                "8983.33"
+              ],
+              [
+                "2024-05-08",
+                "8983.33"
+              ],
+              [
+                "2024-06-07",
+                "8983.33"
+              ],
+              [
+                "2024-07-07",
+                "8983.33"
+              ],
+              [
+                "2024-08-06",
+                "8983.33"
+              ],
+              [
+                "2024-09-05",
+                "8983.33"
+              ],
+              [
+                "2024-10-05",
+                "8983.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_46",
+            "method": "installments",
+            "option_id": "payment_option_46",
+            "plan": [
+              [
+                "2023-08-15",
+                "22050"
+              ],
+              [
+                "2023-09-15",
+                "22050"
+              ],
+              [
+                "2023-10-16",
+                "22050"
+              ],
+              [
+                "2023-11-16",
+                "22050"
+              ],
+              [
+                "2023-12-17",
+                "22050"
+              ],
+              [
+                "2024-01-17",
+                "22050"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "installments"
+      ],
+      "minimum_balance": "122400",
+      "request_date": "2023-08-12",
+      "deadline": "2023-10-11",
+      "expected_status": "affordable_now",
+      "actual_status": "not_affordable",
+      "expected_method": "full_payment",
+      "actual_method": "not_recommended",
+      "expected_plan": "2023-08-12:122500",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_17",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "243849.58",
+          "actual": "274600",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "affordable_with_plan",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "installments",
+          "actual": "installments",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67",
+          "actual": "2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-03-15",
+          "actual": "2026-03-01",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Use 3 installments of INR 95,194.67, starting 1 March 2026. This leaves at least INR 166,100 available.",
+          "actual": "Plan installments completes 274600 while maintaining the minimum balance; safe today: 274600.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 1,
+        "rejected": 3,
+        "valid_candidates": [
+          {
+            "label": "option_payment_option_47",
+            "method": "installments",
+            "option_id": "payment_option_47",
+            "plan": [
+              [
+                "2026-03-01",
+                "95194.67"
+              ],
+              [
+                "2026-03-31",
+                "95194.67"
+              ],
+              [
+                "2026-04-30",
+                "95194.67"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "285584.01",
+              "2026-03-01",
+              3,
+              "payment_option_47"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-03-01",
+                "274600"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_48",
+            "method": "full_payment",
+            "option_id": "payment_option_48",
+            "plan": [
+              [
+                "2026-03-01",
+                "274600"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_49",
+            "method": "installments",
+            "option_id": "payment_option_49",
+            "plan": [
+              [
+                "2026-03-04",
+                "17391.33"
+              ],
+              [
+                "2026-04-04",
+                "17391.33"
+              ],
+              [
+                "2026-05-05",
+                "17391.33"
+              ],
+              [
+                "2026-06-05",
+                "17391.33"
+              ],
+              [
+                "2026-07-06",
+                "17391.33"
+              ],
+              [
+                "2026-08-06",
+                "17391.33"
+              ],
+              [
+                "2026-09-06",
+                "17391.33"
+              ],
+              [
+                "2026-10-07",
+                "17391.33"
+              ],
+              [
+                "2026-11-07",
+                "17391.33"
+              ],
+              [
+                "2026-12-08",
+                "17391.33"
+              ],
+              [
+                "2027-01-08",
+                "17391.33"
+              ],
+              [
+                "2027-02-08",
+                "17391.33"
+              ],
+              [
+                "2027-03-11",
+                "17391.33"
+              ],
+              [
+                "2027-04-11",
+                "17391.33"
+              ],
+              [
+                "2027-05-12",
+                "17391.33"
+              ],
+              [
+                "2027-06-12",
+                "17391.33"
+              ],
+              [
+                "2027-07-13",
+                "17391.33"
+              ],
+              [
+                "2027-08-13",
+                "17391.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "installments"
+      ],
+      "minimum_balance": "166100",
+      "request_date": "2026-03-01",
+      "deadline": "2026-05-04",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "affordable_with_plan",
+      "expected_method": "installments",
+      "actual_method": "installments",
+      "expected_plan": "2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67",
+      "actual_plan": "2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_18",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "462",
+          "actual": "381",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2026-09-15:3246.10",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-09-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay EUR 3,246.10 in full on 15 September 2026. Paying earlier would take the balance below the EUR 1,400 minimum.",
+          "actual": "Safe amount today is 381; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-07-07",
+                "3246.1"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_50",
+            "method": "full_payment",
+            "option_id": "payment_option_50",
+            "plan": [
+              [
+                "2026-07-07",
+                "3246.1"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_51",
+            "method": "installments",
+            "option_id": "payment_option_51",
+            "plan": [
+              [
+                "2026-07-14",
+                "182.4"
+              ],
+              [
+                "2026-08-11",
+                "182.4"
+              ],
+              [
+                "2026-09-08",
+                "182.4"
+              ],
+              [
+                "2026-10-06",
+                "182.4"
+              ],
+              [
+                "2026-11-03",
+                "182.4"
+              ],
+              [
+                "2026-12-01",
+                "182.4"
+              ],
+              [
+                "2026-12-29",
+                "182.4"
+              ],
+              [
+                "2027-01-26",
+                "182.4"
+              ],
+              [
+                "2027-02-23",
+                "182.4"
+              ],
+              [
+                "2027-03-23",
+                "182.4"
+              ],
+              [
+                "2027-04-20",
+                "182.4"
+              ],
+              [
+                "2027-05-18",
+                "182.4"
+              ],
+              [
+                "2027-06-15",
+                "182.4"
+              ],
+              [
+                "2027-07-13",
+                "182.4"
+              ],
+              [
+                "2027-08-10",
+                "182.4"
+              ],
+              [
+                "2027-09-07",
+                "182.4"
+              ],
+              [
+                "2027-10-05",
+                "182.4"
+              ],
+              [
+                "2027-11-02",
+                "182.4"
+              ],
+              [
+                "2027-11-30",
+                "182.4"
+              ],
+              [
+                "2027-12-28",
+                "182.4"
+              ],
+              [
+                "2028-01-25",
+                "182.4"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment"
+      ],
+      "minimum_balance": "1400",
+      "request_date": "2026-07-07",
+      "deadline": "2026-09-15",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2026-09-15:3246.10",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_19",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "28820",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "partial_payment",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2024-09-04:28820|2024-09-15:10840",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2024-09-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay INR 28,820 today and the remaining INR 10,840 on 15 September 2024. This completes the full request and keeps the INR 92,800 minimum protected.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-09-04",
+                "39660"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_52",
+            "method": "full_payment",
+            "option_id": "payment_option_52",
+            "plan": [
+              [
+                "2024-09-04",
+                "39660"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_53",
+            "method": "installments",
+            "option_id": "payment_option_53",
+            "plan": [
+              [
+                "2024-09-04",
+                "20623.2"
+              ],
+              [
+                "2024-10-02",
+                "20623.2"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_54",
+            "method": "installments",
+            "option_id": "payment_option_54",
+            "plan": [
+              [
+                "2024-09-10",
+                "14013.2"
+              ],
+              [
+                "2024-10-11",
+                "14013.2"
+              ],
+              [
+                "2024-11-11",
+                "14013.2"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "92800",
+      "request_date": "2024-09-04",
+      "deadline": "2024-10-04",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "not_affordable",
+      "expected_method": "partial_payment",
+      "actual_method": "not_recommended",
+      "expected_plan": "2024-09-04:28820|2024-09-15:10840",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_20",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "5400",
+          "actual": "6975",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not make this payment by 22 February 2026. None of the available options keeps the INR 64,500 minimum protected.",
+          "actual": "Safe amount today is 6975; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-02-07",
+                "303700"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_55",
+            "method": "full_payment",
+            "option_id": "payment_option_55",
+            "plan": [
+              [
+                "2026-02-07",
+                "303700"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_56",
+            "method": "installments",
+            "option_id": "payment_option_56",
+            "plan": [
+              [
+                "2026-02-07",
+                "19234.33"
+              ],
+              [
+                "2026-03-10",
+                "19234.33"
+              ],
+              [
+                "2026-04-10",
+                "19234.33"
+              ],
+              [
+                "2026-05-11",
+                "19234.33"
+              ],
+              [
+                "2026-06-11",
+                "19234.33"
+              ],
+              [
+                "2026-07-12",
+                "19234.33"
+              ],
+              [
+                "2026-08-12",
+                "19234.33"
+              ],
+              [
+                "2026-09-12",
+                "19234.33"
+              ],
+              [
+                "2026-10-13",
+                "19234.33"
+              ],
+              [
+                "2026-11-13",
+                "19234.33"
+              ],
+              [
+                "2026-12-14",
+                "19234.33"
+              ],
+              [
+                "2027-01-14",
+                "19234.33"
+              ],
+              [
+                "2027-02-14",
+                "19234.33"
+              ],
+              [
+                "2027-03-17",
+                "19234.33"
+              ],
+              [
+                "2027-04-17",
+                "19234.33"
+              ],
+              [
+                "2027-05-18",
+                "19234.33"
+              ],
+              [
+                "2027-06-18",
+                "19234.33"
+              ],
+              [
+                "2027-07-19",
+                "19234.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "64500",
+      "request_date": "2026-02-07",
+      "deadline": "2026-02-22",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_21",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "1543.35",
+          "actual": "1574.4",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "affordable_now",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "full_payment",
+          "actual": "full_payment",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "2026-04-03:1574.40",
+          "actual": "2026-04-03:1574.4",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2026-04-15",
+          "actual": "2026-04-03",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "stop:event_1815|reduce_to:event_1816:23.50",
+          "actual": "none",
+          "match": false
+        },
+        "decision_explanation": {
+          "expected": "Stop the online backup subscription and reduce the streaming subscription to USD 23.50, then pay USD 1,574.40 today. This leaves at least USD 1,800 available.",
+          "actual": "Plan full_payment completes 1574.4 while maintaining the minimum balance; safe today: 1574.4.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 6,
+        "valid": 3,
+        "rejected": 3,
+        "valid_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-04-03",
+                "1574.4"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "1574.4",
+              "2026-04-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "option_payment_option_57",
+            "method": "full_payment",
+            "option_id": "payment_option_57",
+            "plan": [
+              [
+                "2026-04-03",
+                "1574.4"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "1574.4",
+              "2026-04-03",
+              1,
+              "payment_option_57"
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          },
+          {
+            "label": "wait",
+            "method": "wait",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-04-03",
+                "1574.4"
+              ]
+            ],
+            "changes": [],
+            "rank_key": [
+              0,
+              0,
+              "1574.4",
+              "2026-04-03",
+              1,
+              ""
+            ],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": true
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "label": "option_payment_option_58",
+            "method": "installments",
+            "option_id": "payment_option_58",
+            "plan": [
+              [
+                "2026-04-06",
+                "88.47"
+              ],
+              [
+                "2026-05-04",
+                "88.47"
+              ],
+              [
+                "2026-06-01",
+                "88.47"
+              ],
+              [
+                "2026-06-29",
+                "88.47"
+              ],
+              [
+                "2026-07-27",
+                "88.47"
+              ],
+              [
+                "2026-08-24",
+                "88.47"
+              ],
+              [
+                "2026-09-21",
+                "88.47"
+              ],
+              [
+                "2026-10-19",
+                "88.47"
+              ],
+              [
+                "2026-11-16",
+                "88.47"
+              ],
+              [
+                "2026-12-14",
+                "88.47"
+              ],
+              [
+                "2027-01-11",
+                "88.47"
+              ],
+              [
+                "2027-02-08",
+                "88.47"
+              ],
+              [
+                "2027-03-08",
+                "88.47"
+              ],
+              [
+                "2027-04-05",
+                "88.47"
+              ],
+              [
+                "2027-05-03",
+                "88.47"
+              ],
+              [
+                "2027-05-31",
+                "88.47"
+              ],
+              [
+                "2027-06-28",
+                "88.47"
+              ],
+              [
+                "2027-07-26",
+                "88.47"
+              ],
+              [
+                "2027-08-23",
+                "88.47"
+              ],
+              [
+                "2027-09-20",
+                "88.47"
+              ],
+              [
+                "2027-10-18",
+                "88.47"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_59",
+            "method": "installments",
+            "option_id": "payment_option_59",
+            "plan": [
+              [
+                "2026-04-10",
+                "283.39"
+              ],
+              [
+                "2026-05-10",
+                "283.39"
+              ],
+              [
+                "2026-06-09",
+                "283.39"
+              ],
+              [
+                "2026-07-09",
+                "283.39"
+              ],
+              [
+                "2026-08-08",
+                "283.39"
+              ],
+              [
+                "2026-09-07",
+                "283.39"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_60",
+            "method": "installments",
+            "option_id": "payment_option_60",
+            "plan": [
+              [
+                "2026-04-17",
+                "80.03"
+              ],
+              [
+                "2026-05-18",
+                "80.03"
+              ],
+              [
+                "2026-06-18",
+                "80.03"
+              ],
+              [
+                "2026-07-19",
+                "80.03"
+              ],
+              [
+                "2026-08-19",
+                "80.03"
+              ],
+              [
+                "2026-09-19",
+                "80.03"
+              ],
+              [
+                "2026-10-20",
+                "80.03"
+              ],
+              [
+                "2026-11-20",
+                "80.03"
+              ],
+              [
+                "2026-12-21",
+                "80.03"
+              ],
+              [
+                "2027-01-21",
+                "80.03"
+              ],
+              [
+                "2027-02-21",
+                "80.03"
+              ],
+              [
+                "2027-03-24",
+                "80.03"
+              ],
+              [
+                "2027-04-24",
+                "80.03"
+              ],
+              [
+                "2027-05-25",
+                "80.03"
+              ],
+              [
+                "2027-06-25",
+                "80.03"
+              ],
+              [
+                "2027-07-26",
+                "80.03"
+              ],
+              [
+                "2027-08-26",
+                "80.03"
+              ],
+              [
+                "2027-09-26",
+                "80.03"
+              ],
+              [
+                "2027-10-27",
+                "80.03"
+              ],
+              [
+                "2027-11-27",
+                "80.03"
+              ],
+              [
+                "2027-12-28",
+                "80.03"
+              ],
+              [
+                "2028-01-28",
+                "80.03"
+              ],
+              [
+                "2028-02-28",
+                "80.03"
+              ],
+              [
+                "2028-03-30",
+                "80.03"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment"
+      ],
+      "minimum_balance": "1800",
+      "request_date": "2026-04-03",
+      "deadline": "2026-04-14",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "affordable_now",
+      "expected_method": "full_payment",
+      "actual_method": "full_payment",
+      "expected_plan": "2026-04-03:1574.40",
+      "actual_plan": "2026-04-03:1574.4",
+      "expected_changes": "stop:event_1815|reduce_to:event_1816:23.50",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_22",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "475.46",
+          "actual": "261.06",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_with_plan",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "installments",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2024-12-08:253.59|2025-01-05:253.59|2025-02-02:253.59",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2025-01-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Use 3 installments of EUR 253.59, starting 8 December 2024. This leaves at least EUR 500 available.",
+          "actual": "Safe amount today is 261.06; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-12-05",
+                "731.5"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_61",
+            "method": "installments",
+            "option_id": "payment_option_61",
+            "plan": [
+              [
+                "2024-12-08",
+                "253.59"
+              ],
+              [
+                "2025-01-05",
+                "253.59"
+              ],
+              [
+                "2025-02-02",
+                "253.59"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_62",
+            "method": "full_payment",
+            "option_id": "payment_option_62",
+            "plan": [
+              [
+                "2024-12-05",
+                "731.5"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_63",
+            "method": "installments",
+            "option_id": "payment_option_63",
+            "plan": [
+              [
+                "2024-12-12",
+                "53.64"
+              ],
+              [
+                "2025-01-11",
+                "53.64"
+              ],
+              [
+                "2025-02-10",
+                "53.64"
+              ],
+              [
+                "2025-03-12",
+                "53.64"
+              ],
+              [
+                "2025-04-11",
+                "53.64"
+              ],
+              [
+                "2025-05-11",
+                "53.64"
+              ],
+              [
+                "2025-06-10",
+                "53.64"
+              ],
+              [
+                "2025-07-10",
+                "53.64"
+              ],
+              [
+                "2025-08-09",
+                "53.64"
+              ],
+              [
+                "2025-09-08",
+                "53.64"
+              ],
+              [
+                "2025-10-08",
+                "53.64"
+              ],
+              [
+                "2025-11-07",
+                "53.64"
+              ],
+              [
+                "2025-12-07",
+                "53.64"
+              ],
+              [
+                "2026-01-06",
+                "53.64"
+              ],
+              [
+                "2026-02-05",
+                "53.64"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "installments"
+      ],
+      "minimum_balance": "500",
+      "request_date": "2024-12-05",
+      "deadline": "2025-02-10",
+      "expected_status": "affordable_with_plan",
+      "actual_status": "not_affordable",
+      "expected_method": "installments",
+      "actual_method": "not_recommended",
+      "expected_plan": "2024-12-08:253.59|2025-01-05:253.59|2025-02-02:253.59",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_23",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "9152",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "affordable_later",
+          "actual": "not_affordable",
+          "match": false
+        },
+        "recommended_payment_method": {
+          "expected": "wait",
+          "actual": "not_recommended",
+          "match": false
+        },
+        "payment_plan": {
+          "expected": "2025-07-15:38016",
+          "actual": "none",
+          "match": false
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "2025-07-15",
+          "actual": "",
+          "match": false
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Pay ZAR 38,016 in full on 15 July 2025. Paying earlier would take the balance below the ZAR 27,000 minimum.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2025-05-07",
+                "38016"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_64",
+            "method": "full_payment",
+            "option_id": "payment_option_64",
+            "plan": [
+              [
+                "2025-05-07",
+                "38016"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_65",
+            "method": "installments",
+            "option_id": "payment_option_65",
+            "plan": [
+              [
+                "2025-05-21",
+                "2407.68"
+              ],
+              [
+                "2025-06-21",
+                "2407.68"
+              ],
+              [
+                "2025-07-22",
+                "2407.68"
+              ],
+              [
+                "2025-08-22",
+                "2407.68"
+              ],
+              [
+                "2025-09-22",
+                "2407.68"
+              ],
+              [
+                "2025-10-23",
+                "2407.68"
+              ],
+              [
+                "2025-11-23",
+                "2407.68"
+              ],
+              [
+                "2025-12-24",
+                "2407.68"
+              ],
+              [
+                "2026-01-24",
+                "2407.68"
+              ],
+              [
+                "2026-02-24",
+                "2407.68"
+              ],
+              [
+                "2026-03-27",
+                "2407.68"
+              ],
+              [
+                "2026-04-27",
+                "2407.68"
+              ],
+              [
+                "2026-05-28",
+                "2407.68"
+              ],
+              [
+                "2026-06-28",
+                "2407.68"
+              ],
+              [
+                "2026-07-29",
+                "2407.68"
+              ],
+              [
+                "2026-08-29",
+                "2407.68"
+              ],
+              [
+                "2026-09-29",
+                "2407.68"
+              ],
+              [
+                "2026-10-30",
+                "2407.68"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_66",
+            "method": "installments",
+            "option_id": "payment_option_66",
+            "plan": [
+              [
+                "2025-05-10",
+                "1932.48"
+              ],
+              [
+                "2025-06-09",
+                "1932.48"
+              ],
+              [
+                "2025-07-09",
+                "1932.48"
+              ],
+              [
+                "2025-08-08",
+                "1932.48"
+              ],
+              [
+                "2025-09-07",
+                "1932.48"
+              ],
+              [
+                "2025-10-07",
+                "1932.48"
+              ],
+              [
+                "2025-11-06",
+                "1932.48"
+              ],
+              [
+                "2025-12-06",
+                "1932.48"
+              ],
+              [
+                "2026-01-05",
+                "1932.48"
+              ],
+              [
+                "2026-02-04",
+                "1932.48"
+              ],
+              [
+                "2026-03-06",
+                "1932.48"
+              ],
+              [
+                "2026-04-05",
+                "1932.48"
+              ],
+              [
+                "2026-05-05",
+                "1932.48"
+              ],
+              [
+                "2026-06-04",
+                "1932.48"
+              ],
+              [
+                "2026-07-04",
+                "1932.48"
+              ],
+              [
+                "2026-08-03",
+                "1932.48"
+              ],
+              [
+                "2026-09-02",
+                "1932.48"
+              ],
+              [
+                "2026-10-02",
+                "1932.48"
+              ],
+              [
+                "2026-11-01",
+                "1932.48"
+              ],
+              [
+                "2026-12-01",
+                "1932.48"
+              ],
+              [
+                "2026-12-31",
+                "1932.48"
+              ],
+              [
+                "2027-01-30",
+                "1932.48"
+              ],
+              [
+                "2027-03-01",
+                "1932.48"
+              ],
+              [
+                "2027-03-31",
+                "1932.48"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "partial_payment",
+        "installments"
+      ],
+      "minimum_balance": "27000",
+      "request_date": "2025-05-07",
+      "deadline": "2025-07-15",
+      "expected_status": "affordable_later",
+      "actual_status": "not_affordable",
+      "expected_method": "wait",
+      "actual_method": "not_recommended",
+      "expected_plan": "2025-07-15:38016",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_24",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "13420",
+          "actual": "0",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not proceed with the INR 109,600 request. Although INR 13,420 is available today, the full amount cannot be completed safely within 90 days.",
+          "actual": "Safe amount today is 0; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 3,
+        "valid": 0,
+        "rejected": 3,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2026-01-04",
+                "109600"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_67",
+            "method": "full_payment",
+            "option_id": "payment_option_67",
+            "plan": [
+              [
+                "2026-01-04",
+                "109600"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": false,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_68",
+            "method": "installments",
+            "option_id": "payment_option_68",
+            "plan": [
+              [
+                "2026-01-04",
+                "6158.48"
+              ],
+              [
+                "2026-02-01",
+                "6158.48"
+              ],
+              [
+                "2026-03-01",
+                "6158.48"
+              ],
+              [
+                "2026-03-29",
+                "6158.48"
+              ],
+              [
+                "2026-04-26",
+                "6158.48"
+              ],
+              [
+                "2026-05-24",
+                "6158.48"
+              ],
+              [
+                "2026-06-21",
+                "6158.48"
+              ],
+              [
+                "2026-07-19",
+                "6158.48"
+              ],
+              [
+                "2026-08-16",
+                "6158.48"
+              ],
+              [
+                "2026-09-13",
+                "6158.48"
+              ],
+              [
+                "2026-10-11",
+                "6158.48"
+              ],
+              [
+                "2026-11-08",
+                "6158.48"
+              ],
+              [
+                "2026-12-06",
+                "6158.48"
+              ],
+              [
+                "2027-01-03",
+                "6158.48"
+              ],
+              [
+                "2027-01-31",
+                "6158.48"
+              ],
+              [
+                "2027-02-28",
+                "6158.48"
+              ],
+              [
+                "2027-03-28",
+                "6158.48"
+              ],
+              [
+                "2027-04-25",
+                "6158.48"
+              ],
+              [
+                "2027-05-23",
+                "6158.48"
+              ],
+              [
+                "2027-06-20",
+                "6158.48"
+              ],
+              [
+                "2027-07-18",
+                "6158.48"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": false,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "partial_payment"
+      ],
+      "minimum_balance": "51000",
+      "request_date": "2026-01-04",
+      "deadline": "2026-02-08",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    },
+    {
+      "request_id": "request_25",
+      "first_divergence": "SAFE_AMOUNT",
+      "field_matches": {
+        "amount_safe_to_pay": {
+          "expected": "1425000",
+          "actual": "7079400",
+          "match": false
+        },
+        "affordability_status": {
+          "expected": "not_affordable",
+          "actual": "not_affordable",
+          "match": true
+        },
+        "recommended_payment_method": {
+          "expected": "not_recommended",
+          "actual": "not_recommended",
+          "match": true
+        },
+        "payment_plan": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "earliest_date_for_full_payment": {
+          "expected": "",
+          "actual": "",
+          "match": true
+        },
+        "spending_changes_needed": {
+          "expected": "none",
+          "actual": "none",
+          "match": true
+        },
+        "decision_explanation": {
+          "expected": "Do not make this payment by 17 April 2024. None of the available options keeps the IDR 23,379,100 minimum protected.",
+          "actual": "Safe amount today is 7079400; the full amount is not safe within the requested plan.",
+          "match": false
+        }
+      },
+      "candidate_pipeline": {
+        "generated": 4,
+        "valid": 0,
+        "rejected": 4,
+        "valid_candidates": [],
+        "rejected_candidates": [
+          {
+            "label": "full_today",
+            "method": "full_payment",
+            "option_id": "",
+            "plan": [
+              [
+                "2024-03-06",
+                "60496000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_69",
+            "method": "full_payment",
+            "option_id": "payment_option_69",
+            "plan": [
+              [
+                "2024-03-06",
+                "60496000"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": true,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_70",
+            "method": "installments",
+            "option_id": "payment_option_70",
+            "plan": [
+              [
+                "2024-03-09",
+                "4436373.33"
+              ],
+              [
+                "2024-04-08",
+                "4436373.33"
+              ],
+              [
+                "2024-05-08",
+                "4436373.33"
+              ],
+              [
+                "2024-06-07",
+                "4436373.33"
+              ],
+              [
+                "2024-07-07",
+                "4436373.33"
+              ],
+              [
+                "2024-08-06",
+                "4436373.33"
+              ],
+              [
+                "2024-09-05",
+                "4436373.33"
+              ],
+              [
+                "2024-10-05",
+                "4436373.33"
+              ],
+              [
+                "2024-11-04",
+                "4436373.33"
+              ],
+              [
+                "2024-12-04",
+                "4436373.33"
+              ],
+              [
+                "2025-01-03",
+                "4436373.33"
+              ],
+              [
+                "2025-02-02",
+                "4436373.33"
+              ],
+              [
+                "2025-03-04",
+                "4436373.33"
+              ],
+              [
+                "2025-04-03",
+                "4436373.33"
+              ],
+              [
+                "2025-05-03",
+                "4436373.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          },
+          {
+            "label": "option_payment_option_71",
+            "method": "installments",
+            "option_id": "payment_option_71",
+            "plan": [
+              [
+                "2024-03-20",
+                "3075213.33"
+              ],
+              [
+                "2024-04-17",
+                "3075213.33"
+              ],
+              [
+                "2024-05-15",
+                "3075213.33"
+              ],
+              [
+                "2024-06-12",
+                "3075213.33"
+              ],
+              [
+                "2024-07-10",
+                "3075213.33"
+              ],
+              [
+                "2024-08-07",
+                "3075213.33"
+              ],
+              [
+                "2024-09-04",
+                "3075213.33"
+              ],
+              [
+                "2024-10-02",
+                "3075213.33"
+              ],
+              [
+                "2024-10-30",
+                "3075213.33"
+              ],
+              [
+                "2024-11-27",
+                "3075213.33"
+              ],
+              [
+                "2024-12-25",
+                "3075213.33"
+              ],
+              [
+                "2025-01-22",
+                "3075213.33"
+              ],
+              [
+                "2025-02-19",
+                "3075213.33"
+              ],
+              [
+                "2025-03-19",
+                "3075213.33"
+              ],
+              [
+                "2025-04-16",
+                "3075213.33"
+              ],
+              [
+                "2025-05-14",
+                "3075213.33"
+              ],
+              [
+                "2025-06-11",
+                "3075213.33"
+              ],
+              [
+                "2025-07-09",
+                "3075213.33"
+              ],
+              [
+                "2025-08-06",
+                "3075213.33"
+              ],
+              [
+                "2025-09-03",
+                "3075213.33"
+              ],
+              [
+                "2025-10-01",
+                "3075213.33"
+              ],
+              [
+                "2025-10-29",
+                "3075213.33"
+              ],
+              [
+                "2025-11-26",
+                "3075213.33"
+              ],
+              [
+                "2025-12-24",
+                "3075213.33"
+              ]
+            ],
+            "changes": [],
+            "meets_deadline": false,
+            "eligible_preference": true,
+            "safe": false
+          }
+        ]
+      },
+      "preferences": [
+        "full_payment",
+        "installments"
+      ],
+      "minimum_balance": "23379100",
+      "request_date": "2024-03-06",
+      "deadline": "2024-04-17",
+      "expected_status": "not_affordable",
+      "actual_status": "not_affordable",
+      "expected_method": "not_recommended",
+      "actual_method": "not_recommended",
+      "expected_plan": "none",
+      "actual_plan": "none",
+      "expected_changes": "none",
+      "actual_changes": "none"
+    }
+  ],
+  "dependency_graph": "forecast -> safe amount -> earliest date -> candidate generation -> validation -> deadline/status -> ranking -> output",
+  "decision_category": "forecast-dependent and earliest-date dependent; downstream symptoms are not independently repairable until upstream values agree",
+  "recommendation": "FREEZE_DECISION_PIPELINE_AND_DOCUMENT_UNRESOLVED_FORECAST_SEMANTICS"
+}

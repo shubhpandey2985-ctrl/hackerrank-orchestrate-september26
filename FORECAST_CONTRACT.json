@@ -1,0 +1,18 @@
+{
+  "status": "UNRESOLVED",
+  "rules": [
+    {"rule_id":"FC-001","category":"lifecycle","decision":"exclude failed/cancelled/unrealized/non-cash; reserve pending debit; exclude pending credit","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"low"},
+    {"rule_id":"FC-002","category":"income","decision":"only explicit dated confirmed future salary or message-confirmed salary creates future credit","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"low"},
+    {"rule_id":"FC-003","category":"recurrence","decision":"project stable identity/cadence/equal-amount fixed recurrence only","evidence_level":"STRONGLY-EXAMPLE-SUPPORTED","confidence":"medium-high","risk":"medium"},
+    {"rule_id":"FC-004","category":"variable_amount","decision":"RECURRING_AMOUNT_UNRESOLVED; no estimator","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"high"},
+    {"rule_id":"FC-005","category":"fx","decision":"dated direct supplied FX only with Decimal arithmetic","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"low"},
+    {"rule_id":"FC-006","category":"optional_baseline","decision":"CURRENT_BEHAVIOR default; alternatives configurable","evidence_level":"UNRESOLVED","confidence":"medium","risk":"high","alternatives":["INCLUDE_REQUIRED_ONLY","INCLUDE_ALL_RECURRING","EXCLUDE_OPTIONAL_FLEXIBLE"]},
+    {"rule_id":"FC-007","category":"same_day","decision":"credits before debits before plan payment as explicit policy","evidence_level":"UNRESOLVED","confidence":"low","risk":"medium"},
+    {"rule_id":"FC-008","category":"calendar","decision":"exact/monthly/month-end/missed-cycle behavior unresolved","evidence_level":"UNRESOLVED","confidence":"low","risk":"high"},
+    {"rule_id":"FC-009","category":"capacity","decision":"safe amount is monotone maximum Decimal payment preserving minimum through 90-day horizon","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"medium"},
+    {"rule_id":"FC-010","category":"earliest_date","decision":"first independent horizon date whose full payment passes movement-level safety","evidence_level":"SPECIFICATION-EXPLICIT","confidence":"high","risk":"medium"}
+  ],
+  "recommended_model":"explicit confirmed movements plus stable fixed recurrence",
+  "prohibited_inference":["category-only recurrence","variable amount estimator","historical salary cash","FX fallback","replacement timing","LLM-authorized financial plan"],
+  "counterfactual_score_is_not_specification_proof":true
+}

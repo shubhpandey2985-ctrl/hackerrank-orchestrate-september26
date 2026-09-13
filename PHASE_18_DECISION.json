@@ -1,0 +1,41 @@
+{
+  "decision": "AUTHORITATIVE_EVIDENCE_MISSING",
+  "head": "d2416958be49f40ef9a15fefe3a6795d6d34a7e1",
+  "production_files_changed": [],
+  "output_changed": false,
+  "datasets_changed": false,
+  "expected_outputs_changed": false,
+  "code_zip_created": false,
+  "tests": {
+    "full": 64,
+    "semantic_lab": 10
+  },
+  "sample_matches": {
+    "amount_safe_to_pay": 2,
+    "affordability_status": 10,
+    "recommended_payment_method": 12,
+    "payment_plan": 11,
+    "earliest_date_for_full_payment": 8,
+    "spending_changes_needed": 22
+  },
+  "output_sha256": "2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840",
+  "unresolved": [
+    "Variable spending amount",
+    "Variable recurrence identity",
+    "Observation threshold",
+    "Gap tolerance",
+    "Weekly cadence",
+    "Biweekly cadence",
+    "Monthly cadence",
+    "Month-end behavior",
+    "Missed-cycle behavior",
+    "Generic scheduled credits",
+    "Optional baseline",
+    "Same-day ordering",
+    "Replacement timing",
+    "Deadline/status mapping",
+    "Decimal serialization",
+    "Flexible-action ties"
+  ],
+  "next_action": "obtain authoritative fixture/spec clarification for variable amount and recurrence calendar semantics"
+}

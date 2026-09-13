@@ -101,3 +101,18 @@ def test_90_day_boundary_excludes_day_90():
     data=main.Data({"u":profile()},[],{}, {"u":[e]},[],[],{})
     tr=main.forecast_trace("u",date(2026,1,1),data)
     assert all(x["date"] != "2026-04-01" for x in tr["movements"])
+
+def test_optional_baseline_default_preserves_existing_split():
+    assert main.DEFAULT_POLICY.optional_baseline_policy == "CURRENT_BEHAVIOR"
+    assert main.baseline_include_optional("safe") is False
+    assert main.baseline_include_optional("earliest") is True
+
+def test_optional_baseline_policy_rejects_unknown_values():
+    from dataclasses import replace
+    old=main.DEFAULT_POLICY
+    try:
+        main.DEFAULT_POLICY=replace(old, optional_baseline_policy="bad")
+        try: main.baseline_include_optional("safe")
+        except ValueError: pass
+        else: assert False
+    finally: main.DEFAULT_POLICY=old

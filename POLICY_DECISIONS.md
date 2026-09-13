@@ -30,4 +30,62 @@ authoritative problem statement.
 | Late capacity status | Capacity date and deadline compliance are separate; conservative mapping retained | UNRESOLVED-POLICY | Status boundary not fully specified |
 | Ranking | Use published six-key ranking unchanged | SPECIFICATION-EXPLICIT | Do not repair forecast errors downstream |
 | Flexible-action ties | Stable event/action ordering after published keys tie | UNRESOLVED-POLICY | No tie fixture establishes official rule |
+
+## Phase 14 semantic-resolution gate
+
+The formal movement contract marks every raw event as `INCLUDED_BECAUSE` or
+`EXCLUDED_BECAUSE` and preserves recurrence, lifecycle and provenance metadata.
+Phase 14 did not identify a single evidence-supported repair for the 23
+safe-amount first divergences. Variable estimators, calendar thresholds,
+generic scheduled-credit inclusion, same-day changes and invented replacements
+remain prohibited. The production forecast is unchanged.
+
+## Phase 15 fixture-driven semantic discovery
+
+Added an independent Decimal semantic laboratory with 66 synthetic fixtures.
+Resolved lab rules cover lifecycle exclusions, pending-credit treatment, direct
+FX failure, Decimal arithmetic, confirmed-income boundaries and explicit
+replacement evidence. Variable amounts, recurrence calendars, optional
+baseline, same-day ordering and late-deadline mapping remain unresolved by
+available challenge evidence. The lab is analysis-only; production behavior is
+unchanged.
 | Decimal serialization | Exact Decimal internally; deterministic output scale remains explicit | UNRESOLVED-POLICY | Trailing-zero rule absent |
+
+## Phase 13 evidence-to-behavior reconstruction
+
+The Phase 13 matrix and causal traces confirm that safe amount is the first
+observable divergence for 23/25 solved examples, while two rows are
+serialization-only. This is an upstream forecast-contract signal, not evidence
+that candidate ranking is wrong. The strongest general model remains explicit
+confirmed movements plus supported stable fixed recurrence. No variable-amount
+estimator or sample-specific semantic change is authorized.
+
+## Phase 16 evidence-weighted reconstruction
+
+The actual call graph and canonical movement contract were reverified. Stable
+fixed recurrence remains the strongest defensible model. Latest, median, mean,
+maximum and recurrence-conditioned variable estimators are unsupported
+assumptions; calendar, optional-baseline, same-day and late-deadline boundaries
+remain configurable. No production change passed the evidence gate.
+
+## Phase 17 forecast contract implementation
+
+Formalized the three-level inference contract: `EXPLICIT_CONFIRMED` and
+`SUPPORTED_FIXED_RECURRENCE` are production-eligible; `UNRESOLVED_INFERENCE`
+remains visible but contributes no cash. The model lab is analysis-only and no
+counterfactual estimator or calendar model was promoted.
+
+## Phase 18 authoritative evidence gate
+
+Repository-wide search found no authoritative rule resolving variable amounts,
+calendar recurrence, optional baseline, generic scheduled credits, same-day
+order, replacement timing or late-deadline mapping. Decision:
+`AUTHORITATIVE_EVIDENCE_MISSING`; production behavior remains unchanged.
+
+## Phase 19 production policy boundary
+
+Unresolved semantics are centralized, explicit and fail-closed. Fixed-only
+variable spending, observed-interval recurrence, confirmed-salary-only credits,
+never-invent replacements, configurable same-day ordering and conservative
+deadline mapping are documented policies. The hidden-test hardening suite adds
+invariant coverage without changing financial decision logic.

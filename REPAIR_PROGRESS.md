@@ -58,3 +58,182 @@ payment plan 10/25 → 11/25; earliest date 8/25 → 8/25; spending changes
 22/25 → 22/25. Exact field matches improved by 2, regressed by 0, and four
 fields were unchanged. Remaining mismatches and first-divergence categories
 are documented in `PHASE_6_FORECAST_REPAIR.md`.
+
+## Phase 8 controlled semantic repair
+
+Created checkpoint `phase8-pre-semantic-repair` (`d241695`) before changes.
+Added an explicit `OPTIONAL_BASELINE_POLICY` configuration boundary with
+`CURRENT_BEHAVIOR`, `INCLUDE_REQUIRED_ONLY`, `INCLUDE_ALL_RECURRING`, and
+`EXCLUDE_OPTIONAL_FLEXIBLE` variants. The production default remains
+`CURRENT_BEHAVIOR`; recurrence-calendar semantics and downstream ranking were
+not changed.
+
+Counterfactual results showed `INCLUDE_REQUIRED_ONLY` and
+`EXCLUDE_OPTIONAL_FLEXIBLE` each changed one request and improved method/status
+diagnostics, while `INCLUDE_ALL_RECURRING` changed eight requests without an
+evidentiary basis. No policy was selected solely by score. Added policy
+classification/provenance and Phase 8 metamorphic boundary tests.
+
+Focused tests: 38 passed. Full suite: 47 passed. Production-default sample
+matches remain safe 2/25, status 10/25, method 12/25, plan 11/25, earliest
+8/25, changes 22/25. Artifacts: `PHASE_8_SEMANTIC_REPAIR.md` and `.json`.
+
+## Phase 9 recurrence calendar forensics
+
+Analysis-only pass completed; no production or dataset changes. Inventoried 728
+source-identity series across the 25 solved users, including lifecycle,
+flexibility, protection, terminal markers, linked replacements and candidate
+calendar dates. Compared exact-interval, weekly, biweekly, monthly,
+month-end-clamp, explicit-future-only and stable-fixed conceptual models.
+
+Conclusion: `RECURRENCE_REMAINS_UNRESOLVED`. The strongest defensible baseline
+remains explicit confirmed movements plus stable fixed recurrence, with no
+invented variable amounts. Month-end, missed-cycle, calendar cadence and
+replacement timing require fixture-backed evidence before production changes.
+Artifacts: `PHASE_9_RECURRENCE_FORENSICS.md` and `.json`.
+
+## Phase 10 downstream decision forensics
+
+Analysis-only pass completed with the forecast and ledger frozen. The first
+divergence grouping places 23 requests at `SAFE_AMOUNT`; two requests are
+output-only mismatches in the current field comparison. Earliest-date,
+candidate, status, method and plan differences are downstream symptoms of the
+frozen upstream capacity/date contract. Candidate audits, preference
+eligibility, validation/rejection data and ranking keys were captured without
+changing the decision pipeline.
+
+Recommendation: freeze the decision pipeline and document unresolved forecast
+semantics before any Phase 11 downstream repair. Artifacts:
+`PHASE_10_DECISION_FORENSICS.md` and `.json`.
+
+## Phase 11 decision-pipeline freeze and hidden-test hardening
+
+Baseline frozen at `d2416958be49f40ef9a15fefe3a6795d6d34a7e1`: 38 focused
+tests, 47 full tests, sample matches safe 2/25, status 10/25, method 12/25,
+plan 11/25, earliest 8/25, changes 22/25. Output has 250 rows and deterministic
+SHA-256 `2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840`.
+
+Added seven defensive hardening tests covering malformed inputs, pending and
+required-debit monotonicity, lifecycle exclusion, protected/fixed immutability,
+output contract and missing FX. Full suite after hardening: 54 passed. No
+production decision logic changed. The project remains **BLOCKED** because
+safe-amount and earliest-date forecast semantics are unresolved upstream; no
+downstream repair or packaging is justified.
+
+## Phase 12 forecast contract resolution
+
+Read-only forecast-contract reconstruction completed. Status remains
+**UNRESOLVED**: the strongest defensible model is explicit confirmed cash
+movements plus supported stable fixed recurrence, Decimal arithmetic, direct
+supplied FX, strict lifecycle handling and deterministic horizon simulation.
+Variable amounts, recurrence calendars, optional-baseline scope, generic
+scheduled credits, same-day ordering, replacement timing, late-deadline status
+mapping and decimal presentation remain unsupported and configurable. The
+current baseline was not changed. Focused tests: 45 passed; full suite: 54
+passed; evaluator unchanged at safe 2/25, status 10/25, method 12/25, plan
+11/25, earliest 8/25, changes 22/25. Output hash remains
+`2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840`.
+
+Artifacts: `FORECAST_CONTRACT.md`, `FORECAST_CONTRACT.json`,
+`PHASE_12_FORENSICS.md`, `PHASE_12_FORENSICS.json`, and
+`PHASE_12_DECISION.md`. No dataset, expected-output, output.csv, production
+logic, or packaging changes were made.
+
+## Phase 13 evidence-to-behavior reconstruction
+
+Completed the controlled, analysis-first reconstruction. The 25-request matrix
+and JSON traces show safe amount as the first divergence for 23 requests and
+serialization for two. Variable spending was inventoried by source identity;
+no arithmetic mean, median, latest, maximum, minimum, or category-only rule was
+introduced. Existing counterfactual scores were preserved as evidence only.
+
+Outcome: **PARTIALLY_RESOLVED**. Supported lifecycle, confirmed-credit, fixed
+recurrence, FX, Decimal and safety semantics remain frozen; unresolved
+variable amounts, recurrence calendar, optional baseline, scheduled credits,
+same-day ordering, replacement timing, deadline mapping and decimal
+presentation remain explicit policies. No production, dataset, expected-output,
+or output.csv changes were made. Full suite remains 54 passed and output hash
+remains `2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840`.
+
+Artifacts: `PHASE_13_BASELINE.md`, `PHASE_13_FORECAST_BEHAVIOR_MATRIX.md`,
+`PHASE_13_FIRST_DIVERGENCE.md`, `PHASE_13_VARIABLE_SPENDING_ANALYSIS.md`,
+`PHASE_13_COUNTERFACTUAL_MODELS.md`, `PHASE_13_EVALUATION.md/.json`, and
+`PHASE_13_DECISION.md`. The requested `phase13-analysis-only` tag could not be
+created because the checkout denied `.git/refs/tags` lock creation; HEAD was
+left unchanged and the failure is documented in the baseline.
+
+## Phase 14 forecast semantic resolution
+
+Baseline reconfirmed at `d2416958…`: 54 full tests, 45 focused tests, sample
+matches safe 2/25, status 10/25, method 12/25, plan 11/25, earliest 8/25,
+changes 22/25, and output hash
+`2B6FA34AF6B11FCF81E9F5699F6CFAB341104857A079CDB592481F2D9C6D7840`.
+
+Generated the formal movement contract and counterfactual/forensic reports.
+Every raw event has explicit inclusion/exclusion reasoning and provenance.
+The 23 safe-amount divergences remain upstream but observationally confounded;
+no variable estimator, calendar guess, generic scheduled-credit inclusion,
+replacement invention, or downstream ranking change is defensible. No
+production, dataset, expected-output, or `output.csv` change was made.
+
+Outcome: **BLOCKED** pending fixture-backed evidence that isolates the
+remaining forecast semantics. Git checkpoint creation was attempted and
+failed only because the checkout denied `.git` ref-lock creation.
+
+## Phase 15 fixture-driven semantic discovery
+
+Created an independent Decimal semantic lab and 66 minimal synthetic fixtures
+covering variable spending, recurrence calendars, income, optional baseline,
+pending events, same-day ordering, replacements, deadlines, FX and Decimal
+boundaries. Lab tests pass 7/7. Resolved behavior is documented for lifecycle,
+pending credits, confirmed income, explicit replacements, direct FX and Decimal
+arithmetic; unresolved behavior remains isolated for variable amounts, calendar
+recurrence, optional baseline, same-day ordering and late-deadline mapping.
+
+No production logic, ranking, datasets, expected outputs or `output.csv` were
+changed. Final phase state: **BLOCKED** pending authoritative evidence that
+selects among the competing unresolved models.
+
+## Phase 16 evidence-weighted forecast reconstruction
+
+Reverified the actual production call graph and formal forecast state. Stable
+fixed recurrence remains the strongest defensible upstream model; variable
+estimators and calendar, optional-baseline, same-day and late-deadline
+alternatives remain unresolved. Generated the required Phase 16 evidence,
+model-matrix, implied-cashflow, calendar, optional-baseline, same-day,
+deadline, decision and progress artifacts. No production, ranking, dataset,
+expected-output or `output.csv` changes were made. Full suite remains 61
+passed; lab tests 7 passed; final state **BLOCKED**.
+
+## Phase 17 forecast contract implementation
+
+Formalized the forecast contract and production-change gate. Added an
+analysis-only model lab and three same-day contract tests; full suite is now 64
+passed and semantic-lab tests 10 passed. No production semantic change was
+promoted because variable estimators and calendar alternatives remain
+unsupported or unresolved. Sample evaluation and output hash are unchanged;
+datasets, expected outputs and `output.csv` remain untouched.
+
+## Phase 18 authoritative evidence recovery
+
+Audited repository specification, schemas, comments, fixtures, solved examples,
+implementation and Phase 1–17 artifacts. No hidden authoritative rule was found
+for variable amounts, recurrence calendars, optional baseline, generic
+scheduled credits, same-day ordering, replacement timing or late status. The
+identifiability matrix shows these semantics remain observationally confounded.
+
+Decision: **AUTHORITATIVE_EVIDENCE_MISSING** / `NO_PRODUCTION_CHANGE_JUSTIFIED`.
+Full suite remains 64 passed, semantic-lab 10 passed, sample matches and output
+hash are unchanged, and no production/data/output changes were made.
+
+## Phase 19 defensible production policy and hardening
+
+Centralized unresolved policy boundaries, documented the proven core, added 60
+deterministic adversarial fixture cases plus invariant checks, and validated
+the production output. Full suite: 128 passed; adversarial suite: 74 passed;
+semantic lab: 10 passed. Output remains 250 rows with unchanged hash.
+
+The submission gate reached **READY_FOR_PACKAGING**. `code.zip` was created
+with production code, the required usage report, README and image-evidence
+cache; it excludes datasets and forensic artifacts. Independent packaged run
+produced 250 valid rows with the same output hash.

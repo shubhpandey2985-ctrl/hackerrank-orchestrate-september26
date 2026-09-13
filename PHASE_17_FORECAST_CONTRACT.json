@@ -1,0 +1,46 @@
+{
+  "input_facts": [
+    "opening_balance",
+    "request_date",
+    "90_day_horizon",
+    "home_currency",
+    "settled_movements",
+    "confirmed_future_credits",
+    "pending_debits",
+    "lifecycle_state",
+    "recurrence_evidence",
+    "flexibility",
+    "protection",
+    "optional_classification",
+    "supplied_direct_fx",
+    "minimum_balance",
+    "request_amount",
+    "deadline",
+    "payment_options"
+  ],
+  "excluded_facts": [
+    "pending_credits",
+    "failed",
+    "cancelled",
+    "unrealized",
+    "non_cash",
+    "duplicate_lifecycle_records",
+    "unsupported_income",
+    "unsupported_replacements",
+    "unsupported_fx"
+  ],
+  "inference_levels": [
+    "EXPLICIT_CONFIRMED",
+    "SUPPORTED_FIXED_RECURRENCE",
+    "UNRESOLVED_INFERENCE"
+  ],
+  "production_eligible": [
+    "EXPLICIT_CONFIRMED",
+    "SUPPORTED_FIXED_RECURRENCE"
+  ],
+  "unresolved_visible_but_excluded": true,
+  "same_day_order": "credits_before_required_debits_before_plan (policy)",
+  "optional_baseline": "CURRENT_BEHAVIOR (configurable)",
+  "fx": "direct supplied dated pair only",
+  "arithmetic": "Decimal"
+}
