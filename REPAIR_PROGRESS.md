@@ -25,3 +25,20 @@ status `15/25`, payment method `17/25`, payment plan `14/25`, earliest safe date
 submission quality, so this is explicitly not a readiness declaration. The
 remaining mismatches are retained in `SAMPLE_MISMATCH_REPORT.md/.json` for the
 next repair iteration.
+
+## Phase 4 semantic-model implementation
+
+Created the requested `semantic-model-preimplementation` Git checkpoint before
+code changes. Replaced the unsupported variable-spend arithmetic mean with
+explicit `RecurrenceEvidence`; variable amounts and historical salary amounts
+remain unresolved rather than generating invented future movements. Added
+lifecycle status precedence, canonical event classification, and movement-level
+`forecast_trace` audit records. Added four semantic-model regression tests and
+retained all existing invariants.
+
+Focused semantic tests: 12 passed. Full suite: 39 passed. 25-example semantic
+model run: safe amount 2/25, status 10/25, payment method 11/25, payment plan
+10/25, earliest safe date 8/25, spending changes 22/25. The downstream
+regressions are recorded in `SEMANTIC_MODEL_TEST_REPORT.md`; no sample-specific
+patches were applied. Remaining unresolved semantics are listed in
+`SPECIFICATION_RECONSTRUCTION.md`.

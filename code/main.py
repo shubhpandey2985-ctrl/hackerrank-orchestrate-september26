@@ -72,6 +72,33 @@ class Data:
     profiles: dict; requests: list; options: dict; events: dict[str, list[Event]]
     messages: list; images: list; rates: dict
 
+@dataclass
+class RecurrenceEvidence:
+    """Evidence that a source series repeats, without inventing its amount."""
+    events: list[Event]
+    gap_days: int
+    identity: tuple[str, ...]
+    amount_policy: str
+    amount_estimate: Decimal | None
+    provenance: tuple[str, ...]
+    confidence: str
+
+    def __iter__(self):
+        # Backward-compatible unpacking for the development adapters.
+        yield self.events
+        yield self.gap_days
+
+def classify_event(event: Event, profile: dict, recurrence: RecurrenceEvidence | None = None):
+    """Return one canonical, auditable classification for a cash event."""
+    protected_categories = parse_list(profile.get("expense_categories_to_protect", ""))
+    protected = event.category in protected_categories or event.flexibility == "fixed"
+    flexible = event.direction == "debit" and event.flexibility != "fixed" and not protected
+    optional = flexible and event.category not in protected_categories
+    fixed = not flexible
+    modifiable = flexible and recurrence is not None
+    return {"protected": protected, "flexible": flexible, "optional": optional,
+            "fixed": fixed, "modifiable": modifiable}
+
 def load_data(root: Path) -> Data:
     ds = root / "dataset"
     profiles = read_csv(ds/"financial_profiles.csv"); requests = read_csv(ds/"requests.csv")
@@ -152,9 +179,22 @@ def normalize_events(data: Data, root: Path):
 def semantic_events(data: Data, user: str):
     """Return cash-relevant events with lifecycle exclusions and provenance."""
     all_e=data.events[user]; byid={e.event_id:e for e in all_e}; out=[]; seen=set()
+    # Collapse lifecycle duplicates before constructing cash movements. A
+    # settled/amended row supersedes a pending estimate; a linked live row
+    # supersedes its failed/cancelled predecessor. No replacement date or
+    # amount is invented.
+    precedence={"settled":4,"scheduled":3,"pending":2,"failed":1,"cancelled":1,"unrealized":1}
+    chosen={}
+    for e in all_e:
+        key=(e.linked_event_id or "", e.event_type, e.description, e.category,
+             e.direction, e.amount, e.currency, e.event_date, e.settlement_date)
+        old=chosen.get(key)
+        if old is None or precedence.get(e.status,0)>precedence.get(old.status,0):
+            chosen[key]=e
+    lifecycle_events=list(chosen.values())
     ending_dates=[dt(m.get("sent_at")) for m in data.messages if m.get("user_id")==user and re.search(r"employment has ended|contract .*ended|no off-season income|no regular salary payments", m.get("message_text", ""), re.I)]
     ending_income = bool(ending_dates); ending_cutoff=max(ending_dates) if ending_dates else None
-    for e in all_e:
+    for e in lifecycle_events:
         if e.status in {"cancelled","failed","unrealized"} or e.direction=="non_cash":
             e.excluded_reason=e.status or "non_cash"; continue
         if e.status == "pending" and e.direction == "credit":
@@ -214,10 +254,10 @@ def recurring(events):
     groups=defaultdict(list)
     for e in events:
         if e.direction in {"debit","credit"} and e.status in {"settled","pending","scheduled"} and e.event_type not in {"refund","investment_sale"}:
-            # Description varies for variable essentials (for example, grocery
-            # and dining merchants). Category/direction/currency is the stable
-            # recurrence identity; provenance retains each source event.
-            key=(e.category,e.direction,e.currency)
+            # Recurrence identity retains the source description. Category-only
+            # aggregation would silently merge unrelated purchases and would
+            # turn a coincidental category repetition into an obligation.
+            key=(e.category,e.description,e.direction,e.currency)
             groups[key].append(e)
     result=[]
     for key, xs in groups.items():
@@ -238,9 +278,8 @@ def recurring(events):
         med=sorted(gaps)[(len(gaps)-1)//2]
         if min(abs(g-med) for g in gaps) > DEFAULT_POLICY.recurrence_gap_tolerance_days: continue
         # A supported cadence plus repeated history is sufficient for named
-        # obligations and essential/variable categories. Require at least five
-        # observations for discretionary categories with varying descriptions;
-        # this avoids promoting a few coincidental purchases to obligations.
+        # fixed obligations. Repeated variable spending is retained as
+        # unresolved evidence only; it is not assigned an invented amount.
         named_obligation = xs[0].event_type in {"subscription","debt_payment","income"}
         essential_category = xs[0].category in {
             "rent","housing","utilities","insurance","education","healthcare",
@@ -248,12 +287,25 @@ def recurring(events):
             "transport","dining","entertainment","shopping"
         }
         stable_description = len({x.description for x in xs}) == 1
-        if not (named_obligation or essential_category or (len(xs) >= 5 and stable_description)):
+        if not (named_obligation or stable_description):
             continue
-        result.append((xs, med))
+        variable = xs[0].category in {"groceries","transport","dining","entertainment","shopping","healthcare","education","family_support"}
+        # Income recurrence is evidence only. Historical salary observations do
+        # not authorize a future credit; explicit scheduled/message-confirmed
+        # credits are already represented as dated events in semantic_events.
+        if variable:
+            policy, estimate, confidence = "unresolved_variable_amount", None, "unresolved"
+        elif xs[0].direction == "credit":
+            policy, estimate, confidence = "no_historical_income_extrapolation", None, "policy"
+        else:
+            policy, estimate, confidence = "latest_fixed_obligation_amount", xs[-1].home_amount, "high"
+        result.append(RecurrenceEvidence(
+            events=xs, gap_days=med, identity=tuple(str(x) for x in key),
+            amount_policy=policy, amount_estimate=estimate,
+            provenance=tuple(x.event_id for x in xs), confidence=confidence))
     return result
 
-def forecast(user, request_date, data, extra_payments=(), changes=(), include_optional=True):
+def forecast(user, request_date, data, extra_payments=(), changes=(), include_optional=True, trace_out=None):
     p=data.profiles[user]; horizon=[request_date+timedelta(days=i) for i in range(DEFAULT_POLICY.forecast_days)]
     balances={d:D("0") for d in horizon}; balance=D(p["current_available_balance"])
     events=semantic_events(data,user)
@@ -276,23 +328,25 @@ def forecast(user, request_date, data, extra_payments=(), changes=(), include_op
             amt=min(amt,new)
         if when in horizon:
             priority=0 if (DEFAULT_POLICY.same_day_order.startswith("credits") and e.direction=="credit") else 1
-            flow[when].append((priority, amt if e.direction=="credit" else -amt))
+            flow[when].append((priority, amt if e.direction=="credit" else -amt, e.event_id, e))
     # Extend supported recurring cash movements conservatively through horizon.
-    for xs,gap in recurring(events):
+    for recurrence in recurring(events):
+        xs, gap = recurrence
+        # Recurrence detection and amount estimation are separate. Variable
+        # series and historical income are retained as evidence but cannot
+        # create a future movement without an explicit supported amount.
+        if recurrence.amount_estimate is None:
+            continue
         last=xs[-1]; d=last.settlement_date or last.event_date
         if (not include_optional and last.direction == "debit"
                 and ((last.flexibility != "fixed" and last.category not in protected)
                      or (last.category in variable_categories and last.category not in protected))
                 and last.event_id not in {x[1] for x in changes}):
             continue
-        values=[x.home_amount for x in xs if x.home_amount is not None]
-        # Variable recurring outflows use the observed mean as a deterministic
-        # baseline for this explicit policy. Fixed obligations and income
-        # use the latest observed amount to respect amendments.
-        if last.direction == "debit" and last.category in variable_categories:
-            amt=(sum(values, ZERO)/Decimal(len(values))) if values else ZERO
-        else:
-            amt=last.home_amount or ZERO
+        # The recurrence object owns the amount policy. Only a fixed debit
+        # with a resolved source amount is projected here; no mean/median/
+        # latest heuristic is applied to variable spending.
+        amt=recurrence.amount_estimate
         while True:
             d=d+timedelta(days=gap)
             if d >= horizon[-1]: break
@@ -301,23 +355,52 @@ def forecast(user, request_date, data, extra_payments=(), changes=(), include_op
                 if action and action[0]=="stop": continue
                 if action and action[0]=="reduce": amt=min(amt,action[1])
                 priority=0 if (DEFAULT_POLICY.same_day_order.startswith("credits") and last.direction == "credit") else 1
-                flow[d].append((priority, amt if last.direction == "credit" else -amt))
+                flow[d].append((priority, amt if last.direction == "credit" else -amt, f"recurrence:{last.event_id}:{d.isoformat()}", last))
     minimum=D(p["minimum_balance_to_keep"])
     safe_floor=balance
     for d in horizon:
         # Explicit policy: confirmed credits are applied before required debits
         # and candidate payments on the same date.
-        for _, day_move in sorted(flow[d], key=lambda item:item[0]):
+        for _, day_move, movement_id, source_event in sorted(flow[d], key=lambda item:item[0]):
+            before=balance
             balance += day_move
             safe_floor=min(safe_floor,balance)
+            if trace_out is not None:
+                trace_out.append({"date":d.isoformat(),"event_id":movement_id,
+                                  "source":source_event.event_id,
+                                  "event_type":source_event.event_type,
+                                  "cash_state":source_event.cash_state,
+                                  "currency":source_event.currency,
+                                  "home_currency_amount":str(abs(day_move)),
+                                  "balance_before":str(before),"movement":str(day_move),
+                                  "balance_after":str(balance),"minimum_balance":str(minimum),
+                                  "safe_after_movement":balance>=minimum})
         balances[d]=balance
     for d,a in extra_payments:
         if d < request_date or d not in balances: return False, balances
         for x in horizon:
+            before=balances[x]
             if x>=d:
                 balances[x]-=a
                 safe_floor=min(safe_floor,balances[x])
+                if trace_out is not None:
+                    trace_out.append({"date":x.isoformat(),"event_id":"plan_payment",
+                                      "source":"candidate_plan","event_type":"payment",
+                                      "cash_state":"plan_payment","currency":p["home_currency"],
+                                      "home_currency_amount":str(a),"balance_before":str(before),
+                                      "movement":str(-a),"balance_after":str(balances[x]),
+                                      "minimum_balance":str(minimum),
+                                      "safe_after_movement":balances[x]>=minimum})
     return safe_floor>=minimum, balances
+
+def forecast_trace(user, request_date, data, extra_payments=(), changes=(), include_optional=True):
+    """Return the deterministic forecast result plus auditable movements."""
+    movements=[]
+    ok, balances=forecast(user, request_date, data, extra_payments, changes,
+                          include_optional, movements)
+    return {"safe":ok, "balances":balances, "movements":movements,
+            "policy": {"same_day_order": DEFAULT_POLICY.same_day_order,
+                       "forecast_days": DEFAULT_POLICY.forecast_days}}
 
 def safe_amount(user, req, data, changes=()):
     rd=dt(req["request_date"]); requested=D(req["requested_amount"]); p=data.profiles[user]

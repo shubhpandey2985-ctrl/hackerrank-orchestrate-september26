@@ -2,10 +2,10 @@
   "sample_count": 25,
   "field_matches": {
     "amount_safe_to_pay": 2,
-    "affordability_status": 15,
-    "recommended_payment_method": 17,
-    "payment_plan": 14,
-    "earliest_date_for_full_payment": 9,
+    "affordability_status": 10,
+    "recommended_payment_method": 11,
+    "payment_plan": 10,
+    "earliest_date_for_full_payment": 8,
     "spending_changes_needed": 22
   },
   "rows": [
@@ -20,11 +20,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "23292.94",
-        "affordability_status": "not_affordable",
-        "recommended_payment_method": "not_recommended",
-        "payment_plan": "none",
-        "earliest_date_for_full_payment": "",
+        "amount_safe_to_pay": "25256",
+        "affordability_status": "affordable_now",
+        "recommended_payment_method": "full_payment",
+        "payment_plan": "2024-03-03:25256",
+        "earliest_date_for_full_payment": "2024-03-03",
         "spending_changes_needed": "none"
       }
     },
@@ -39,11 +39,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "24911239.26",
+        "amount_safe_to_pay": "14334739.38",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
-        "earliest_date_for_full_payment": "2025-10-13",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -58,11 +58,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "1159761.09",
+        "amount_safe_to_pay": "0",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
-        "earliest_date_for_full_payment": "2019-11-29",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -77,11 +77,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "12693000",
-        "affordability_status": "affordable_later",
-        "recommended_payment_method": "wait",
-        "payment_plan": "2024-06-13:12693000",
-        "earliest_date_for_full_payment": "2024-06-13",
+        "amount_safe_to_pay": "0",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -96,11 +96,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "5821",
-        "affordability_status": "not_affordable",
-        "recommended_payment_method": "not_recommended",
-        "payment_plan": "none",
-        "earliest_date_for_full_payment": "",
+        "amount_safe_to_pay": "15488",
+        "affordability_status": "affordable_now",
+        "recommended_payment_method": "full_payment",
+        "payment_plan": "2025-11-06:15488",
+        "earliest_date_for_full_payment": "2025-11-06",
         "spending_changes_needed": "none"
       }
     },
@@ -115,11 +115,11 @@
         "spending_changes_needed": "stop:event_476"
       },
       "actual": {
-        "amount_safe_to_pay": "620.40",
-        "affordability_status": "affordable_now",
-        "recommended_payment_method": "full_payment",
-        "payment_plan": "2026-01-03:620.40",
-        "earliest_date_for_full_payment": "2026-01-03",
+        "amount_safe_to_pay": "385.62",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -210,11 +210,11 @@
         "spending_changes_needed": "reduce_to:event_989:665950"
       },
       "actual": {
-        "amount_safe_to_pay": "13110000",
-        "affordability_status": "affordable_now",
-        "recommended_payment_method": "full_payment",
-        "payment_plan": "2025-05-03:13110000",
-        "earliest_date_for_full_payment": "2025-05-03",
+        "amount_safe_to_pay": "6496199.46",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -248,11 +248,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "941.60",
-        "affordability_status": "affordable_now",
-        "recommended_payment_method": "full_payment",
-        "payment_plan": "2024-03-07:941.60",
-        "earliest_date_for_full_payment": "2024-03-07",
+        "amount_safe_to_pay": "696.76",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -267,7 +267,7 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "805.35",
+        "amount_safe_to_pay": "1228.05",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
@@ -286,7 +286,7 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "84.42",
+        "amount_safe_to_pay": "363.64",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
@@ -305,11 +305,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "122500",
-        "affordability_status": "affordable_now",
-        "recommended_payment_method": "full_payment",
-        "payment_plan": "2023-08-12:122500",
-        "earliest_date_for_full_payment": "2023-08-12",
+        "amount_safe_to_pay": "0",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -324,11 +324,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "261721.97",
+        "amount_safe_to_pay": "274600",
         "affordability_status": "affordable_with_plan",
         "recommended_payment_method": "installments",
         "payment_plan": "2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67",
-        "earliest_date_for_full_payment": "2026-04-15",
+        "earliest_date_for_full_payment": "2026-03-01",
         "spending_changes_needed": "none"
       }
     },
@@ -343,11 +343,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "755.15",
-        "affordability_status": "affordable_later",
-        "recommended_payment_method": "wait",
-        "payment_plan": "2026-09-13:3246.1",
-        "earliest_date_for_full_payment": "2026-09-13",
+        "amount_safe_to_pay": "58.71",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -362,11 +362,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "39660",
-        "affordability_status": "affordable_with_plan",
-        "recommended_payment_method": "installments",
-        "payment_plan": "2024-09-04:20623.2|2024-10-02:20623.2",
-        "earliest_date_for_full_payment": "2024-09-04",
+        "amount_safe_to_pay": "0",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -381,7 +381,7 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "37405",
+        "amount_safe_to_pay": "0",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
@@ -419,11 +419,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "549.9",
-        "affordability_status": "affordable_with_plan",
-        "recommended_payment_method": "installments",
-        "payment_plan": "2024-12-08:253.59|2025-01-05:253.59|2025-02-02:253.59",
-        "earliest_date_for_full_payment": "2025-01-16",
+        "amount_safe_to_pay": "179.04",
+        "affordability_status": "not_affordable",
+        "recommended_payment_method": "not_recommended",
+        "payment_plan": "none",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -438,11 +438,11 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "11407.59",
+        "amount_safe_to_pay": "0",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
-        "earliest_date_for_full_payment": "2025-07-17",
+        "earliest_date_for_full_payment": "",
         "spending_changes_needed": "none"
       }
     },
@@ -457,7 +457,7 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "26006.51",
+        "amount_safe_to_pay": "0",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
@@ -476,7 +476,7 @@
         "spending_changes_needed": "none"
       },
       "actual": {
-        "amount_safe_to_pay": "5284985.18",
+        "amount_safe_to_pay": "5877496.33",
         "affordability_status": "not_affordable",
         "recommended_payment_method": "not_recommended",
         "payment_plan": "none",
